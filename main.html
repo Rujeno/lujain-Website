@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lujain Portofolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .overlay {
+            background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(255, 255, 255, 0.2));
+        }
+        body {
+            background-image: url('image.png');
+            background-size: cover;
+            background-position: center;
+            background-color: white;
+        }
+    </style>
+</head>
+<body class="h-screen flex items-center justify-center">
+   <div class="relative max-w-4xl w-full bg-red-600 p-8 backdrop-blur-md rounded-lg shadow-lg text-white">
+        <nav class="absolute top-4 left-4">
+            <button id="menu-toggle" class="text-white text-lg font-bold">☰ </button>
+            <ul id="menu" class="hidden absolute left-0 top-0 mt-0 bg-white p-2 rounded-lg shadow-lg w-40 text-black"
+                onmouseleave="this.classList.add('hidden')">
+                <li class="py-1"><a href="aboutme.html" class="text-black hover:underline">About Me</a></li>
+                <li class="py-1"><a href="mydesignes.html" class="text-black hover:underline">My Designes</a></li>
+            </ul>
+        </nav>
+        <div class="grid md:grid-cols-2 items-center gap-8">
+            <div>
+                <h1 class="text-5xl font-bold text-white">Lujain Alshamrani</h1>
+                <p class="text-white-900 mt-4">A graphic designer who transforms images into a creative design ...</p>
+                <div class="mt-6 flex gap-4">
+                    <button> <a href="mydesignes.html" class="px-6 py-2 bg-black text-white font-bold rounded shadow hover:bg-gray-100">My work</a> </button>
+                </div>
+            </div>
+            <div class="relative">
+                <img src="lujain.png" alt="Chihiro" class="w-full h-auto">
+            </div>
+             <div>Phone:+966540626039 </div>
+              <div> Email:Lujain.shumrani@gmail.com  </div>
+        </div>
+    </div>
+     <script>
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            document.getElementById('menu').classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
