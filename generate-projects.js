@@ -53,13 +53,32 @@ const projects = [
   },
   {
     slug: 'saudeels', num: '06',
-    title: 'Saudeels', titleEn: 'Saudeels', category: 'Platform Branding',
+    title: 'Saudeels', titleEn: 'Saudeels · سعوديلز', category: 'Food Truck Branding',
     img: 'Images/Saudeels.png', year: '2024',
-    summaryAr: 'هوية منصة عروض رقمية مصممة للوقف الفوري في التمرير — جرأة بصرية عالية، وقابلية تكيّف تضمن استمرار المحتوى بجودة ثابتة.',
-    deliverables: ['Logo Design', 'App Icon', 'Social Media Templates', 'Brand Guidelines', 'Campaign Assets'],
-    brief: `Saudeels is a digital platform aggregating deals and services for Saudi consumers. In an attention economy where everyone is scrolling fast, the brand needed to stop thumbs — instantly recognizable, high-contrast, and adaptable enough to power ongoing campaigns without looking repetitive.`,
-    approach: `We designed for the scroll. Bold geometry, a high-contrast palette, and a logo that works as an app icon, a sticker, and a billboard with equal confidence. The visual system was built as a campaign toolkit — templates and rules that let the brand produce content at volume without losing consistency.`,
-    outcome: `Full brand identity and campaign system: logo and app icon, color and type guidelines, a social media template library, campaign asset templates, and a digital brand book. Saudeels launched with everything it needed to hit the ground running.`
+    summaryAr: 'هوية كاملة لعربة نودلز سعودية — شعار يجمع الثقافتين، ولوح ألوان جريء، ومنظومة بصرية تمتد من الشاحنة والتغليف حتى السوشال ميديا.',
+    deliverables: ['Logo Design', 'Brand Guidelines', 'Food Truck Wrap', 'Packaging & Stickers', 'Uniforms', 'Poster Design', 'Social Media Kit', 'Menu Design', 'Brochure'],
+    brief: `Saudeels (سعوديلز) is a Saudi noodles food truck concept that needed a brand as bold as its food. The challenge: merge local Saudi identity with the energy of Asian street food — in a visual language customers would recognize and remember from across a parking lot.`,
+    approach: `The mark pairs a stylized noodle bowl and chopsticks into a single icon that reads instantly at any size — from an app icon to a full food truck wrap. A vivid palette of deep green, indigo blue, and vermillion orange signals warmth and appetite. Typography spans Arabic and English with equal confidence, and brand patterns built from the logo elements give every touchpoint its own personality.`,
+    outcome: `A fully deployed identity across every surface: the food truck exterior, noodle boxes, paper bags, chopstick sleeves, stickers, staff uniforms, posters, social media templates, menu, and a printed brochure. Every piece reinforces the same bold, appetite-forward character.`,
+    galleryOverride: `
+        <div class="gallery-item g-wide">
+            <img src="Images/saudeels-1.jpg" alt="Saudeels — Brand Identity Cover" loading="lazy" decoding="async">
+        </div>
+        <div class="gallery-item g-tall">
+            <img src="Images/saudeels-2.jpg" alt="Saudeels — Food Truck Wrap" loading="lazy" decoding="async">
+        </div>
+        <div class="gallery-item">
+            <img src="Images/saudeels-3.jpg" alt="Saudeels — Chopstick & Business Card" loading="lazy" decoding="async">
+        </div>
+        <div class="gallery-item">
+            <img src="Images/saudeels-4.jpg" alt="Saudeels — Noodles Box Packaging" loading="lazy" decoding="async">
+        </div>
+        <div class="gallery-item g-wide">
+            <img src="Images/saudeels-5.jpg" alt="Saudeels — Poster Design" loading="lazy" decoding="async">
+        </div>
+        <div class="gallery-item">
+            <img src="Images/saudeels-6.jpg" alt="Saudeels — Social Media Posts" loading="lazy" decoding="async">
+        </div>`
   },
   {
     slug: 'perk', num: '07',
