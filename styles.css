@@ -309,39 +309,115 @@ a { color: inherit; text-decoration: none; }
     padding: 3rem 0 5rem;
 }
 
-/* ── HOME: ABOUT STRIP ── */
-.home-about-strip {
+/* ── HOME: ABOUT SECTION ── */
+.home-about-section {
+    padding: 6rem 0;
+    border-top: 1px solid var(--border);
+}
+
+.home-about-grid {
+    display: grid;
+    grid-template-columns: 0.85fr 1.15fr;
+    gap: 6rem;
+    align-items: center;
+}
+
+.home-about-img-wrap {
+    position: relative;
+}
+
+.home-about-img-wrap img {
+    width: 100%;
+    aspect-ratio: 3/4;
+    object-fit: cover;
+    object-position: top center;
+}
+
+.home-about-img-wrap::after {
+    content: '';
+    position: absolute;
+    bottom: -14px;
+    left: -14px;
+    width: 50%;
+    height: 50%;
+    border: 1px solid var(--border);
+    z-index: -1;
+}
+
+.home-about-name {
+    font-family: var(--serif);
+    font-size: clamp(2.5rem, 4.5vw, 3.8rem);
+    font-weight: 300;
+    line-height: 1.05;
+    color: var(--black);
+    margin: 1rem 0 0.3rem;
+}
+
+.home-about-role {
+    font-family: var(--serif);
+    font-size: 1rem;
+    font-style: italic;
+    color: var(--muted);
+    margin-bottom: 2rem;
+}
+
+.home-about-bio {
+    font-size: 0.92rem;
+    color: var(--muted);
+    line-height: 1.9;
+    margin-bottom: 2.25rem;
+}
+.home-about-bio p + p { margin-top: 1rem; }
+
+.home-services-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.home-service-pill {
+    font-size: 0.68rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--dark);
+    border: 1px solid var(--border);
+    padding: 0.45rem 1rem;
+}
+
+@media (max-width: 900px) {
+    .home-about-grid { grid-template-columns: 1fr; gap: 3rem; }
+    .home-about-img-wrap { max-width: 380px; }
+    .home-about-img-wrap::after { display: none; }
+}
+
+/* ── HOME: QUOTE STRIP ── */
+.home-quote-strip {
     background: var(--charcoal);
     padding: 5rem var(--pad);
 }
 
-.home-about-inner {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 3rem;
-    flex-wrap: wrap;
+.home-quote-inner {
+    max-width: 780px;
+    margin: 0 auto;
+    text-align: center;
 }
 
-.home-about-text {
-    flex: 1;
-    min-width: 240px;
-}
-
-.home-about-ar {
-    font-size: clamp(1.1rem, 2.5vw, 1.6rem);
+.home-quote-ar {
+    font-family: var(--serif);
+    font-size: clamp(1.15rem, 2.5vw, 1.6rem);
     font-weight: 300;
     color: white;
     direction: rtl;
-    line-height: 1.6;
-    margin-bottom: 0.6rem;
+    line-height: 1.8;
+    margin-bottom: 1.25rem;
 }
 
-.home-about-en {
+.home-quote-en {
     font-size: 0.88rem;
     color: rgba(255,255,255,0.45);
     font-style: italic;
-    line-height: 1.7;
+    line-height: 1.8;
 }
 
 /* ── HOME: CONTACT ── */
