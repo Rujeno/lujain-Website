@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Al-Athaa Fragrances — Lujain Alshamrani</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="nav">
+        <a href="index.html" class="nav-brand">Lujain Alshamrani</a>
+        <nav>
+            <button class="nav-btn" id="navBtn" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="mydesignes.html" class="active">Work</a></li>
+                <li><a href="aboutme.html">About</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="page">
+        <div class="container">
+
+            <a href="mydesignes.html" class="back-link">All Work</a>
+
+            <div class="project-hero fade-in">
+                <img src="Images/alatha.png" alt="عطور العذاء">
+            </div>
+
+            <div class="project-header fade-in">
+                <div class="project-title-block">
+                    <div class="project-eyebrow-tag">Fragrance Branding</div>
+                    <h1 class="project-main-title">عطور العذاء</h1>
+                </div>
+                <div class="project-number">16</div>
+            </div>
+
+            <div class="project-body fade-in-2">
+
+                <aside class="project-meta">
+                    <div class="meta-item">
+                        <div class="meta-label">Client</div>
+                        <div class="meta-value">Al-Athaa Fragrances</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Category</div>
+                        <div class="meta-value">Fragrance Branding</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Deliverables</div>
+                        <div class="meta-value">Brand Identity<br>Bottle Label Design<br>Packaging Design<br>Brand Guidelines<br>Brand Collateral</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Year</div>
+                        <div class="meta-value">2024</div>
+                    </div>
+                </aside>
+
+                <div class="project-story">
+                    <div class="story-block">
+                        <div class="story-heading">The Brief</div>
+                        <p class="story-text">Al-Athaa is a luxury fragrance house rooted in the tradition of Arabian oud and attar. They needed a brand identity that honored the depth and heritage of their craft — something that would feel as precious as the fragrances inside the bottles, and as timeless as the tradition behind them.</p>
+                    </div>
+                    <div class="story-block">
+                        <div class="story-heading">The Approach</div>
+                        <p class="story-text">The identity was built as a love letter to the art of Arabian perfumery. Ornamental details drawn from traditional Islamic geometry, a rich and layered palette of deep ambers and golds, and typography that moves between Arabic calligraphic sensibility and contemporary refinement. Nothing was arbitrary — every element references something real in the tradition.</p>
+                    </div>
+                    <div class="story-block">
+                        <div class="story-heading">The Outcome</div>
+                        <p class="story-text">Full fragrance brand identity: primary mark and ornamental logo system, bottle label design across the product range, outer packaging design, brand color and material guide, tissue and ribbon system, and a brand story document that captures the heritage behind the name.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="gallery-section fade-in-3">
+                <div class="gallery-heading">Project Gallery</div>
+                <div class="gallery-grid">
+                    <div class="gallery-item g-wide">
+                        <img src="Images/alatha.png" alt="عطور العذاء">
+                    </div>
+                    <div class="gallery-item g-tall">
+                        <img src="Images/alatha.png" alt="عطور العذاء">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="Images/alatha.png" alt="عطور العذاء">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="Images/alatha.png" alt="عطور العذاء">
+                    </div>
+                    <div class="gallery-placeholder g-wide">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="1"/><path d="M3 9l4-4 4 4 4-5 4 5"/><circle cx="8.5" cy="7.5" r="1.5"/></svg>
+                        <span>More images coming soon</span>
+                    </div>
+                    <div class="gallery-placeholder">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="1"/><path d="M3 9l4-4 4 4 4-5 4 5"/><circle cx="8.5" cy="7.5" r="1.5"/></svg>
+                        <span>Coming soon</span>
+                    </div>
+                </div>
+            </div>
+
+            <a href="project-jood.html" class="next-project">
+                <div>
+                    <div class="next-label">Next Project</div>
+                    <div class="next-name">جود الأصيل</div>
+                </div>
+                <div class="next-arrow">&rarr;</div>
+            </a>
+
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <span class="footer-brand">Lujain Alshamrani</span>
+        <ul class="footer-links">
+            <li><a href="mydesignes.html">Work</a></li>
+            <li><a href="aboutme.html">About</a></li>
+        </ul>
+        <span class="footer-copy">&copy; 2024 All rights reserved</span>
+    </footer>
+
+    <script>
+        const btn = document.getElementById('navBtn');
+        const menu = document.getElementById('navMenu');
+        btn.addEventListener('click', () => {
+            btn.classList.toggle('open');
+            menu.classList.toggle('open');
+        });
+        menu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                btn.classList.remove('open');
+                menu.classList.remove('open');
+            });
+        });
+    </script>
+</body>
+</html>

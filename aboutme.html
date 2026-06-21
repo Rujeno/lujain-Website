@@ -2,54 +2,233 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="Cache-Control" content="max-age=31536000, must-revalidate">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css?v=2">
-    <title>About Me - Lujain Alshamrani</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>About — Lujain Alshamrani</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
-        body {
-            background-color: white;
-        }
+        /* Google Fonts Arabic support */
+        @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500&display=swap');
+        .ar { font-family: 'Tajawal', var(--serif), sans-serif; }
     </style>
 </head>
-<body class="h-screen flex items-center justify-center">
-    <div class="relative max-w-5xl w-full bg-red-600 p-12 backdrop-blur-md rounded-lg shadow-lg text-white">
-        <nav class="absolute top-6 left-6">
-            <button id="menu-toggle" class="text-white text-lg font-bold">☰ </button>
-            <ul id="menu" class="hidden absolute left-0 top-0 mt-0 bg-white p-2 rounded-lg shadow-lg w-40 text-black"
-                onmouseleave="this.classList.add('hidden')">
-                <li class="py-1"><a href="index.html" class="text-black hover:underline">Home</a></li>
-                <li class="py-1"><a href="mydesignes.html" class="text-black hover:underline">My Designs</a></li>
+<body>
+
+    <!-- NAV -->
+    <header class="nav">
+        <a href="index.html" class="nav-brand">Lujain Alshamrani</a>
+        <nav>
+            <button class="nav-btn" id="navBtn" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="mydesignes.html">Work</a></li>
+                <li><a href="aboutme.html" class="active">About</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
             </ul>
         </nav>
-        <div class="grid md:grid-cols-2 items-center gap-12 mt-12">
-            <div>
-                <h1 class="text-5xl font-bold text-white mb-4">Lujain Alshamrani</h1>
-                <h2 class="text-2xl font-semibold text-gray-200">Graphic Designer</h2>
-                <p class="text-gray-100 mt-4">
-                    I am Lujain Abdullah, a graphic designer specializing in logo design, brand identities, and advertising content.
-                    I have expertise in using Adobe software to create innovative and professional designs.
-                    My focus is on developing creative solutions that align with market needs and fulfill client goals.
+    </header>
+
+    <main class="page">
+
+        <!-- ① BIO HERO — dark charcoal + brand mark -->
+        <section class="about-bio-hero">
+            <svg class="brand-mark" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="100" cy="100" r="96" fill="#7C1020"/>
+                <circle cx="86" cy="82" r="64" fill="#F5F5F4"/>
+                <circle cx="110" cy="112" r="37" fill="#272727"/>
+            </svg>
+            <div class="bio-hero-text">
+                <p class="bio-hero-ar ar">
+                    "أنا لجين، مصممة شغوفة بصناعة صور وهوية تجعل العلامات التجارية تتحدث بلغة الناس.
+                    أؤمن أن التصميم الناجح ليس فقط جمالاً بصرياً، بل أداة استراتيجية لخلق انطباع قوي يفتح أبواب النجاح.
+                    مهمتي أن أترجم رؤية العميل إلى تجربة بصرية متكاملة تُحدث صدى وتبقى في الأذهان."
+                </p>
+                <p class="bio-hero-en">
+                    "I am LUJAIN, a passionate designer dedicated to creating visuals and identities that make brands
+                    speak the language of people. I believe that successful design is not just about visual beauty,
+                    but a strategic tool to create a strong impression that opens doors to success. My mission is
+                    to translate the client's vision into a complete visual experience that resonates and remains unforgettable."
                 </p>
             </div>
-            <div class="relative">
-                <img src="Images/lujain1.png" alt="Lujain's Profile" class="w-full h-auto rounded-lg">
+        </section>
+
+        <!-- ② ABOUT DETAILS — profile + skills -->
+        <section class="about-section">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-text fade-in">
+                        <div class="section-label">About Me</div>
+                        <h1 class="about-name">Lujain<br>Alshamrani</h1>
+                        <p class="about-title">Graphic Designer</p>
+                        <div class="about-bio">
+                            <p>
+                                Graphic designer based in Riyadh, specializing in brand identity,
+                                logo design, and visual communication. I work at the intersection
+                                of strategy and craft — understanding what a brand needs to say,
+                                then finding the most compelling way to say it.
+                            </p>
+                            <p>
+                                My work spans startups building their identity from scratch to
+                                established brands looking to evolve. Whether it's a single logo
+                                or a full visual system, I bring the same attention to detail
+                                and purpose to every project.
+                            </p>
+                        </div>
+                        <div class="skills-label">Tools &amp; Disciplines</div>
+                        <ul class="skills-list">
+                            <li>Adobe Illustrator</li>
+                            <li>Adobe Photoshop</li>
+                            <li>Visual Design</li>
+                            <li>Brand Identity &amp; Logo Design</li>
+                            <li>Strategy &amp; Brand Positioning</li>
+                            <li>Print &amp; Advertising Design</li>
+                            <li>Social Media Design</li>
+                        </ul>
+                        <div class="about-contact-links">
+                            <a href="tel:+966540626039">
+                                <span style="font-size:0.65rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--sand);">Phone &nbsp;—&nbsp;</span>
+                                +966 54 062 6039
+                            </a>
+                            <a href="mailto:lujain.shumrani@gmail.com">
+                                <span style="font-size:0.65rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--sand);">Email &nbsp;—&nbsp;</span>
+                                lujain.shumrani@gmail.com
+                            </a>
+                        </div>
+                    </div>
+                    <div class="about-img-wrap fade-in-2">
+                        <img src="Images/lujain1.png" alt="Lujain Alshamrani">
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="mt-4 flex justify-start gap-6 flex-wrap" style="margin-top: 1rem;">
-            <img src="Images/Photoshop.png" alt="Photoshop Badge" class="h-16">
-            <img src="Images/Illustrator.png" alt="Illustrator Badge" class="h-16">
-            <img src="Images/Visual_Design.png" alt="Visual Design Badge" class="h-16">
-        </div>
-        <div>Phone:+966540626039 </div>
-              <div> Email:Lujain.shumrani@gmail.com  </div>
-    </div>
+        </section>
+
+        <!-- ③ SERVICES -->
+        <section class="services-section">
+            <div class="container">
+                <div class="services-heading">
+                    <p class="services-title-ar ar">كيف أقدر أخدمك؟</p>
+                    <p class="services-title-en">HOW CAN I HELP YOU?</p>
+                </div>
+                <div class="services-grid">
+
+                    <div class="service-card">
+                        <p class="service-title-ar ar">الاستراتيجية والتموضع</p>
+                        <span class="service-title-en">Strategy &amp; Positioning</span>
+                        <div class="service-rule"></div>
+                        <p class="service-desc-ar ar">
+                            من خلال الدراسة العميقة، يتم تحديد موقع العلامة في أذهان الجمهور مقارنة
+                            بالمنافسين. يساعد التموضع الاستراتيجي على رسم الطريق الواضح للعلامة
+                            وضمان ارتباطها بقيم واضحة ومؤثرة.
+                        </p>
+                        <p class="service-desc-en">
+                            Through in-depth study, the brand's position in the minds of the audience
+                            is defined in comparison to competitors. Strategic positioning ensures the
+                            brand is linked with clear and impactful values, paving the way for its
+                            growth and differentiation.
+                        </p>
+                    </div>
+
+                    <div class="service-card">
+                        <p class="service-title-ar ar">بناء الهوية المتكاملة</p>
+                        <span class="service-title-en">Integrated Identity Building</span>
+                        <div class="service-rule"></div>
+                        <p class="service-desc-ar ar">
+                            بناء الهوية لا يقتصر على تصميم الشعار أو الألوان فقط، بل يشمل صياغة
+                            رسالة وهوية بصرية ولفظية متكاملة تعكس شخصية العلامة. يهدف هذا العمل
+                            إلى خلق انطباع متماسك يجعل العلامة فريدة ومميزة في السوق.
+                        </p>
+                        <p class="service-desc-en">
+                            Identity building goes beyond logos and colors; it involves crafting
+                            a complete visual and verbal system that reflects the brand's personality.
+                            The goal is to create a cohesive impression that makes the brand
+                            stand out in the market.
+                        </p>
+                    </div>
+
+                    <div class="service-card">
+                        <p class="service-title-ar ar">إدارة العلامة التجارية</p>
+                        <span class="service-title-en">Brand Management</span>
+                        <div class="service-rule"></div>
+                        <p class="service-desc-ar ar">
+                            إدارة العلامة التجارية هي فن وعلم بناء قيمة العلامة والمحافظة عليها.
+                            من خلال فهم سلوك المستهلك والسوق، يتم وضع استراتيجيات تسويقية وبصرية
+                            متكاملة تعزز حضور العلامة وتزيد من ولاء العملاء.
+                        </p>
+                        <p class="service-desc-en">
+                            Brand management is the art and science of building and sustaining brand
+                            value. By understanding consumer behavior and market dynamics, integrated
+                            marketing and visual strategies are developed to strengthen brand presence
+                            and increase customer loyalty.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ④ CLIENTS -->
+        <section class="clients-section">
+            <div class="clients-heading">
+                <p class="clients-title-ar ar">شركاء النجاح</p>
+                <p class="clients-title-en">Success Partners</p>
+            </div>
+            <div class="clients-grid">
+                <span class="client-name">بنك الرياض · Riyad Bank</span>
+                <span class="client-name">وزارة البيئة والمياه والزراعة</span>
+                <span class="client-name">إمداد · Emdad</span>
+                <span class="client-name">Abyat</span>
+                <span class="client-name">كالما · Calma</span>
+                <span class="client-name">Zid</span>
+                <span class="client-name">البوابة العقارية</span>
+                <span class="client-name">Foreiva Beauty Culture</span>
+                <span class="client-name">8 Infiito Training</span>
+                <span class="client-name">قمة · Qemmah</span>
+                <span class="client-name">نهتم للفعاليات</span>
+                <span class="client-name">الهنداوية · AlHindawiya</span>
+                <span class="client-name">الكنا · Aladda</span>
+                <span class="client-name">Duke Gulf</span>
+                <span class="client-name">اللجنة التنفيذية لحوكمة الطاقة</span>
+            </div>
+        </section>
+
+        <!-- ⑤ CTA -->
+        <section class="cta-section">
+            <p class="cta-quote-ar ar">
+                "هل لديك فكرة تبحث عمّن يصيغها بصريًا؟<br>
+                أنا هنا لأحوّلها إلى تجربة مميزة."
+            </p>
+            <p class="cta-quote-en">
+                "Do you have an idea waiting to be visually shaped?<br>
+                I'm here to transform it into a unique experience."
+            </p>
+            <a href="mailto:lujain.shumrani@gmail.com" class="btn-white">Get in Touch &rarr;</a>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <span class="footer-brand">Lujain Alshamrani</span>
+        <ul class="footer-links">
+            <li><a href="mydesignes.html">Work</a></li>
+            <li><a href="aboutme.html">About</a></li>
+        </ul>
+        <span class="footer-copy">&copy; 2024 All rights reserved</span>
+    </footer>
+
     <script>
-        document.getElementById('menu-toggle').addEventListener('click', function() {
-            document.getElementById('menu').classList.toggle('hidden');
+        const btn = document.getElementById('navBtn');
+        const menu = document.getElementById('navMenu');
+        btn.addEventListener('click', () => {
+            btn.classList.toggle('open');
+            menu.classList.toggle('open');
+        });
+        menu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                btn.classList.remove('open');
+                menu.classList.remove('open');
+            });
         });
     </script>
-    <script src="script.js" defer></script>
 </body>
 </html>

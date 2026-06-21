@@ -1,0 +1,407 @@
+const fs = require('fs');
+
+const projects = [
+  {
+    slug: 'zid',
+    num: '01',
+    title: 'حدث زد',
+    titleEn: 'Zid Event',
+    category: 'Event Branding',
+    img: 'Images/zid.jpg',
+    deliverables: ['Event Logo', 'Stage Graphics', 'Social Media Kit', 'Print Collateral', 'Digital Invitations'],
+    year: '2024',
+    brief: `Zid — one of Saudi Arabia's leading e-commerce platforms — needed a full visual identity for their flagship annual event. The ask was clear: create something that feels celebratory and high-energy while still fitting within Zid's established brand world. The event had to stand out, but not look like a stranger to the brand.`,
+    approach: `We started by studying what makes Zid's visual world tick — their geometry, their palette, their rhythm — then pushed it into event territory. The result was a system that amplified what already existed without abandoning it. Bold headline treatments, an energetic color push, and motion-friendly compositions that would work across screens and physical spaces equally.`,
+    outcome: `A complete event identity delivered in full: event logo, stage backdrops, speaker presentation templates, digital invitations, social media countdown kit, and all print collateral. Every touchpoint was production-ready and consistent — from the first Instagram post to the last banner on stage.`
+  },
+  {
+    slug: 'lacorvet',
+    num: '02',
+    title: 'LA-CORVET',
+    titleEn: 'LA-CORVET',
+    category: 'Brand Identity',
+    img: 'Images/LACORVET.png',
+    deliverables: ['Logo Design', 'Brand Guidelines', 'Typography System', 'Color Palette', 'Brand Collateral'],
+    year: '2024',
+    brief: `LA-CORVET was entering a competitive fashion market with no visual identity and a need to establish themselves as a premium player from day one. The challenge: create a brand that reads as luxury without looking like a copy of European labels — something with its own character and confidence.`,
+    approach: `The direction was refined minimalism. We built around a lettermark that carries weight in any size, a typographic system that feels editorial, and a palette that walks the line between classic and contemporary. Every decision was made to feel intentional — nothing decorative for its own sake, everything earned.`,
+    outcome: `A complete brand system: primary and secondary logo lockups, full color and typography guidelines, business card and stationery design, and a packaging concept. The brand launched with a clear visual voice that positioned LA-CORVET as a name worth noticing.`
+  },
+  {
+    slug: 'spert',
+    num: '03',
+    title: 'Spert Cosmetics',
+    titleEn: 'Spert Cosmetics',
+    category: 'Brand Identity · Cosmetics',
+    img: 'Images/Spert.png',
+    deliverables: ['Logo Design', 'Packaging Design', 'Social Media Templates', 'Brand Guidelines', 'Label Design'],
+    year: '2024',
+    brief: `Spert was launching as a new local cosmetics brand in a market crowded with international names. They needed a brand that could hold its own on shelf against established competitors — one that communicated quality, care, and femininity without looking generic.`,
+    approach: `The identity was built around softness and precision. A wordmark that's clean but not cold, a palette drawn from skin tones and botanicals, and packaging that feels tactile even on a screen. The goal was something that a customer would pick up not because she had to, but because it felt right.`,
+    outcome: `Full brand identity including logo, color and typography system, product label design, packaging templates, and a complete social media design kit. Spert launched with a cohesive brand presence that made it look like it had been around for years.`
+  },
+  {
+    slug: 'rotora',
+    num: '04',
+    title: 'Rotora',
+    titleEn: 'Rotora',
+    category: 'Brand Identity',
+    img: 'Images/rotora.png',
+    deliverables: ['Logo Design', 'Brand System', 'Vehicle Branding', 'Business Stationery', 'Brand Guidelines'],
+    year: '2024',
+    brief: `Rotora needed an identity built to grow with them — one that could move from a business card to a vehicle wrap to a digital platform without losing its integrity. The brand needed to convey precision, momentum, and professionalism in equal measure.`,
+    approach: `The logomark was designed with geometry that implies motion without being literal about it. A structured, bold form with careful proportions that holds at any scale. The visual system was built for versatility first — every element tested across the real environments where the brand would actually live.`,
+    outcome: `A complete brand identity: primary logomark, mono and reversed versions, vehicle branding templates, full stationery suite, and a brand guidelines document that made the system hand-off-ready for any application.`
+  },
+  {
+    slug: 'art',
+    num: '05',
+    title: 'روائع الفن',
+    titleEn: 'Rawae\'i Al-Fan',
+    category: 'Exhibition Design',
+    img: 'Images/Art.png',
+    deliverables: ['Exhibition Identity', 'Signage System', 'Print Collateral', 'Social Media Kit', 'Catalog Design'],
+    year: '2024',
+    brief: `An art space showcasing masterworks needed an identity that felt worthy of what it housed — one that communicated cultural value and curatorial seriousness without intimidating its audience. The design had to honor heritage while feeling alive and contemporary.`,
+    approach: `The approach was restraint. An art space identity shouldn't compete with the art — it should create a frame for it. We drew from classical Arabic visual tradition, using geometric structure and careful proportion as the foundation, then stripped everything back to its essentials. The result is an identity that recedes when it needs to and asserts itself when it has to.`,
+    outcome: `A full exhibition identity: wordmark, signage system, printed catalog layout, wall text templates, social media graphics, and event posters. The system works as elegantly in a printed catalog as it does on a digital screen.`
+  },
+  {
+    slug: 'saudeels',
+    num: '06',
+    title: 'Saudeels',
+    titleEn: 'Saudeels',
+    category: 'Platform Branding',
+    img: 'Images/Saudeels.png',
+    deliverables: ['Logo Design', 'App Icon', 'Social Media Templates', 'Brand Guidelines', 'Campaign Assets'],
+    year: '2024',
+    brief: `Saudeels is a digital platform aggregating deals and services for Saudi consumers. In an attention economy where everyone is scrolling fast, the brand needed to stop thumbs — instantly recognizable, high-contrast, and adaptable enough to power ongoing campaigns without looking repetitive.`,
+    approach: `We designed for the scroll. Bold geometry, a high-contrast palette, and a logo that works as an app icon, a sticker, and a billboard with equal confidence. The visual system was built as a campaign toolkit — templates and rules that let the brand produce content at volume without losing consistency.`,
+    outcome: `Full brand identity and campaign system: logo and app icon, color and type guidelines, a social media template library, campaign asset templates, and a digital brand book. Saudeels launched with everything it needed to hit the ground running.`
+  },
+  {
+    slug: 'perk',
+    num: '07',
+    title: 'Perk Cafe',
+    titleEn: 'Perk Cafe',
+    category: 'Cafe Branding',
+    img: 'Images/perk.png',
+    deliverables: ['Logo Design', 'Brand Guidelines', 'Packaging Design', 'Social Media Kit', 'Signage'],
+    year: '2024',
+    brief: `Perk is a specialty coffee shop with a focus on quality and experience. They came in with a strong vision but no visual identity — just a name and a location. The challenge was translating that vision into a brand that could carry the weight of the experience they were building.`,
+    approach: `We started with the feeling — warm, quiet, specialty-focused. Not loud, not trendy. The kind of place people return to. From there, every decision was made through that lens: a mark that's confident without being bold, a palette that feels like the hour before noon, and typography that doesn't rush you.`,
+    outcome: `A complete brand system: logo, packaging, cups, signage, and a full social media template kit. Every touchpoint was designed to feel consistent and intentional. The result is an identity customers feel before they take their first sip.`
+  },
+  {
+    slug: 'dayin',
+    num: '08',
+    title: 'DayIn Mini Market',
+    titleEn: 'DayIn Mini Market',
+    category: 'Retail Branding',
+    img: 'Images/DayIn.png',
+    deliverables: ['Logo Design', 'Signage System', 'Packaging Templates', 'Brand Guidelines', 'Point-of-Sale Design'],
+    year: '2024',
+    brief: `DayIn wanted to feel like the neighborhood market everyone loves — the one that's been there forever, that you trust without thinking about it. They needed a brand that communicated friendliness and freshness while being immediately recognizable at street level.`,
+    approach: `The identity was designed to feel human and approachable, with a mark that reads clearly at any size — from a shopping bag to a shopfront. A cheerful, high-legibility palette, and typography that never takes itself too seriously. The goal was warmth you can spot from a moving car.`,
+    outcome: `Complete retail identity: logo, shopfront signage system, packaging templates for in-house products, price tag and label design, staff uniform guidelines, and a social media starter kit. DayIn opened with a brand that felt instantly familiar.`
+  },
+  {
+    slug: 'baker',
+    num: '09',
+    title: 'Baker Bakery',
+    titleEn: 'Baker Bakery',
+    category: 'Bakery Branding',
+    img: 'Images/baker.png',
+    deliverables: ['Logo Design', 'Packaging Design', 'Brand Guidelines', 'Stationery', 'Social Media Templates'],
+    year: '2024',
+    brief: `Baker Bakery wanted an identity that communicated one thing above all else: craft. They bake with intention, they use quality ingredients, and they wanted their branding to say that before a customer takes a single bite. The challenge was finding the visual language for warmth and artisanship without cliché.`,
+    approach: `We built around texture and warmth. A wordmark with just enough character to feel handmade without actually being hand-drawn. A palette pulled from bread, butter, and burnt sugar. Packaging that feels worth keeping. Every element designed to make the product feel more valuable — because it is.`,
+    outcome: `Full bakery identity: logo in multiple lockups, paper bag and box packaging design, label and sticker system, cafe card and stationery, and social media templates for ongoing content. The brand communicates quality before the first word is read.`
+  },
+  {
+    slug: 'amad',
+    num: '10',
+    title: 'AMAD Group',
+    titleEn: 'AMAD Group',
+    category: 'Corporate Identity',
+    img: 'Images/amad.png',
+    deliverables: ['Corporate Logo', 'Brand System', 'Stationery Suite', 'Brand Guidelines', 'Document Templates'],
+    year: '2024',
+    brief: `AMAD Group operates across multiple business sectors and needed a single corporate identity that could give them a unified voice — one strong enough to lead the group while flexible enough to accommodate sub-brands. The design had to communicate scale, reliability, and ambition.`,
+    approach: `Corporate identities for multi-sector groups need structure above all else. We built a parent brand with a strong, neutral character that doesn't belong to any one industry — it belongs to the group. The visual system was designed as a hierarchy: everything flows from one source, and everything stays consistent without being rigid.`,
+    outcome: `Full corporate identity: group logo with sub-brand adaptation rules, complete stationery suite (business cards, letterhead, envelopes), PowerPoint and document templates, brand guidelines, and vehicle branding templates. The system is handed off and production-ready for any division.`
+  },
+  {
+    slug: 'alshifa',
+    num: '11',
+    title: 'Alshifa',
+    titleEn: 'Alshifa',
+    category: 'Healthcare Branding',
+    img: 'Images/alshifa.png',
+    deliverables: ['Logo Design', 'Brand Guidelines', 'Stationery', 'Signage System', 'Digital Templates'],
+    year: '2024',
+    brief: `Alshifa needed a healthcare brand built on trust. In the medical sector, design decisions carry weight — patients make inferences about the quality of care from the quality of what they see. The challenge was creating something that felt genuinely caring, clear, and credible without being clinical or cold.`,
+    approach: `Every choice was filtered through one question: does this feel safe? A mark with soft geometry and natural proportion. A palette of calm, reassuring tones — the kind that lower your heart rate rather than raise it. Typography that's highly legible and never shouts. The brand was designed to put people at ease before they speak to anyone.`,
+    outcome: `Complete healthcare identity: logo, wayfinding and signage system, clinical stationery, patient-facing print materials, staff uniform design, and digital communication templates. The result is a brand that communicates care through every detail.`
+  },
+  {
+    slug: 'mazadak',
+    num: '12',
+    title: 'Mazadak Event',
+    titleEn: 'Mazadak Event',
+    category: 'Event Design',
+    img: 'Images/mazadak.png',
+    deliverables: ['Event Identity', 'Campaign Graphics', 'Social Media Kit', 'Stage Design', 'Print Materials'],
+    year: '2024',
+    brief: `Mazadak's auction event needed to generate genuine excitement before a single bid was placed. The visual identity had to do the promotional work — building anticipation across social media, attracting registrations, and making the event feel like something worth showing up for.`,
+    approach: `The design language was built for impact. High-contrast, kinetic, built to move through social feeds and stop scrollers in their tracks. Campaign assets were designed in a modular system — one set of rules that could power weeks of content at volume without feeling repetitive or exhausted.`,
+    outcome: `Full event campaign identity: event logo and visual system, countdown content series, registration and invitation graphics, social media template library, stage and backdrop design, and day-of print materials. Everything produced and handed off before the campaign launched.`
+  },
+  {
+    slug: 'madain',
+    num: '13',
+    title: 'Madain',
+    titleEn: 'Madain',
+    category: 'Heritage Branding',
+    img: 'Images/madain.png',
+    deliverables: ['Brand Identity', 'Logo Design', 'Brand Guidelines', 'Print Collateral', 'Digital Assets'],
+    year: '2024',
+    brief: `Madain is a region defined by extraordinary historical depth — one of the most significant archaeological destinations in Saudi Arabia. The brand needed to carry that weight: to feel rooted in something real and ancient while communicating a contemporary vision for what the destination could become.`,
+    approach: `The design process started with research — architectural motifs, Nabataean forms, the geometry of the landscape. From there, the identity was distilled down to its essentials: a mark that feels both ancient and immediate, a palette drawn from the sandstone and sky, and a typographic system that respects the territory it represents.`,
+    outcome: `Complete destination identity: primary logo with alternate configurations, color system, Arabic and Latin typography guidelines, print and digital collateral templates, and a brand story document. The identity is ready to carry the destination into its next chapter.`
+  },
+  {
+    slug: 'qemmah',
+    num: '14',
+    title: 'Qemmah',
+    titleEn: 'Qemmah',
+    category: 'Brand Identity',
+    img: 'Images/Qemmah.png',
+    deliverables: ['Logo Design', 'Brand System', 'Brand Guidelines', 'Stationery', 'Digital Templates'],
+    year: '2024',
+    brief: `Qemmah — meaning "peak" in Arabic — needed an identity that matched its name. The brand aspires to represent excellence and the drive to reach the highest possible standard in everything it does. The challenge: communicate that aspiration without falling into the visual clichés of "premium" branding.`,
+    approach: `We designed upward. The visual language uses proportion and negative space to create a sense of elevation — nothing heavy, nothing grounded. The mark was refined through many iterations until it had the confidence that the name demands. The palette is restrained, the typography exacting.`,
+    outcome: `Full brand identity system: primary mark and logo lockups, color and typography guidelines, stationery and business card design, digital asset templates, and a brand guidelines document. Qemmah launched with a visual identity that lives up to the ambition of its name.`
+  },
+  {
+    slug: 'emdad',
+    num: '15',
+    title: 'Emdad',
+    titleEn: 'Emdad',
+    category: 'Corporate Identity',
+    img: 'Images/Emdad.png',
+    deliverables: ['Corporate Logo', 'Brand System', 'Vehicle Branding', 'Uniform Design', 'Brand Guidelines'],
+    year: '2024',
+    brief: `Emdad provides supply and staffing solutions across multiple industries. They needed a corporate identity that communicated dependability and scale — one that would work as credibly on a fleet vehicle as on a business proposal. The brand had to say: we are here, we are reliable, and we will deliver.`,
+    approach: `Dependability in design comes from consistency and structure. We built an identity with strong geometric foundations — a mark that holds together under any treatment — and a visual system designed for real operational environments: uniforms, vehicles, signage, and documents. Nothing precious, everything practical.`,
+    outcome: `Complete corporate identity: group logo with mono and reversed versions, full stationery suite, vehicle livery templates, uniform design guidelines, document and proposal templates, and brand standards documentation. The brand is operational-ready across every division.`
+  },
+  {
+    slug: 'alatha',
+    num: '16',
+    title: 'عطور العذاء',
+    titleEn: 'Al-Athaa Fragrances',
+    category: 'Fragrance Branding',
+    img: 'Images/alatha.png',
+    deliverables: ['Brand Identity', 'Bottle Label Design', 'Packaging Design', 'Brand Guidelines', 'Brand Collateral'],
+    year: '2024',
+    brief: `Al-Athaa is a luxury fragrance house rooted in the tradition of Arabian oud and attar. They needed a brand identity that honored the depth and heritage of their craft — something that would feel as precious as the fragrances inside the bottles, and as timeless as the tradition behind them.`,
+    approach: `The identity was built as a love letter to the art of Arabian perfumery. Ornamental details drawn from traditional Islamic geometry, a rich and layered palette of deep ambers and golds, and typography that moves between Arabic calligraphic sensibility and contemporary refinement. Nothing was arbitrary — every element references something real in the tradition.`,
+    outcome: `Full fragrance brand identity: primary mark and ornamental logo system, bottle label design across the product range, outer packaging design, brand color and material guide, tissue and ribbon system, and a brand story document that captures the heritage behind the name.`
+  },
+  {
+    slug: 'jood',
+    num: '17',
+    title: 'جود الأصيل',
+    titleEn: 'Jood Al-Aseel',
+    category: 'Heritage Brand Identity',
+    img: 'Images/jood.png',
+    deliverables: ['Logo Design', 'Brand System', 'Packaging Design', 'Brand Guidelines', 'Print Collateral'],
+    year: '2024',
+    brief: `Jood Al-Aseel — "the authentic generosity" — is a brand built on the deep Saudi values of hospitality and giving. The identity had to feel genuinely rooted in that tradition: warm, proud, and worth trusting. Not nostalgic for its own sake, but honest about where it comes from.`,
+    approach: `The design language draws from Arabic calligraphic tradition and the visual culture of Saudi heritage — warm earth tones, deliberate proportion, ornamental elements used with restraint. The mark was designed to feel like it belongs to a lineage, not a trend. Something that could exist a hundred years ago and still make sense today.`,
+    outcome: `Complete brand identity: primary calligraphic logo with supporting marks, heritage color palette, packaging design for the product range, brand collateral including gift box and ribbon design, and brand guidelines with cultural usage notes. A brand that carries genuine pride in its identity.`
+  },
+  {
+    slug: 'riyadh',
+    num: '18',
+    title: 'بنك الرياض',
+    titleEn: 'Riyadh Bank',
+    category: 'Banking · Campaign Design',
+    img: 'Images/riyadh.png',
+    deliverables: ['Campaign Design', 'Social Media Content', 'Motion Graphics', 'Print Advertising', 'Digital Banners'],
+    year: '2024',
+    brief: `Riyadh Bank is one of Saudi Arabia's most established financial institutions. The brief was to develop marketing visuals that could humanize the bank's communication — bringing the institutional credibility of the brand closer to its customers while speaking authentically to a younger, digitally-native audience.`,
+    approach: `The work sat at the intersection of trust and approachability. We built campaign concepts that retained the bank's established color language and typographic authority while introducing warmer, more human moments — real scenarios, relatable messaging, design that felt like it came from inside the customer's world, not from above it.`,
+    outcome: `A full campaign visual suite: social media content series across platforms, animated motion graphic templates, print and outdoor advertising layouts, digital banner set in multiple sizes, and a campaign style guide for ongoing execution. Every asset delivered production-ready.`
+  },
+  {
+    slug: 'gate',
+    num: '19',
+    title: 'البوابة العقارية',
+    titleEn: 'Real Estate Gateway',
+    category: 'Real Estate Branding',
+    img: 'Images/gate.png',
+    deliverables: ['Brand Identity', 'Logo Design', 'Platform Design Assets', 'Brand Guidelines', 'Marketing Collateral'],
+    year: '2024',
+    brief: `A real estate platform targeting both individual buyers and institutional investors needed an identity that inspired trust from first contact. In a market where credibility is everything, the brand had to signal professionalism, transparency, and authority — while remaining approachable enough to welcome first-time buyers.`,
+    approach: `The identity concept was built around the idea of a gateway — open, clear, and welcoming. A mark with clean architectural lines that references the built environment without being literal. A professional palette that reads as serious without being cold. Typography that communicates clarity and confidence at every scale.`,
+    outcome: `Complete real estate brand identity: primary logo with architectural mark, full color and typography system, marketing collateral templates (brochures, property listings, presentations), digital platform design assets, signage guidelines, and a brand standards document ready for developer and investor-facing materials.`
+  }
+];
+
+function makeProjectPage(p, projects) {
+  const nextIdx = (projects.indexOf(p) + 1) % projects.length;
+  const next = projects[nextIdx];
+
+  return `<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>${p.titleEn} — Lujain Alshamrani</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="nav">
+        <a href="index.html" class="nav-brand">Lujain Alshamrani</a>
+        <nav>
+            <button class="nav-btn" id="navBtn" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="mydesignes.html" class="active">Work</a></li>
+                <li><a href="aboutme.html">About</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="page">
+        <div class="container">
+
+            <a href="mydesignes.html" class="back-link">All Work</a>
+
+            <div class="project-hero fade-in">
+                <img src="${p.img}" alt="${p.title}">
+            </div>
+
+            <div class="project-header fade-in">
+                <div class="project-title-block">
+                    <div class="project-eyebrow-tag">${p.category}</div>
+                    <h1 class="project-main-title">${p.title}</h1>
+                </div>
+                <div class="project-number">${p.num}</div>
+            </div>
+
+            <div class="project-body fade-in-2">
+
+                <aside class="project-meta">
+                    <div class="meta-item">
+                        <div class="meta-label">Client</div>
+                        <div class="meta-value">${p.titleEn}</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Category</div>
+                        <div class="meta-value">${p.category.replace(' · ', '<br>')}</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Deliverables</div>
+                        <div class="meta-value">${p.deliverables.join('<br>')}</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Year</div>
+                        <div class="meta-value">${p.year}</div>
+                    </div>
+                </aside>
+
+                <div class="project-story">
+                    <div class="story-block">
+                        <div class="story-heading">The Brief</div>
+                        <p class="story-text">${p.brief}</p>
+                    </div>
+                    <div class="story-block">
+                        <div class="story-heading">The Approach</div>
+                        <p class="story-text">${p.approach}</p>
+                    </div>
+                    <div class="story-block">
+                        <div class="story-heading">The Outcome</div>
+                        <p class="story-text">${p.outcome}</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="gallery-section fade-in-3">
+                <div class="gallery-heading">Project Gallery</div>
+                <div class="gallery-grid">
+                    <div class="gallery-item g-wide">
+                        <img src="${p.img}" alt="${p.title}">
+                    </div>
+                    <div class="gallery-item g-tall">
+                        <img src="${p.img}" alt="${p.title}">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="${p.img}" alt="${p.title}">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="${p.img}" alt="${p.title}">
+                    </div>
+                    <div class="gallery-placeholder g-wide">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="1"/><path d="M3 9l4-4 4 4 4-5 4 5"/><circle cx="8.5" cy="7.5" r="1.5"/></svg>
+                        <span>More images coming soon</span>
+                    </div>
+                    <div class="gallery-placeholder">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="1"/><path d="M3 9l4-4 4 4 4-5 4 5"/><circle cx="8.5" cy="7.5" r="1.5"/></svg>
+                        <span>Coming soon</span>
+                    </div>
+                </div>
+            </div>
+
+            <a href="project-${next.slug}.html" class="next-project">
+                <div>
+                    <div class="next-label">Next Project</div>
+                    <div class="next-name">${next.title}</div>
+                </div>
+                <div class="next-arrow">&rarr;</div>
+            </a>
+
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <span class="footer-brand">Lujain Alshamrani</span>
+        <ul class="footer-links">
+            <li><a href="mydesignes.html">Work</a></li>
+            <li><a href="aboutme.html">About</a></li>
+        </ul>
+        <span class="footer-copy">&copy; 2024 All rights reserved</span>
+    </footer>
+
+    <script>
+        const btn = document.getElementById('navBtn');
+        const menu = document.getElementById('navMenu');
+        btn.addEventListener('click', () => {
+            btn.classList.toggle('open');
+            menu.classList.toggle('open');
+        });
+        menu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                btn.classList.remove('open');
+                menu.classList.remove('open');
+            });
+        });
+    </script>
+</body>
+</html>`;
+}
+
+// Generate all project pages
+projects.forEach(p => {
+  const html = makeProjectPage(p, projects);
+  fs.writeFileSync(`project-${p.slug}.html`, html);
+  console.log(`✓ project-${p.slug}.html`);
+});
+
+console.log(`\nDone — ${projects.length} pages generated.`);
