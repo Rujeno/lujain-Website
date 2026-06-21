@@ -64,7 +64,7 @@ const projects = [
         <div class="gallery-item g-wide">
             <img src="Images/saudeels-1.jpg" alt="Saudeels — Brand Identity Cover" loading="lazy" decoding="async">
         </div>
-        <div class="gallery-item g-tall">
+        <div class="gallery-item">
             <img src="Images/saudeels-2.jpg" alt="Saudeels — Food Truck Wrap" loading="lazy" decoding="async">
         </div>
         <div class="gallery-item">
@@ -76,7 +76,7 @@ const projects = [
         <div class="gallery-item g-wide">
             <img src="Images/saudeels-5.jpg" alt="Saudeels — Poster Design" loading="lazy" decoding="async">
         </div>
-        <div class="gallery-item">
+        <div class="gallery-item g-wide">
             <img src="Images/saudeels-6.jpg" alt="Saudeels — Social Media Posts" loading="lazy" decoding="async">
         </div>`
   },
@@ -213,13 +213,13 @@ const projects = [
                 <div class="gallery-item g-wide">
                     <img src="Images/gate-1.jpg" alt="البوابة العقارية — Stationery" loading="lazy" decoding="async">
                 </div>
-                <div class="gallery-item g-tall">
+                <div class="gallery-item">
                     <img src="Images/gate-2.jpg" alt="البوابة العقارية — Outdoor Signage" loading="lazy" decoding="async">
                 </div>
                 <div class="gallery-item">
                     <img src="Images/gate-3.jpg" alt="البوابة العقارية — Mobile App" loading="lazy" decoding="async">
                 </div>
-                <div class="gallery-item">
+                <div class="gallery-item g-wide">
                     <img src="Images/gate.png" alt="البوابة العقارية — Logo" loading="lazy" decoding="async">
                 </div>`
   }
@@ -231,7 +231,7 @@ function makeGallery(p) {
                 <div class="gallery-item g-wide">
                     <img src="${p.img}" alt="${p.title}" loading="lazy" decoding="async">
                 </div>
-                <div class="gallery-item g-tall">
+                <div class="gallery-item">
                     <img src="${p.img}" alt="${p.title}" loading="lazy" decoding="async">
                 </div>
                 <div class="gallery-item">
