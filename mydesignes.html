@@ -3,112 +3,489 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css?v=2">
-    <meta http-equiv="Cache-Control" content="max-age=31536000, must-revalidate">
-    <title>My Designs - Lujain Portofolio</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        body {
-            background-color: white;
-        }
-    </style>
+    <title>Work — Lujain Alshamrani</title>
+    <meta name="description" content="Selected graphic design projects — brand identities, event design, and visual systems.">
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body class="min-h-screen flex items-center justify-center">
-    <div class="relative max-w-6xl w-full bg-red-600 p-12 backdrop-blur-md rounded-lg shadow-lg text-white min-h-screen">
-        <nav class="absolute top-6 left-6">
-            <button id="menu-toggle" class="text-white text-lg font-bold">☰ </button>
-            <ul id="menu" class="hidden absolute left-0 top-0 mt-0 bg-white p-2 rounded-lg shadow-lg w-40 text-black"
-                onmouseleave="this.classList.add('hidden')">
-                <li class="py-1"><a href="index.html" class="text-black hover:underline">Home</a></li>
-                <li class="py-1"><a href="aboutme.html" class="text-black hover:underline">About Me</a></li>
+<body>
+
+    <!-- NAV -->
+    <header class="nav">
+        <a href="index.html" class="nav-brand">Lujain Alshamrani</a>
+        <nav>
+            <button class="nav-btn" id="navBtn" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="mydesignes.html" class="active">Work</a></li>
+                <li><a href="aboutme.html">About</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
             </ul>
         </nav>
-        
-        <h1 class="text-5xl font-bold text-white mb-8 text-center w-full">My Portfolio</h1>
-        <div class="grid md:grid-cols-3 gap-6 place-items-center">
-            <div class="bg-white p-4 rounded-lg shadow-md">
-                <a href="https://drive.google.com/drive/folders/19nC3bEz4Depxu6BJi2z6dCkh7znruTmw?usp=sharing" target="_blank"><img src="Images/zid.jpg" alt="Design 1" class="w-[250px] h-[400px] rounded-2xl object-cover shadow-lg">
-                </a><p class="text-black text-center mt-2">حدث زد</p>
-            </div>
-            <div class="bg-white p-4 rounded-lg shadow-md">
-                <a href="https://drive.google.com/drive/folders/1ySZC6dgzzrjjvkQ6IxOLCMS3eQxUcUQx?usp=sharing" target="_blank"><img src="Images/LACORVET.png" alt="Design 3" class="w-[250px] h-[400px] rounded-2xl object-cover shadow-lg">
-                </a><p class="text-black text-center mt-2">LA-CORVET</p>
-            </div>
-            <div class="bg-white p-4 rounded-lg shadow-md">
-                <a href="https://drive.google.com/drive/folders/1-f9c672IYEfAK0m0Bi2PxGGClagsGYNQ?usp=drive_link" target="_blank"><img src="Images/Spert.png" alt="Design 3" class="w-[250px] h-[400px] rounded-2xl object-cover shadow-lg">
-                </a><p class="text-black text-center mt-2">Spert Cosmetics</p>
-            </div>
-            <div class="bg-white p-4 rounded-lg shadow-md">
-                <a href="https://drive.google.com/drive/folders/13r0JOL6mCj5Zgcb1mtjZHxh_iFbVfmO7?usp=sharing" target="_blank"><img src="Images/rotora.png" alt="Design 3" class="w-[250px] h-[400px] rounded-2xl object-cover shadow-lg">
-                </a><p class="text-black text-center mt-2">Rotora</p>
-            </div>
-            <div class="bg-white p-4 rounded-lg shadow-md">
-                <a href="https://drive.google.com/drive/folders/1lO_fJtpP_4tsjKTk4j37CbfT3097zus_?usp=sharing" target="_blank"><img src="Images/Art.png" alt="Design 3" class="w-[250px] h-[400px] rounded-2xl object-cover shadow-lg">
-                </a><p class="text-black text-center mt-2">روائع الفن </p>
-            </div>
-            <div class="bg-white p-4 rounded-lg shadow-md">
-                <a href="https://drive.google.com/drive/folders/19fQNJTdTBxcaziUW1hO7sOWFPdsQJm2M?usp=sharing" target="_blank"><img src="Images/Saudeels.png" alt="Design 3" class="w-[250px] h-[400px] rounded-2xl object-cover shadow-lg">
-                </a><p class="text-black text-center mt-2">Saudeels</p>
-            </div>
-              <div class="bg-white p-4 rounded-lg shadow-md">
-                <a href="https://drive.google.com/drive/folders/1557_YPIX8cNRXiH9zMrd31Ro9lKZDn41?usp=sharing" target="_blank"><img src="Images/perk.png" alt="Design 3" class="w-[250px] h-[400px] rounded-2xl object-cover shadow-lg">
-                </a><p class="text-black text-center mt-2">Perk Cafe</p>
-            </div>
-            <div class="bg-white p-4 rounded-lg shadow-md">
-                <a href="https://drive.google.com/drive/folders/1SyiDLGSlmQ1uTmaj3PJvMKH6gSyOjREr?usp=sharing" target="_blank"><img src="Images/DayIn.png" alt="Design 3" class="w-[250px] h-[400px] rounded-2xl object-cover shadow-lg">
-                </a><p class="text-black text-center mt-2">DayIn Mini Market</p>
-            </div>
-            <div class="bg-white p-4 rounded-lg shadow-md">
-                <a href="https://drive.google.com/drive/folders/1U4ZBdd-d_-aUzMwEJzpUCqFcgT6mdOh0?usp=sharing" target="_blank"><img src="Images/baker.png" alt="Design 3" class="w-[250px] h-[400px] rounded-2xl object-cover shadow-lg">
-                </a><p class="text-black text-center mt-2">Baker Bakery</p>
-            </div>
-              <div class="bg-white p-4 rounded-lg shadow-md">
-                <a href="https://drive.google.com/drive/folders/18deeuzXO2uASbLQI91CBoWlPAkNfKBjP?usp=sharing" target="_blank"><img src="Images/amad.png" alt="Design 3" class="w-[250px] h-[400px] rounded-2xl object-cover shadow-lg">
-                </a><p class="text-black text-center mt-2">AMAD Group</p>
-            </div>
-            <div class="bg-white p-4 rounded-lg shadow-md">
-                <a href="https://drive.google.com/drive/folders/1olVwQ_l8RPSxtAqXKbWDEtx7O1vDCTwL?usp=sharing" target="_blank"><img src="Images/alshifa.png" alt="Design 3" class="w-[250px] h-[400px] rounded-2xl object-cover shadow-lg">
-                </a><p class="text-black text-center mt-2">alshifa</p>
-            </div>
-            <div class="bg-white p-4 rounded-lg shadow-md">
-                <a href="https://drive.google.com/drive/folders/1rEuaY3ux9rEgIHWzcJYYhzksFtNz5Djh?usp=sharing" target="_blank"><img src="Images/mazadak.png" alt="mazadak.png" class="w-[250px] h-[400px] rounded-2xl object-cover shadow-lg">
-                </a><p class="text-black text-center mt-2">Mazadak Event</p>
-            </div>
-              <div class="bg-white p-4 rounded-lg shadow-md">
-                <a href="https://drive.google.com/drive/folders/1EC4u-NCcjzdDHdjba-dxeW6CsA0gMHcg?usp=sharing" target="_blank"><img src="Images/madain.png" alt="Design 3" class="w-[250px] h-[400px] rounded-2xl object-cover shadow-lg">
-                </a><p class="text-black text-center mt-2">Madain</p>
-            </div>
-            <div class="bg-white p-4 rounded-lg shadow-md">
-                <a href="https://drive.google.com/drive/folders/1GmqmZ58xLTFcq4r_AbFxHMaqnQtx2UX4?usp=sharing" target="_blank"><img src="Images/Qemmah.png" alt="Design 3" class="w-[250px] h-[400px] rounded-2xl object-cover shadow-lg">
-                </a><p class="text-black text-center mt-2">Qemmah</p>
-            </div>
-            <div class="bg-white p-4 rounded-lg shadow-md">
-                <a href="https://drive.google.com/drive/folders/1HyNF41xXaVFjm7q61ITVOI6c4au0j75b?usp=sharing" target="_blank"><img src="Images/Emdad.png" alt="Design 3" class="w-[250px] h-[400px] rounded-2xl object-cover shadow-lg">
-                </a><p class="text-black text-center mt-2">Emdad</p>
-            </div>
-            <div class="bg-white p-4 rounded-lg shadow-md">
-                <a href="https://drive.google.com/file/d/1yBZ8EcEBMmijqdMAlk7mmLUw-toIzu5H/view?usp=sharing" target="_blank"><img src="Images/alatha.png" alt="Design 3" class="w-[250px] h-[400px] rounded-2xl object-cover shadow-lg">
-                </a><p class="text-black text-center mt-2">عطور العذاء</p>
-            </div>
-            <div class="bg-white p-4 rounded-lg shadow-md">
-                <a href="https://drive.google.com/file/d/1SpjfbKLjFf596ksMEOdstlwT3ymyBwpH/view?usp=sharing" target="_blank"><img src="Images/jood.png" alt="Design 3" class="w-[250px] h-[400px] rounded-2xl object-cover shadow-lg">
-                </a><p class="text-black text-center mt-2">جود الأصيل</p>
-            </div>
-            <div class="bg-white p-4 rounded-lg shadow-md">
-                <a href="https://drive.google.com/drive/folders/1PAusLdGpn6fWt4YVOQrj0iPSd4bsoGlK?usp=sharing" target="_blank"><img src="Images/riyadh.png" alt="Design 3" class="w-[250px] h-[400px] rounded-2xl object-cover shadow-lg">
-                </a><p class="text-black text-center mt-2">بنك الرياض</p>
-            </div>
-            <div class="bg-white p-4 rounded-lg shadow-md">
-                <a href="https://drive.google.com/drive/folders/1mvrlO4ZuhwY0ighoYp7vnQDqeD1ERBtD?usp=sharing" target="_blank"><img src="Images/gate.png" alt="Design 3" class="w-[250px] h-[400px] rounded-2xl object-cover shadow-lg">
-                </a><p class="text-black text-center mt-2"> البوابة العقارية </p>
+    </header>
+
+    <main class="page">
+
+        <!-- HEADER -->
+        <div class="container">
+            <div class="portfolio-header fade-in">
+                <div class="portfolio-eyebrow">Selected Work</div>
+                <h1 class="portfolio-title">Portfolio</h1>
+                <p class="portfolio-sub">
+                    A collection of brand identities, visual systems,
+                    and design projects developed for clients across industries.
+                </p>
             </div>
         </div>
-    </div>
+
+        <!-- GRID -->
+        <div class="projects-grid">
+
+            <!-- 01 · حدث زد -->
+            <article class="project-card">
+                <div class="card-img-wrap">
+                    <a href="https://drive.google.com/drive/folders/19nC3bEz4Depxu6BJi2z6dCkh7znruTmw?usp=sharing" target="_blank" rel="noopener">
+                        <img src="Images/zid.jpg" alt="حدث زد — Zid Event Branding">
+                        <div class="card-overlay"><span class="card-overlay-btn">View Project</span></div>
+                    </a>
+                </div>
+                <div class="card-body">
+                    <div class="card-category">Event Branding</div>
+                    <div class="card-rule"></div>
+                    <h2 class="card-title">حدث زد</h2>
+                    <p class="card-desc">
+                        Zid commissioned event branding for one of their high-profile annual gatherings.
+                        The challenge was creating a visual identity that felt bold and celebratory while
+                        staying true to Zid's established brand ecosystem. Delivered a complete event system
+                        — event logo, stage graphics, social media kit, and print collateral.
+                    </p>
+                    <a href="https://drive.google.com/drive/folders/19nC3bEz4Depxu6BJi2z6dCkh7znruTmw?usp=sharing" target="_blank" rel="noopener" class="card-link">View Project &rarr;</a>
+                </div>
+            </article>
+
+            <!-- 02 · LA-CORVET -->
+            <article class="project-card">
+                <div class="card-img-wrap">
+                    <a href="https://drive.google.com/drive/folders/1ySZC6dgzzrjjvkQ6IxOLCMS3eQxUcUQx?usp=sharing" target="_blank" rel="noopener">
+                        <img src="Images/LACORVET.png" alt="LA-CORVET Brand Identity">
+                        <div class="card-overlay"><span class="card-overlay-btn">View Project</span></div>
+                    </a>
+                </div>
+                <div class="card-body">
+                    <div class="card-category">Brand Identity</div>
+                    <div class="card-rule"></div>
+                    <h2 class="card-title">LA-CORVET</h2>
+                    <p class="card-desc">
+                        A new fashion label entering a saturated market needed a distinctive identity
+                        from day one. The goal was luxury positioning with a contemporary edge.
+                        Built a complete visual language rooted in European elegance — refined letterforms,
+                        a restrained palette, and a mark that reads with confidence at every scale.
+                    </p>
+                    <a href="https://drive.google.com/drive/folders/1ySZC6dgzzrjjvkQ6IxOLCMS3eQxUcUQx?usp=sharing" target="_blank" rel="noopener" class="card-link">View Project &rarr;</a>
+                </div>
+            </article>
+
+            <!-- 03 · Spert Cosmetics -->
+            <article class="project-card">
+                <div class="card-img-wrap">
+                    <a href="https://drive.google.com/drive/folders/1-f9c672IYEfAK0m0Bi2PxGGClagsGYNQ?usp=drive_link" target="_blank" rel="noopener">
+                        <img src="Images/Spert.png" alt="Spert Cosmetics Brand Identity">
+                        <div class="card-overlay"><span class="card-overlay-btn">View Project</span></div>
+                    </a>
+                </div>
+                <div class="card-body">
+                    <div class="card-category">Brand Identity · Cosmetics</div>
+                    <div class="card-rule"></div>
+                    <h2 class="card-title">Spert Cosmetics</h2>
+                    <p class="card-desc">
+                        Spert launched as a local cosmetics brand in a competitive market. The challenge
+                        was standing out on shelf while clearly communicating quality and care.
+                        Developed a clean, feminine identity system spanning packaging, social media
+                        templates, and all brand touchpoints — cohesive from unboxing to online.
+                    </p>
+                    <a href="https://drive.google.com/drive/folders/1-f9c672IYEfAK0m0Bi2PxGGClagsGYNQ?usp=drive_link" target="_blank" rel="noopener" class="card-link">View Project &rarr;</a>
+                </div>
+            </article>
+
+            <!-- 04 · Rotora -->
+            <article class="project-card">
+                <div class="card-img-wrap">
+                    <a href="https://drive.google.com/drive/folders/13r0JOL6mCj5Zgcb1mtjZHxh_iFbVfmO7?usp=sharing" target="_blank" rel="noopener">
+                        <img src="Images/rotora.png" alt="Rotora Brand Identity">
+                        <div class="card-overlay"><span class="card-overlay-btn">View Project</span></div>
+                    </a>
+                </div>
+                <div class="card-body">
+                    <div class="card-category">Brand Identity</div>
+                    <div class="card-rule"></div>
+                    <h2 class="card-title">Rotora</h2>
+                    <p class="card-desc">
+                        Rotora needed an identity built to grow with them. Starting from a strong
+                        logomark, a visual identity was designed to work across business cards,
+                        vehicle wraps, and digital platforms equally. The result: a flexible, bold
+                        system that conveys precision and momentum — ready for every application.
+                    </p>
+                    <a href="https://drive.google.com/drive/folders/13r0JOL6mCj5Zgcb1mtjZHxh_iFbVfmO7?usp=sharing" target="_blank" rel="noopener" class="card-link">View Project &rarr;</a>
+                </div>
+            </article>
+
+            <!-- 05 · روائع الفن -->
+            <article class="project-card">
+                <div class="card-img-wrap">
+                    <a href="https://drive.google.com/drive/folders/1lO_fJtpP_4tsjKTk4j37CbfT3097zus_?usp=sharing" target="_blank" rel="noopener">
+                        <img src="Images/Art.png" alt="روائع الفن — Art Exhibition Design">
+                        <div class="card-overlay"><span class="card-overlay-btn">View Project</span></div>
+                    </a>
+                </div>
+                <div class="card-body">
+                    <div class="card-category">Exhibition Design</div>
+                    <div class="card-rule"></div>
+                    <h2 class="card-title">روائع الفن</h2>
+                    <p class="card-desc">
+                        An art space showcasing masterworks needed an identity that felt curatorial
+                        rather than commercial. The design merges classical heritage with contemporary
+                        typographic restraint. The visual system honors artistic tradition while
+                        speaking a modern design language — letting the work inside remain the focus.
+                    </p>
+                    <a href="https://drive.google.com/drive/folders/1lO_fJtpP_4tsjKTk4j37CbfT3097zus_?usp=sharing" target="_blank" rel="noopener" class="card-link">View Project &rarr;</a>
+                </div>
+            </article>
+
+            <!-- 06 · Saudeels -->
+            <article class="project-card">
+                <div class="card-img-wrap">
+                    <a href="https://drive.google.com/drive/folders/19fQNJTdTBxcaziUW1hO7sOWFPdsQJm2M?usp=sharing" target="_blank" rel="noopener">
+                        <img src="Images/Saudeels.png" alt="Saudeels Platform Branding">
+                        <div class="card-overlay"><span class="card-overlay-btn">View Project</span></div>
+                    </a>
+                </div>
+                <div class="card-body">
+                    <div class="card-category">Platform Branding</div>
+                    <div class="card-rule"></div>
+                    <h2 class="card-title">Saudeels</h2>
+                    <p class="card-desc">
+                        A digital platform connecting Saudi consumers with curated deals required
+                        bold, instant recognition in a crowded digital space. The identity was
+                        designed for scroll-stopping impact, balancing clarity with energy.
+                        Delivered an adaptable brand system built for ongoing campaign content.
+                    </p>
+                    <a href="https://drive.google.com/drive/folders/19fQNJTdTBxcaziUW1hO7sOWFPdsQJm2M?usp=sharing" target="_blank" rel="noopener" class="card-link">View Project &rarr;</a>
+                </div>
+            </article>
+
+            <!-- 07 · Perk Cafe -->
+            <article class="project-card">
+                <div class="card-img-wrap">
+                    <a href="https://drive.google.com/drive/folders/1557_YPIX8cNRXiH9zMrd31Ro9lKZDn41?usp=sharing" target="_blank" rel="noopener">
+                        <img src="Images/perk.png" alt="Perk Cafe Branding">
+                        <div class="card-overlay"><span class="card-overlay-btn">View Project</span></div>
+                    </a>
+                </div>
+                <div class="card-body">
+                    <div class="card-category">Cafe Branding</div>
+                    <div class="card-rule"></div>
+                    <h2 class="card-title">Perk Cafe</h2>
+                    <p class="card-desc">
+                        Perk needed an identity that matched its atmosphere: warm, specialty-focused,
+                        and quietly confident. From the logo to cups and packaging, every touchpoint
+                        was designed to build a recognizable brand experience. The result is an
+                        identity customers feel before they take their first sip.
+                    </p>
+                    <a href="https://drive.google.com/drive/folders/1557_YPIX8cNRXiH9zMrd31Ro9lKZDn41?usp=sharing" target="_blank" rel="noopener" class="card-link">View Project &rarr;</a>
+                </div>
+            </article>
+
+            <!-- 08 · DayIn Mini Market -->
+            <article class="project-card">
+                <div class="card-img-wrap">
+                    <a href="https://drive.google.com/drive/folders/1SyiDLGSlmQ1uTmaj3PJvMKH6gSyOjREr?usp=sharing" target="_blank" rel="noopener">
+                        <img src="Images/DayIn.png" alt="DayIn Mini Market Branding">
+                        <div class="card-overlay"><span class="card-overlay-btn">View Project</span></div>
+                    </a>
+                </div>
+                <div class="card-body">
+                    <div class="card-category">Retail Branding</div>
+                    <div class="card-rule"></div>
+                    <h2 class="card-title">DayIn Mini Market</h2>
+                    <p class="card-desc">
+                        DayIn wanted to feel like the neighborhood market everyone loves. A friendly,
+                        bright identity was designed for accessibility and warmth, with clear signage
+                        and packaging that gives the space a distinct personality. Simple to recognize,
+                        easy to trust, and designed to feel like home.
+                    </p>
+                    <a href="https://drive.google.com/drive/folders/1SyiDLGSlmQ1uTmaj3PJvMKH6gSyOjREr?usp=sharing" target="_blank" rel="noopener" class="card-link">View Project &rarr;</a>
+                </div>
+            </article>
+
+            <!-- 09 · Baker Bakery -->
+            <article class="project-card">
+                <div class="card-img-wrap">
+                    <a href="https://drive.google.com/drive/folders/1U4ZBdd-d_-aUzMwEJzpUCqFcgT6mdOh0?usp=sharing" target="_blank" rel="noopener">
+                        <img src="Images/baker.png" alt="Baker Bakery Branding">
+                        <div class="card-overlay"><span class="card-overlay-btn">View Project</span></div>
+                    </a>
+                </div>
+                <div class="card-body">
+                    <div class="card-category">Bakery Branding</div>
+                    <div class="card-rule"></div>
+                    <h2 class="card-title">Baker Bakery</h2>
+                    <p class="card-desc">
+                        Baker Bakery celebrates artisanal craft and the warmth that comes with it.
+                        The visual identity was built around heritage and texture: a rich warm palette,
+                        and packaging that feels worth keeping. An identity that communicates quality
+                        you can taste before you even step through the door.
+                    </p>
+                    <a href="https://drive.google.com/drive/folders/1U4ZBdd-d_-aUzMwEJzpUCqFcgT6mdOh0?usp=sharing" target="_blank" rel="noopener" class="card-link">View Project &rarr;</a>
+                </div>
+            </article>
+
+            <!-- 10 · AMAD Group -->
+            <article class="project-card">
+                <div class="card-img-wrap">
+                    <a href="https://drive.google.com/drive/folders/18deeuzXO2uASbLQI91CBoWlPAkNfKBjP?usp=sharing" target="_blank" rel="noopener">
+                        <img src="Images/amad.png" alt="AMAD Group Corporate Identity">
+                        <div class="card-overlay"><span class="card-overlay-btn">View Project</span></div>
+                    </a>
+                </div>
+                <div class="card-body">
+                    <div class="card-category">Corporate Identity</div>
+                    <div class="card-rule"></div>
+                    <h2 class="card-title">AMAD Group</h2>
+                    <p class="card-desc">
+                        A growing group with multiple business lines needed a cohesive corporate identity
+                        that could unify them all. The design system provides a strong parent brand
+                        while remaining flexible enough to support each division individually —
+                        consistent, professional, and built to scale across every application.
+                    </p>
+                    <a href="https://drive.google.com/drive/folders/18deeuzXO2uASbLQI91CBoWlPAkNfKBjP?usp=sharing" target="_blank" rel="noopener" class="card-link">View Project &rarr;</a>
+                </div>
+            </article>
+
+            <!-- 11 · alshifa -->
+            <article class="project-card">
+                <div class="card-img-wrap">
+                    <a href="https://drive.google.com/drive/folders/1olVwQ_l8RPSxtAqXKbWDEtx7O1vDCTwL?usp=sharing" target="_blank" rel="noopener">
+                        <img src="Images/alshifa.png" alt="alshifa Healthcare Branding">
+                        <div class="card-overlay"><span class="card-overlay-btn">View Project</span></div>
+                    </a>
+                </div>
+                <div class="card-body">
+                    <div class="card-category">Healthcare Branding</div>
+                    <div class="card-rule"></div>
+                    <h2 class="card-title">Alshifa</h2>
+                    <p class="card-desc">
+                        Healthcare brands must communicate trust above everything else. The alshifa
+                        identity was built on softness and clarity — a calm palette, approachable
+                        typography, and a mark that signals genuine care without the coldness of
+                        clinical design. Patients feel the warmth before they read a single word.
+                    </p>
+                    <a href="https://drive.google.com/drive/folders/1olVwQ_l8RPSxtAqXKbWDEtx7O1vDCTwL?usp=sharing" target="_blank" rel="noopener" class="card-link">View Project &rarr;</a>
+                </div>
+            </article>
+
+            <!-- 12 · Mazadak Event -->
+            <article class="project-card">
+                <div class="card-img-wrap">
+                    <a href="https://drive.google.com/drive/folders/1rEuaY3ux9rEgIHWzcJYYhzksFtNz5Djh?usp=sharing" target="_blank" rel="noopener">
+                        <img src="Images/mazadak.png" alt="Mazadak Event Design">
+                        <div class="card-overlay"><span class="card-overlay-btn">View Project</span></div>
+                    </a>
+                </div>
+                <div class="card-body">
+                    <div class="card-category">Event Design</div>
+                    <div class="card-rule"></div>
+                    <h2 class="card-title">Mazadak Event</h2>
+                    <p class="card-desc">
+                        Mazadak's auction event needed to generate excitement long before doors opened.
+                        A campaign-ready visual identity was developed — high-energy, bold, and built
+                        social-first to drive digital engagement. Event graphics, countdown content,
+                        and branded materials created momentum at every stage of the campaign.
+                    </p>
+                    <a href="https://drive.google.com/drive/folders/1rEuaY3ux9rEgIHWzcJYYhzksFtNz5Djh?usp=sharing" target="_blank" rel="noopener" class="card-link">View Project &rarr;</a>
+                </div>
+            </article>
+
+            <!-- 13 · Madain -->
+            <article class="project-card">
+                <div class="card-img-wrap">
+                    <a href="https://drive.google.com/drive/folders/1EC4u-NCcjzdDHdjba-dxeW6CsA0gMHcg?usp=sharing" target="_blank" rel="noopener">
+                        <img src="Images/madain.png" alt="Madain Heritage Branding">
+                        <div class="card-overlay"><span class="card-overlay-btn">View Project</span></div>
+                    </a>
+                </div>
+                <div class="card-body">
+                    <div class="card-category">Heritage Branding</div>
+                    <div class="card-rule"></div>
+                    <h2 class="card-title">Madain</h2>
+                    <p class="card-desc">
+                        Madain is steeped in history, and its identity had to carry that weight.
+                        Drawing from the region's layered cultural heritage, the design translates
+                        ancient visual references into a modern mark — inviting both local pride
+                        and international curiosity. Heritage in form, contemporary in execution.
+                    </p>
+                    <a href="https://drive.google.com/drive/folders/1EC4u-NCcjzdDHdjba-dxeW6CsA0gMHcg?usp=sharing" target="_blank" rel="noopener" class="card-link">View Project &rarr;</a>
+                </div>
+            </article>
+
+            <!-- 14 · Qemmah -->
+            <article class="project-card">
+                <div class="card-img-wrap">
+                    <a href="https://drive.google.com/drive/folders/1GmqmZ58xLTFcq4r_AbFxHMaqnQtx2UX4?usp=sharing" target="_blank" rel="noopener">
+                        <img src="Images/Qemmah.png" alt="Qemmah Brand Identity">
+                        <div class="card-overlay"><span class="card-overlay-btn">View Project</span></div>
+                    </a>
+                </div>
+                <div class="card-body">
+                    <div class="card-category">Brand Identity</div>
+                    <div class="card-rule"></div>
+                    <h2 class="card-title">Qemmah</h2>
+                    <p class="card-desc">
+                        Qemmah means "peak" — and the identity had to match that ambition. A refined,
+                        upward-reaching visual language was designed to position the brand as
+                        aspirational, premium, and built for those who demand excellence.
+                        Every detail communicates the drive to always reach higher.
+                    </p>
+                    <a href="https://drive.google.com/drive/folders/1GmqmZ58xLTFcq4r_AbFxHMaqnQtx2UX4?usp=sharing" target="_blank" rel="noopener" class="card-link">View Project &rarr;</a>
+                </div>
+            </article>
+
+            <!-- 15 · Emdad -->
+            <article class="project-card">
+                <div class="card-img-wrap">
+                    <a href="https://drive.google.com/drive/folders/1HyNF41xXaVFjm7q61ITVOI6c4au0j75b?usp=sharing" target="_blank" rel="noopener">
+                        <img src="Images/Emdad.png" alt="Emdad Corporate Identity">
+                        <div class="card-overlay"><span class="card-overlay-btn">View Project</span></div>
+                    </a>
+                </div>
+                <div class="card-body">
+                    <div class="card-category">Corporate Identity</div>
+                    <div class="card-rule"></div>
+                    <h2 class="card-title">Emdad</h2>
+                    <p class="card-desc">
+                        Emdad provides supply and staffing solutions across industries and needed
+                        an identity built for durability. A strong mark, a structured color system,
+                        and versatile templates were developed to scale cleanly across uniforms,
+                        vehicles, and digital environments — consistent wherever the brand appears.
+                    </p>
+                    <a href="https://drive.google.com/drive/folders/1HyNF41xXaVFjm7q61ITVOI6c4au0j75b?usp=sharing" target="_blank" rel="noopener" class="card-link">View Project &rarr;</a>
+                </div>
+            </article>
+
+            <!-- 16 · عطور العذاء -->
+            <article class="project-card">
+                <div class="card-img-wrap">
+                    <a href="https://drive.google.com/file/d/1yBZ8EcEBMmijqdMAlk7mmLUw-toIzu5H/view?usp=sharing" target="_blank" rel="noopener">
+                        <img src="Images/alatha.png" alt="عطور العذاء — Al-Athaa Fragrances">
+                        <div class="card-overlay"><span class="card-overlay-btn">View Project</span></div>
+                    </a>
+                </div>
+                <div class="card-body">
+                    <div class="card-category">Fragrance Branding</div>
+                    <div class="card-rule"></div>
+                    <h2 class="card-title">عطور العذاء</h2>
+                    <p class="card-desc">
+                        A luxury fragrance house rooted in Arabian oud tradition needed an identity
+                        worthy of what's inside the bottle. Rich textures, ornamental details, and
+                        a deep warm palette honor the art of the craft — weaving heritage with
+                        modern restraint to speak to both traditionalists and a new generation.
+                    </p>
+                    <a href="https://drive.google.com/file/d/1yBZ8EcEBMmijqdMAlk7mmLUw-toIzu5H/view?usp=sharing" target="_blank" rel="noopener" class="card-link">View Project &rarr;</a>
+                </div>
+            </article>
+
+            <!-- 17 · جود الأصيل -->
+            <article class="project-card">
+                <div class="card-img-wrap">
+                    <a href="https://drive.google.com/file/d/1SpjfbKLjFf596ksMEOdstlwT3ymyBwpH/view?usp=sharing" target="_blank" rel="noopener">
+                        <img src="Images/jood.png" alt="جود الأصيل — Jood Al-Aseel Brand Identity">
+                        <div class="card-overlay"><span class="card-overlay-btn">View Project</span></div>
+                    </a>
+                </div>
+                <div class="card-body">
+                    <div class="card-category">Heritage Brand Identity</div>
+                    <div class="card-rule"></div>
+                    <h2 class="card-title">جود الأصيل</h2>
+                    <p class="card-desc">
+                        Jood Al-Aseel celebrates the authentic generosity that defines Saudi culture.
+                        The identity draws on Arabic calligraphic tradition and warm earth tones,
+                        creating a brand that feels genuinely rooted and worthy of pride.
+                        Every element was crafted to honor the values it represents.
+                    </p>
+                    <a href="https://drive.google.com/file/d/1SpjfbKLjFf596ksMEOdstlwT3ymyBwpH/view?usp=sharing" target="_blank" rel="noopener" class="card-link">View Project &rarr;</a>
+                </div>
+            </article>
+
+            <!-- 18 · بنك الرياض -->
+            <article class="project-card">
+                <div class="card-img-wrap">
+                    <a href="https://drive.google.com/drive/folders/1PAusLdGpn6fWt4YVOQrj0iPSd4bsoGlK?usp=sharing" target="_blank" rel="noopener">
+                        <img src="Images/riyadh.png" alt="بنك الرياض — Riyadh Bank Campaign Design">
+                        <div class="card-overlay"><span class="card-overlay-btn">View Project</span></div>
+                    </a>
+                </div>
+                <div class="card-body">
+                    <div class="card-category">Banking · Campaign Design</div>
+                    <div class="card-rule"></div>
+                    <h2 class="card-title">بنك الرياض</h2>
+                    <p class="card-desc">
+                        Developing marketing visuals for one of Saudi Arabia's leading banks required
+                        balancing institutional credibility with modern relevance. Motion graphics,
+                        social content, and print materials were designed to humanize the brand's
+                        communication — keeping trust at the core while speaking to a younger audience.
+                    </p>
+                    <a href="https://drive.google.com/drive/folders/1PAusLdGpn6fWt4YVOQrj0iPSd4bsoGlK?usp=sharing" target="_blank" rel="noopener" class="card-link">View Project &rarr;</a>
+                </div>
+            </article>
+
+            <!-- 19 · البوابة العقارية -->
+            <article class="project-card">
+                <div class="card-img-wrap">
+                    <a href="https://drive.google.com/drive/folders/1mvrlO4ZuhwY0ighoYp7vnQDqeD1ERBtD?usp=sharing" target="_blank" rel="noopener">
+                        <img src="Images/gate.png" alt="البوابة العقارية — Real Estate Gateway">
+                        <div class="card-overlay"><span class="card-overlay-btn">View Project</span></div>
+                    </a>
+                </div>
+                <div class="card-body">
+                    <div class="card-category">Real Estate Branding</div>
+                    <div class="card-rule"></div>
+                    <h2 class="card-title">البوابة العقارية</h2>
+                    <p class="card-desc">
+                        A real estate platform targeting both buyers and investors required a trustworthy,
+                        sophisticated identity. Clean architecture, a premium palette, and a mark
+                        inspired by gateway forms establish authority in the market — open, clear,
+                        and welcoming without sacrificing the gravitas the sector demands.
+                    </p>
+                    <a href="https://drive.google.com/drive/folders/1mvrlO4ZuhwY0ighoYp7vnQDqeD1ERBtD?usp=sharing" target="_blank" rel="noopener" class="card-link">View Project &rarr;</a>
+                </div>
+            </article>
+
+        </div><!-- /projects-grid -->
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <span class="footer-brand">Lujain Alshamrani</span>
+        <ul class="footer-links">
+            <li><a href="mydesignes.html">Work</a></li>
+            <li><a href="aboutme.html">About</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+        <span class="footer-copy">&copy; 2024 All rights reserved</span>
+    </footer>
+
     <script>
-        document.getElementById('menu-toggle').addEventListener('click', function() {
-            document.getElementById('menu').classList.toggle('hidden');
+        const btn = document.getElementById('navBtn');
+        const menu = document.getElementById('navMenu');
+        btn.addEventListener('click', () => {
+            btn.classList.toggle('open');
+            menu.classList.toggle('open');
+        });
+        menu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                btn.classList.remove('open');
+                menu.classList.remove('open');
+            });
         });
     </script>
-    <script src="script.js" defer></script>
 </body>
 </html>
