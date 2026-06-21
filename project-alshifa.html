@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alshifa — Lujain Alshamrani</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="nav">
+        <a href="index.html" class="nav-brand">Lujain Alshamrani</a>
+        <nav>
+            <button class="nav-btn" id="navBtn" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="mydesignes.html" class="active">Work</a></li>
+                <li><a href="aboutme.html">About</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="page">
+        <div class="container">
+
+            <a href="mydesignes.html" class="back-link">All Work</a>
+
+            <div class="project-hero fade-in">
+                <img src="Images/alshifa.png" alt="Alshifa">
+            </div>
+
+            <div class="project-header fade-in">
+                <div class="project-title-block">
+                    <div class="project-eyebrow-tag">Healthcare Branding</div>
+                    <h1 class="project-main-title">Alshifa</h1>
+                </div>
+                <div class="project-number">11</div>
+            </div>
+
+            <div class="project-body fade-in-2">
+
+                <aside class="project-meta">
+                    <div class="meta-item">
+                        <div class="meta-label">Client</div>
+                        <div class="meta-value">Alshifa</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Category</div>
+                        <div class="meta-value">Healthcare Branding</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Deliverables</div>
+                        <div class="meta-value">Logo Design<br>Brand Guidelines<br>Stationery<br>Signage System<br>Digital Templates</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Year</div>
+                        <div class="meta-value">2024</div>
+                    </div>
+                </aside>
+
+                <div class="project-story">
+                    <div class="story-block">
+                        <div class="story-heading">The Brief</div>
+                        <p class="story-text">Alshifa needed a healthcare brand built on trust. In the medical sector, design decisions carry weight — patients make inferences about the quality of care from the quality of what they see. The challenge was creating something that felt genuinely caring, clear, and credible without being clinical or cold.</p>
+                    </div>
+                    <div class="story-block">
+                        <div class="story-heading">The Approach</div>
+                        <p class="story-text">Every choice was filtered through one question: does this feel safe? A mark with soft geometry and natural proportion. A palette of calm, reassuring tones — the kind that lower your heart rate rather than raise it. Typography that's highly legible and never shouts. The brand was designed to put people at ease before they speak to anyone.</p>
+                    </div>
+                    <div class="story-block">
+                        <div class="story-heading">The Outcome</div>
+                        <p class="story-text">Complete healthcare identity: logo, wayfinding and signage system, clinical stationery, patient-facing print materials, staff uniform design, and digital communication templates. The result is a brand that communicates care through every detail.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="gallery-section fade-in-3">
+                <div class="gallery-heading">Project Gallery</div>
+                <div class="gallery-grid">
+                    <div class="gallery-item g-wide">
+                        <img src="Images/alshifa.png" alt="Alshifa">
+                    </div>
+                    <div class="gallery-item g-tall">
+                        <img src="Images/alshifa.png" alt="Alshifa">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="Images/alshifa.png" alt="Alshifa">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="Images/alshifa.png" alt="Alshifa">
+                    </div>
+                    <div class="gallery-placeholder g-wide">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="1"/><path d="M3 9l4-4 4 4 4-5 4 5"/><circle cx="8.5" cy="7.5" r="1.5"/></svg>
+                        <span>More images coming soon</span>
+                    </div>
+                    <div class="gallery-placeholder">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="1"/><path d="M3 9l4-4 4 4 4-5 4 5"/><circle cx="8.5" cy="7.5" r="1.5"/></svg>
+                        <span>Coming soon</span>
+                    </div>
+                </div>
+            </div>
+
+            <a href="project-mazadak.html" class="next-project">
+                <div>
+                    <div class="next-label">Next Project</div>
+                    <div class="next-name">Mazadak Event</div>
+                </div>
+                <div class="next-arrow">&rarr;</div>
+            </a>
+
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <span class="footer-brand">Lujain Alshamrani</span>
+        <ul class="footer-links">
+            <li><a href="mydesignes.html">Work</a></li>
+            <li><a href="aboutme.html">About</a></li>
+        </ul>
+        <span class="footer-copy">&copy; 2024 All rights reserved</span>
+    </footer>
+
+    <script>
+        const btn = document.getElementById('navBtn');
+        const menu = document.getElementById('navMenu');
+        btn.addEventListener('click', () => {
+            btn.classList.toggle('open');
+            menu.classList.toggle('open');
+        });
+        menu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                btn.classList.remove('open');
+                menu.classList.remove('open');
+            });
+        });
+    </script>
+</body>
+</html>

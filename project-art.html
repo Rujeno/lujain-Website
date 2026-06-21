@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rawae'i Al-Fan — Lujain Alshamrani</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="nav">
+        <a href="index.html" class="nav-brand">Lujain Alshamrani</a>
+        <nav>
+            <button class="nav-btn" id="navBtn" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="mydesignes.html" class="active">Work</a></li>
+                <li><a href="aboutme.html">About</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="page">
+        <div class="container">
+
+            <a href="mydesignes.html" class="back-link">All Work</a>
+
+            <div class="project-hero fade-in">
+                <img src="Images/Art.png" alt="روائع الفن">
+            </div>
+
+            <div class="project-header fade-in">
+                <div class="project-title-block">
+                    <div class="project-eyebrow-tag">Exhibition Design</div>
+                    <h1 class="project-main-title">روائع الفن</h1>
+                </div>
+                <div class="project-number">05</div>
+            </div>
+
+            <div class="project-body fade-in-2">
+
+                <aside class="project-meta">
+                    <div class="meta-item">
+                        <div class="meta-label">Client</div>
+                        <div class="meta-value">Rawae'i Al-Fan</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Category</div>
+                        <div class="meta-value">Exhibition Design</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Deliverables</div>
+                        <div class="meta-value">Exhibition Identity<br>Signage System<br>Print Collateral<br>Social Media Kit<br>Catalog Design</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Year</div>
+                        <div class="meta-value">2024</div>
+                    </div>
+                </aside>
+
+                <div class="project-story">
+                    <div class="story-block">
+                        <div class="story-heading">The Brief</div>
+                        <p class="story-text">An art space showcasing masterworks needed an identity that felt worthy of what it housed — one that communicated cultural value and curatorial seriousness without intimidating its audience. The design had to honor heritage while feeling alive and contemporary.</p>
+                    </div>
+                    <div class="story-block">
+                        <div class="story-heading">The Approach</div>
+                        <p class="story-text">The approach was restraint. An art space identity shouldn't compete with the art — it should create a frame for it. We drew from classical Arabic visual tradition, using geometric structure and careful proportion as the foundation, then stripped everything back to its essentials. The result is an identity that recedes when it needs to and asserts itself when it has to.</p>
+                    </div>
+                    <div class="story-block">
+                        <div class="story-heading">The Outcome</div>
+                        <p class="story-text">A full exhibition identity: wordmark, signage system, printed catalog layout, wall text templates, social media graphics, and event posters. The system works as elegantly in a printed catalog as it does on a digital screen.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="gallery-section fade-in-3">
+                <div class="gallery-heading">Project Gallery</div>
+                <div class="gallery-grid">
+                    <div class="gallery-item g-wide">
+                        <img src="Images/Art.png" alt="روائع الفن">
+                    </div>
+                    <div class="gallery-item g-tall">
+                        <img src="Images/Art.png" alt="روائع الفن">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="Images/Art.png" alt="روائع الفن">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="Images/Art.png" alt="روائع الفن">
+                    </div>
+                    <div class="gallery-placeholder g-wide">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="1"/><path d="M3 9l4-4 4 4 4-5 4 5"/><circle cx="8.5" cy="7.5" r="1.5"/></svg>
+                        <span>More images coming soon</span>
+                    </div>
+                    <div class="gallery-placeholder">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="1"/><path d="M3 9l4-4 4 4 4-5 4 5"/><circle cx="8.5" cy="7.5" r="1.5"/></svg>
+                        <span>Coming soon</span>
+                    </div>
+                </div>
+            </div>
+
+            <a href="project-saudeels.html" class="next-project">
+                <div>
+                    <div class="next-label">Next Project</div>
+                    <div class="next-name">Saudeels</div>
+                </div>
+                <div class="next-arrow">&rarr;</div>
+            </a>
+
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <span class="footer-brand">Lujain Alshamrani</span>
+        <ul class="footer-links">
+            <li><a href="mydesignes.html">Work</a></li>
+            <li><a href="aboutme.html">About</a></li>
+        </ul>
+        <span class="footer-copy">&copy; 2024 All rights reserved</span>
+    </footer>
+
+    <script>
+        const btn = document.getElementById('navBtn');
+        const menu = document.getElementById('navMenu');
+        btn.addEventListener('click', () => {
+            btn.classList.toggle('open');
+            menu.classList.toggle('open');
+        });
+        menu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                btn.classList.remove('open');
+                menu.classList.remove('open');
+            });
+        });
+    </script>
+</body>
+</html>
