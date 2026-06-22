@@ -154,12 +154,25 @@ const projects = [
   },
   {
     slug: 'emdad', num: '15',
-    title: 'إمداد', titleEn: 'Emdad', category: 'Corporate Identity',
-    img: 'Images/Emdad.png', year: '2024',
-    summaryAr: 'هوية مؤسسية لشركة توريد وتوظيف متعددة القطاعات — قوة هندسية تُقرأ بوضوح على المركبة، والزي، وورق الاقتراح على حد سواء.',
-    deliverables: ['Corporate Logo', 'Brand System', 'Vehicle Branding', 'Uniform Design', 'Brand Guidelines'],
-    brief: `Emdad provides supply and staffing solutions across multiple industries. They needed a corporate identity that communicated dependability and scale — one that would work as credibly on a fleet vehicle as on a business proposal. The brand had to say: we are here, we are reliable, and we will deliver.`,
-    approach: `Dependability in design comes from consistency and structure. We built an identity with strong geometric foundations — a mark that holds together under any treatment — and a visual system designed for real operational environments: uniforms, vehicles, signage, and documents. Nothing precious, everything practical.`,
+    title: 'إمداد · رمضان 2025', titleEn: 'Emdad Ramadan 2025', category: 'Event Branding · Seasonal Campaign',
+    img: 'Images/emdad-1.jpg', year: '2025',
+    summaryAr: 'هوية رمضان 2025 لإمداد الخبرات — منظومة بصرية احتفالية تمتد من الكيوبات التفاعلية إلى خلفيات المسرح واللوحات الإعلانية، بلوحة ألوان تجمع التراث والحداثة.',
+    deliverables: ['Seasonal Brand System', 'Event Stage Design', 'Display Cube Branding', 'Outdoor Advertising', 'Environmental Design'],
+    brief: `Emdad Al Khebrat needed a complete Ramadan 2025 campaign identity — a visual system that could carry the warmth of the holy month while staying true to the brand's bold, energetic character. The campaign had to work across physical environments: exhibition cubes, event stages, and outdoor street advertising.`,
+    approach: `The palette pushed the brand into Ramadan territory — deep navy and vibrant magenta layered with Islamic geometric patterns drawn in fine white linework. The gradient treatment gave the campaign a sense of depth and celebration without departing from Emdad's core identity. Each application was designed to work at its own scale: intimate on a cube, grand on a stage, impactful on a street poster.`,
+    outcome: `A complete seasonal identity system deployed across: branded 3D display cubes with welcome and Ramadan greetings, a full event stage backdrop with gradient and pattern treatment, and an outdoor advertising suite including illuminated panels and street furniture posters — all production-ready for the 2025 Ramadan season.`,
+    driveLink: 'https://drive.google.com/drive/folders/1HyNF41xXaVFjm7q61ITVOI6c4au0j75b?usp=sharing',
+    galleryOverride: `<div class="proj-img proj-full">
+            <img src="Images/emdad-2.jpg" alt="إمداد — Event Stage" loading="lazy" decoding="async">
+        </div>
+        <div class="proj-img-pair">
+            <div class="proj-img">
+                <img src="Images/emdad-1.jpg" alt="إمداد — Display Cubes" loading="lazy" decoding="async">
+            </div>
+            <div class="proj-img">
+                <img src="Images/emdad-3.jpg" alt="إمداد — Outdoor Advertising" loading="lazy" decoding="async">
+            </div>
+        </div>`,
     outcome: `Complete corporate identity: group logo with mono and reversed versions, full stationery suite, vehicle livery templates, uniform design guidelines, document and proposal templates, and brand standards documentation. The brand is operational-ready across every division.`
   },
   {
