@@ -125,12 +125,18 @@ const projects = [
   {
     slug: 'mazadak', num: '12',
     title: 'مزادك', titleEn: 'Mazadak Event', category: 'Event Design',
-    img: 'Images/mazadak.webp', year: '2024',
+    img: 'Images/mazadak-1.jpg', year: '2024',
     summaryAr: 'هوية حدث مزادات مصممة لبناء التشويق وتحريك الجمهور — نظام بصري عالي التباين يعمل عبر وسائل التواصل الاجتماعي ويصل إلى المسرح.',
     deliverables: ['Event Identity', 'Campaign Graphics', 'Social Media Kit', 'Stage Design', 'Print Materials'],
     brief: `Mazadak's auction event needed to generate genuine excitement before a single bid was placed. The visual identity had to do the promotional work — building anticipation across social media, attracting registrations, and making the event feel like something worth showing up for.`,
     approach: `The design language was built for impact. High-contrast, kinetic, built to move through social feeds and stop scrollers in their tracks. Campaign assets were designed in a modular system — one set of rules that could power weeks of content at volume without feeling repetitive or exhausted.`,
-    outcome: `Full event campaign identity: event logo and visual system, countdown content series, registration and invitation graphics, social media template library, stage and backdrop design, and day-of print materials. Everything produced and handed off before the campaign launched.`
+    outcome: `Full event campaign identity: event logo and visual system, countdown content series, registration and invitation graphics, social media template library, stage and backdrop design, and day-of print materials. Everything produced and handed off before the campaign launched.`,
+    galleryOverride: `<div class="proj-img proj-full">
+            <img src="Images/mazadak-1.jpg" alt="مزادك — المعرض" loading="lazy" decoding="async">
+        </div>
+        <div class="proj-img proj-full">
+            <img src="Images/mazadak.webp" alt="مزادك — هوية الحدث" loading="lazy" decoding="async">
+        </div>`
   },
   {
     slug: 'madain', num: '13',
