@@ -275,6 +275,20 @@ const projects = [
                 <img src="Images/housing-2.jpg" alt="برنامج الإسكان — Report Template" loading="lazy" decoding="async">
             </div>
         </div>`
+  },
+  {
+    slug: 'hindawiya', num: '22',
+    title: 'الهنداوية', titleEn: 'AlHindawiya', category: 'Brand Identity · Lifestyle',
+    img: 'Images/hindawiya-1.jpg', year: '2024',
+    summaryAr: 'دليل هوية بصرية متكامل لعلامة الهنداوية — هوية نابعة من الطبيعة، تجمع بين اللوغو النباتي المرسوم يدوياً ولوحة ألوان هادئة لتعكس روح المنزل الجميل.',
+    deliverables: ['Brand Identity', 'Logo Design', 'Brand Guidelines', 'Color & Typography System', 'Visual Identity Manual'],
+    brief: `AlHindawiya needed a brand identity that felt rooted in nature and the art of the home — something that would appeal to customers who care about beauty in everyday spaces. The brand needed to feel handcrafted without being rustic, botanical without being too earthy, and modern without being cold.`,
+    approach: `The logomark was built around a classic ceramic jar with botanical elements growing from within it — a symbol of cultivation, home, and care. The identity system was kept deliberately minimal: soft neutrals, refined typography, and generous white space. The branding guideline was designed as a visual language reference that could be applied to packaging, labels, social media, and interior touchpoints consistently.`,
+    outcome: `A full visual identity manual for AlHindawiya covering: primary and secondary logo usage, color palette with swatches and values, typography hierarchy, photography style direction, and application examples across packaging and digital — a complete reference for every visual decision the brand makes going forward.`,
+    driveLink: 'https://drive.google.com/file/d/1HJm_4y0ciinzVs4HkjgzQz2dxovPu0bE/view?usp=sharing',
+    galleryOverride: `<div class="proj-img proj-full">
+            <img src="Images/hindawiya-1.jpg" alt="الهنداوية — Brand Guideline Cover" loading="lazy" decoding="async">
+        </div>`
   }
 ];
 
