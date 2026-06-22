@@ -164,13 +164,17 @@ const projects = [
   },
   {
     slug: 'alatha', num: '16',
-    title: 'عطور العذاء', titleEn: 'Al-Athaa Fragrances', category: 'Fragrance Branding',
-    img: 'Images/alatha.png', year: '2024',
-    summaryAr: 'هوية دار عطور فاخرة تُجسّد موروث العطارة العربية الأصيل — زخرفة إسلامية، لوحة ألوان عميقة، وتصميم عبوة يُشعل الحواس قبل فتح الغطاء.',
-    deliverables: ['Brand Identity', 'Bottle Label Design', 'Packaging Design', 'Brand Guidelines', 'Brand Collateral'],
-    brief: `Al-Athaa is a luxury fragrance house rooted in the tradition of Arabian oud and attar. They needed a brand identity that honored the depth and heritage of their craft — something that would feel as precious as the fragrances inside the bottles, and as timeless as the tradition behind them.`,
-    approach: `The identity was built as a love letter to the art of Arabian perfumery. Ornamental details drawn from traditional Islamic geometry, a rich and layered palette of deep ambers and golds, and typography that moves between Arabic calligraphic sensibility and contemporary refinement. Nothing was arbitrary — every element references something real in the tradition.`,
-    outcome: `Full fragrance brand identity: primary mark and ornamental logo system, bottle label design across the product range, outer packaging design, brand color and material guide, tissue and ribbon system, and a brand story document that captures the heritage behind the name.`
+    title: 'العذا · Aladda', titleEn: 'Aladda Perfumes', category: 'Fragrance · Social Media Design',
+    img: 'Images/alatha.png', year: '2023',
+    summaryAr: 'تصاميم متجر عطور "العذا" — هوية بصرية متكاملة وبوسترات تسويقية إبداعية تُقدّم خطوط العطور المختلفة بأسلوب راقٍ يعكس شخصية العلامة.',
+    deliverables: ['Brand Posters', 'Product Catalog Design', 'Social Media Templates', 'Hair Mist Line Design', 'Campaign Visuals'],
+    brief: `Aladda Perfume is a Saudi fragrance brand offering a range of distinctive scents — from light and fresh to deep oud blends, including a hair mist collection. They needed marketing visuals that could present their full product catalog in a sophisticated, retail-ready format that would work across social media and in-store.`,
+    approach: `The design system balanced the brand's refined logo with editorial catalog layouts — clean white space paired with bold dark backgrounds, Arabic typography that carries warmth, and product photography integrated into storytelling compositions. Each poster was designed to highlight a different product line while maintaining a coherent visual language across the full set.`,
+    outcome: `A full set of social media marketing posters covering the perfume collection (Nooq, Ghaim, Asseer, Jissar), the hero campaign visual, and the hair mist product line — each delivered as standalone pieces that also read as a unified campaign family.`,
+    driveLink: 'https://drive.google.com/drive/folders/1eN9ZYbkzOzNWMtIXteWkbTZUeyaBGVdd?usp=sharing',
+    galleryOverride: `<div class="proj-img proj-full">
+            <img src="Images/aladda-1.jpg" alt="العذا — Campaign Posters" loading="lazy" decoding="async">
+        </div>`
   },
   {
     slug: 'jood', num: '17',
