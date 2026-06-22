@@ -191,13 +191,17 @@ const projects = [
   },
   {
     slug: 'jood', num: '17',
-    title: 'جود الأصيل', titleEn: 'Jood Al-Aseel', category: 'Heritage Brand Identity',
-    img: 'Images/jood.png', year: '2024',
-    summaryAr: 'هوية تراثية تحتفي بقيم الكرم السعودي الأصيل — خط عربي، ألوان تراب دافئ، وتصميم يحمل شعوراً بأنه موجود منذ أجيال.',
-    deliverables: ['Logo Design', 'Brand System', 'Packaging Design', 'Brand Guidelines', 'Print Collateral'],
-    brief: `Jood Al-Aseel — "the authentic generosity" — is a brand built on the deep Saudi values of hospitality and giving. The identity had to feel genuinely rooted in that tradition: warm, proud, and worth trusting. Not nostalgic for its own sake, but honest about where it comes from.`,
-    approach: `The design language draws from Arabic calligraphic tradition and the visual culture of Saudi heritage — warm earth tones, deliberate proportion, ornamental elements used with restraint. The mark was designed to feel like it belongs to a lineage, not a trend.`,
-    outcome: `Complete brand identity: primary calligraphic logo with supporting marks, heritage color palette, packaging design for the product range, brand collateral including gift box and ribbon design, and brand guidelines with cultural usage notes.`
+    title: 'جود الأصيل', titleEn: 'Jood Al-Aseel', category: 'Food & Product Catalog Design',
+    img: 'Images/jood-1.jpg', year: '2024',
+    summaryAr: 'تصميم مجلة منتجات غذائية لجود الأصيل — كتالوج احترافي يعرض المنتجات الطازجة والمشتريات الغذائية بأسلوب بصري شهي يقنع المشتري قبل أن يتذوق.',
+    deliverables: ['Magazine Design', 'Product Catalog', 'Food Photography Layout', 'Print Production Files'],
+    brief: `Jood Al-Aseel is a food supplier specializing in fresh produce, pickles, and ingredients for sandwiches and shawarma. They needed a product catalog magazine that could present their full range to restaurant and retail buyers — something that looked appetizing and professional, and made the product quality speak for itself on the page.`,
+    approach: `The catalog was designed around the food itself — full-bleed photography, generous white space, and a clean layout that let each product shine. Product categories were given clear visual hierarchy with numbered spreads and bilingual Arabic/English copy. The brand's leaf logo and natural green palette tied the editorial design back to freshness and quality without overpowering the food visuals.`,
+    outcome: `A professionally designed product catalog magazine for Jood Al-Aseel, covering their full product range across multiple categories — ready for print distribution to wholesale buyers, restaurants, and retail partners.`,
+    driveLink: 'https://drive.google.com/file/d/1xdWbaNTo4qvc4Aiww_-i05A2c-10Dw6H/view?usp=sharing',
+    galleryOverride: `<div class="proj-img proj-full">
+            <img src="Images/jood-1.jpg" alt="جود الأصيل — Product Catalog" loading="lazy" decoding="async">
+        </div>`
   },
   {
     slug: 'riyadh', num: '18',
