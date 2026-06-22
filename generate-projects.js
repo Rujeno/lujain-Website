@@ -155,7 +155,7 @@ const projects = [
   {
     slug: 'emdad', num: '15',
     title: 'إمداد · رمضان 2025', titleEn: 'Emdad Ramadan 2025', category: 'Event Branding · Seasonal Campaign',
-    img: 'Images/emdad-1.jpg', year: '2025',
+    img: 'Images/Emdad.png', year: '2025',
     summaryAr: 'هوية رمضان 2025 لإمداد الخبرات — منظومة بصرية احتفالية تمتد من الكيوبات التفاعلية إلى خلفيات المسرح واللوحات الإعلانية، بلوحة ألوان تجمع التراث والحداثة.',
     deliverables: ['Seasonal Brand System', 'Event Stage Design', 'Display Cube Branding', 'Outdoor Advertising', 'Environmental Design'],
     brief: `Emdad Al Khebrat needed a complete Ramadan 2025 campaign identity — a visual system that could carry the warmth of the holy month while staying true to the brand's bold, energetic character. The campaign had to work across physical environments: exhibition cubes, event stages, and outdoor street advertising.`,
@@ -163,17 +163,8 @@ const projects = [
     outcome: `A complete seasonal identity system deployed across: branded 3D display cubes with welcome and Ramadan greetings, a full event stage backdrop with gradient and pattern treatment, and an outdoor advertising suite including illuminated panels and street furniture posters — all production-ready for the 2025 Ramadan season.`,
     driveLink: 'https://drive.google.com/drive/folders/1HyNF41xXaVFjm7q61ITVOI6c4au0j75b?usp=sharing',
     galleryOverride: `<div class="proj-img proj-full">
-            <img src="Images/emdad-2.jpg" alt="إمداد — Event Stage" loading="lazy" decoding="async">
-        </div>
-        <div class="proj-img-pair">
-            <div class="proj-img">
-                <img src="Images/emdad-1.jpg" alt="إمداد — Display Cubes" loading="lazy" decoding="async">
-            </div>
-            <div class="proj-img">
-                <img src="Images/emdad-3.jpg" alt="إمداد — Outdoor Advertising" loading="lazy" decoding="async">
-            </div>
-        </div>`,
-    outcome: `Complete corporate identity: group logo with mono and reversed versions, full stationery suite, vehicle livery templates, uniform design guidelines, document and proposal templates, and brand standards documentation. The brand is operational-ready across every division.`
+            <img src="Images/Emdad.png" alt="إمداد رمضان 2025 — هوية الحملة" loading="lazy" decoding="async">
+        </div>`
   },
   {
     slug: 'alatha', num: '16',
@@ -186,13 +177,13 @@ const projects = [
     outcome: `A full set of social media marketing posters covering the perfume collection (Nooq, Ghaim, Asseer, Jissar), the hero campaign visual, and the hair mist product line — each delivered as standalone pieces that also read as a unified campaign family.`,
     driveLink: 'https://drive.google.com/drive/folders/1eN9ZYbkzOzNWMtIXteWkbTZUeyaBGVdd?usp=sharing',
     galleryOverride: `<div class="proj-img proj-full">
-            <img src="Images/aladda-1.jpg" alt="العذا — Campaign Posters" loading="lazy" decoding="async">
+            <img src="Images/alatha.png" alt="العذا — Campaign Posters" loading="lazy" decoding="async">
         </div>`
   },
   {
     slug: 'jood', num: '17',
     title: 'جود الأصيل', titleEn: 'Jood Al-Aseel', category: 'Food & Product Catalog Design',
-    img: 'Images/jood-1.jpg', year: '2024',
+    img: 'Images/jood.png', year: '2024',
     summaryAr: 'تصميم مجلة منتجات غذائية لجود الأصيل — كتالوج احترافي يعرض المنتجات الطازجة والمشتريات الغذائية بأسلوب بصري شهي يقنع المشتري قبل أن يتذوق.',
     deliverables: ['Magazine Design', 'Product Catalog', 'Food Photography Layout', 'Print Production Files'],
     brief: `Jood Al-Aseel is a food supplier specializing in fresh produce, pickles, and ingredients for sandwiches and shawarma. They needed a product catalog magazine that could present their full range to restaurant and retail buyers — something that looked appetizing and professional, and made the product quality speak for itself on the page.`,
@@ -200,7 +191,7 @@ const projects = [
     outcome: `A professionally designed product catalog magazine for Jood Al-Aseel, covering their full product range across multiple categories — ready for print distribution to wholesale buyers, restaurants, and retail partners.`,
     driveLink: 'https://drive.google.com/file/d/1xdWbaNTo4qvc4Aiww_-i05A2c-10Dw6H/view?usp=sharing',
     galleryOverride: `<div class="proj-img proj-full">
-            <img src="Images/jood-1.jpg" alt="جود الأصيل — Product Catalog" loading="lazy" decoding="async">
+            <img src="Images/jood.png" alt="جود الأصيل — Product Catalog" loading="lazy" decoding="async">
         </div>`
   },
   {
@@ -214,7 +205,7 @@ const projects = [
     outcome: `A fully executed large-format mural design — production files prepared for direct print at architectural scale, installed in a Riyadh Bank branch as a permanent seasonal feature. The piece delivers brand presence and emotional warmth simultaneously.`,
     driveLink: 'https://drive.google.com/drive/folders/1PAusLdGpn6fWt4YVOQrj0iPSd4bsoGlK?usp=sharing',
     galleryOverride: `<div class="proj-img proj-full">
-            <img src="Images/riyadh-1.jpg" alt="بنك الرياض — Mural" loading="lazy" decoding="async">
+            <img src="Images/riyadh.png" alt="بنك الرياض — Mural" loading="lazy" decoding="async">
         </div>`
   },
   {
@@ -292,6 +283,53 @@ const projects = [
     driveLink: 'https://drive.google.com/file/d/1HJm_4y0ciinzVs4HkjgzQz2dxovPu0bE/view?usp=sharing',
     galleryOverride: `<div class="proj-img proj-full">
             <img src="Images/hindawiya-1.jpg" alt="الهنداوية — Brand Guideline Cover" loading="lazy" decoding="async">
+        </div>`
+  },
+  {
+    slug: 'foreiva', num: '23',
+    title: 'Foreiva Beauty Culture', titleEn: 'Foreiva Beauty Culture', category: 'Packaging Design · Beauty',
+    img: 'Images/foreiva-1.jpg', year: '2024',
+    summaryAr: 'تصميم تعبئة وتغليف لمنتجات Foreiva للعناية بالشعر — أربع نسخ تجمع بين الأخضر الطبيعي والوردي النسائي بأنماط متموجة ورسوم نباتية تعكس شخصية العلامة الجمالية.',
+    deliverables: ['Packaging Design', 'Bottle Label Design', 'Box Design', 'Multiple Variants', 'Print Production Files'],
+    brief: `Foreiva Beauty Culture needed packaging for their natural hair care oil range — a product positioned between accessible and aspirational. The packaging had to feel premium on shelf, appeal to a female audience, and communicate natural ingredients without looking clinical or too mass-market.`,
+    approach: `Four distinct packaging variants were developed, each with its own color story: an earthy sage green with fluid swirl patterns, a botanical pink with hand-drawn leaf illustration, a deeper magenta with a bold botanical design, and a clean cream-on-green minimal variant. The same circular logo mark and brand typography run across all variants — creating a coherent family that still allows each product to have its own personality on shelf.`,
+    outcome: `A complete packaging suite across four color variants covering both flip-cap and pump-dispenser bottle formats, each with matching outer box design — production-ready for print, giving Foreiva a professional, photogenic range that stands out in the beauty aisle.`,
+    galleryOverride: `<div class="proj-img proj-full">
+            <img src="Images/foreiva-1.jpg" alt="Foreiva — Green Packaging" loading="lazy" decoding="async">
+        </div>
+        <div class="proj-img-pair">
+            <div class="proj-img">
+                <img src="Images/foreiva-2.jpg" alt="Foreiva — Pink Variant" loading="lazy" decoding="async">
+            </div>
+            <div class="proj-img">
+                <img src="Images/foreiva-3.jpg" alt="Foreiva — Magenta Variant" loading="lazy" decoding="async">
+            </div>
+        </div>`
+  },
+  {
+    slug: 'imaa', num: '24',
+    title: 'حملة شتاء IMAA', titleEn: 'IMAA Winter Campaign',
+    category: 'Social Media Design · Advertising',
+    img: 'Images/imaa-1.jpg', year: '2024',
+    driveLink: 'https://drive.google.com/drive/folders/1c1lfO6n1bNOc7F567xuigOu2BWZioa2y?usp=sharing',
+    summaryAr: 'بوستات سوشيال ميديا لحملة شتاء IMAA الترويجية — تصاميم بصرية تبرز منتجات العطور والبودي ميست بعروض موسمية وألوان دافئة وتايبوغرافيا عربية جريئة.',
+    deliverables: ['Social Media Posts', 'Promotional Campaign Design', 'Multiple Product Variants', 'Price Display Graphics', 'Winter Campaign Assets'],
+    brief: `IMAA Perfumes launched a winter promotional campaign featuring discounted prices on their fragrance and body mist range. The campaign needed bold, eye-catching social media posts that communicated the offer clearly — product, discounted price, and available payment methods (Madfu, Tamara, Tabby) all in one frame.`,
+    approach: `Each post pairs a hero product shot with the "شتاء IMAA" (IMAA Winter) campaign header in mixed Arabic-Latin typography. The discount structure — original price struck through in red, new price in prominent orange — creates immediate visual impact. Four products were covered: the orange-capped Shita fragrance shot in and around a car, the Fancy body mist set in a lush forest scene, and the Super Me eau de parfum placed within a dramatic rock canyon. Each background was chosen to fit the product's personality — urban energy, natural freshness, and bold confidence respectively. Payment method logos were placed consistently at the base of each post.`,
+    outcome: `A cohesive set of four promotional posts covering the full winter campaign product range — consistent enough to read as a unified campaign, distinct enough that each product gets its own visual moment. The bold price treatment and familiar payment logos reduce friction and drive conversion directly from social media.`,
+    galleryOverride: `<div class="proj-img proj-full">
+            <img src="Images/imaa-1.jpg" alt="حملة شتاء IMAA — عطر الشتاء" loading="lazy" decoding="async">
+        </div>
+        <div class="proj-img-pair">
+            <div class="proj-img">
+                <img src="Images/imaa-2.jpg" alt="IMAA Fancy Body Mist" loading="lazy" decoding="async">
+            </div>
+            <div class="proj-img">
+                <img src="Images/imaa-3.jpg" alt="IMAA — نسخة السيارة" loading="lazy" decoding="async">
+            </div>
+        </div>
+        <div class="proj-img proj-full">
+            <img src="Images/imaa-4.jpg" alt="IMAA Super Me — العطر الأحمر" loading="lazy" decoding="async">
         </div>`
   }
 ];
