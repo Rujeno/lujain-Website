@@ -213,6 +213,28 @@ const projects = [
                 <img src="Images/gate-3.jpg" alt="البوابة العقارية — Mobile App" loading="lazy" decoding="async">
             </div>
         </div>`
+  },
+  {
+    slug: 'perfume-ai', num: '20',
+    title: 'تصاميم العطور', titleEn: 'AI Perfume Campaigns', category: 'AI Visual Design',
+    img: 'Images/perfume-ai-1.jpg', year: '2025',
+    summaryAr: 'تجارب بصرية توليدية لعلامات عطور عالمية — إنتاج إعلاني احترافي بأدوات الذكاء الاصطناعي، يدمج الجماليات السينمائية بالهوية التجارية للمنتج.',
+    deliverables: ['AI Campaign Visuals', 'Art Direction', 'Mood Compositions', 'Social Media Formats'],
+    brief: `A series of AI-generated advertising compositions for luxury fragrance brands — exploring what high-end campaign photography looks like when it's built entirely through generative tools. The challenge was to match the cinematic quality of international perfume advertising while maintaining a distinct artistic perspective.`,
+    approach: `Each visual was art-directed from prompt to final frame — selecting environments, lighting moods, and product placement that would feel native to luxury editorial. Three distinct atmospheres were developed: a dramatic amber scene with a black panther, an aquatic composition with water and moss, and a lush green forest setting. Each one builds a different sensory narrative around the same bottle.`,
+    outcome: `A portfolio of high-fidelity campaign images that demonstrate AI as a serious creative tool for advertising design — production-quality visuals built with precision direction, not luck. The series shows the full range of mood-making possible through generative workflows.`,
+    driveLink: 'https://drive.google.com/drive/folders/1xteDF8nK09QDLNv4uQIlJRGl7OsEWvoV?usp=sharing',
+    galleryOverride: `<div class="proj-img proj-full">
+            <img src="Images/perfume-ai-1.jpg" alt="تصاميم العطور — Amber Scene" loading="lazy" decoding="async">
+        </div>
+        <div class="proj-img-pair">
+            <div class="proj-img">
+                <img src="Images/perfume-ai-2.jpg" alt="تصاميم العطور — Aquatic" loading="lazy" decoding="async">
+            </div>
+            <div class="proj-img">
+                <img src="Images/perfume-ai-3.jpg" alt="تصاميم العطور — Forest" loading="lazy" decoding="async">
+            </div>
+        </div>`
   }
 ];
 
