@@ -188,13 +188,17 @@ const projects = [
   },
   {
     slug: 'riyadh', num: '18',
-    title: 'بنك الرياض', titleEn: 'Riyadh Bank', category: 'Banking · Campaign Design',
+    title: 'بنك الرياض', titleEn: 'Riyadh Bank', category: 'Environmental Design · Mural',
     img: 'Images/riyadh.png', year: '2024',
-    summaryAr: 'تصاميم حملة تسويقية تُقرّب بنك الرياض من عملائه بلغة إنسانية ودافئة — محتوى رقمي ومطبوع يُجسّد المصداقية ويمس الوجدان في آنٍ واحد.',
-    deliverables: ['Campaign Design', 'Social Media Content', 'Motion Graphics', 'Print Advertising', 'Digital Banners'],
-    brief: `Riyadh Bank is one of Saudi Arabia's most established financial institutions. The brief was to develop marketing visuals that could humanize the bank's communication — bringing the institutional credibility of the brand closer to its customers while speaking authentically to a younger, digitally-native audience.`,
-    approach: `The work sat at the intersection of trust and approachability. We built campaign concepts that retained the bank's established color language and typographic authority while introducing warmer, more human moments — real scenarios, relatable messaging, design that felt like it came from inside the customer's world, not from above it.`,
-    outcome: `A full campaign visual suite: social media content series across platforms, animated motion graphic templates, print and outdoor advertising layouts, digital banner set in multiple sizes, and a campaign style guide for ongoing execution. Every asset delivered production-ready.`
+    summaryAr: 'تصميم جدارية احتفالية لبنك الرياض — مزيج بصري يجمع بين أيقونات أفق الرياض ورسالة العيد بلوحة ألوان تعكس هوية البنك على مساحة معمارية واسعة.',
+    deliverables: ['Mural Design', 'Environmental Branding', 'Large Format Print', 'Campaign Artwork'],
+    brief: `Riyadh Bank needed a large-scale wall mural for an Eid campaign — a statement piece that would greet customers walking into a branch with celebration and civic pride. The design had to feel monumental but warm, institutional but welcoming, and unmistakably tied to Riyadh's identity.`,
+    approach: `The composition was built around Riyadh's most recognizable skyline — Kingdom Tower and Al-Faisaliah — rendered in a teal duotone that anchors the bank's brand color into an architectural narrative. The Eid greeting was set in Arabic calligraphy at scale, floating above the cityscape. The result feels like a window into the city's spirit, not a poster on a wall.`,
+    outcome: `A fully executed large-format mural design — production files prepared for direct print at architectural scale, installed in a Riyadh Bank branch as a permanent seasonal feature. The piece delivers brand presence and emotional warmth simultaneously.`,
+    driveLink: 'https://drive.google.com/drive/folders/1PAusLdGpn6fWt4YVOQrj0iPSd4bsoGlK?usp=sharing',
+    galleryOverride: `<div class="proj-img proj-full">
+            <img src="Images/riyadh-1.jpg" alt="بنك الرياض — Mural" loading="lazy" decoding="async">
+        </div>`
   },
   {
     slug: 'gate', num: '19',
