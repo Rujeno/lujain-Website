@@ -201,6 +201,7 @@ const projects = [
     brief: `A real estate platform targeting both individual buyers and institutional investors needed an identity that inspired trust from first contact. In a market where credibility is everything, the brand had to signal professionalism, transparency, and authority — while remaining approachable enough to welcome first-time buyers.`,
     approach: `The mark is a diamond-rotated grid of four interlocking blocks — each unit representing a property, together forming a gateway. The geometry is precise and modular, with subtle notches that give the mark character without decoration. The palette was kept near-neutral: deep earth tones for print, pure black-on-white for environmental applications.`,
     outcome: `A fully deployed identity across every brand surface — from the letterhead and envelopes in the tan/kraft stationery suite, to a dimensional outdoor monument sign with an illuminated logo, to the app splash screen and mobile digital experience. Every touchpoint carries the same measured confidence.`,
+    driveLink: 'https://drive.google.com/drive/folders/1mvrlO4ZuhwY0ighoYp7vnQDqeD1ERBtD?usp=drive_link',
     galleryOverride: `<div class="proj-img proj-full">
             <img src="Images/gate-1.jpg" alt="البوابة العقارية — Stationery" loading="lazy" decoding="async">
         </div>
