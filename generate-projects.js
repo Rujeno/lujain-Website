@@ -144,13 +144,19 @@ const projects = [
   },
   {
     slug: 'qemmah', num: '14',
-    title: 'قمة', titleEn: 'Qemmah', category: 'Brand Identity',
-    img: 'Images/Qemmah.png', year: '2024',
-    summaryAr: 'هوية علامة تجارية طموحة تعكس التميز والتطلع للقمة — تصاعد بصري محسوب، لا ثقل ولا غلو، فقط ثقة تُقرأ في كل تفصيل.',
-    deliverables: ['Logo Design', 'Brand System', 'Brand Guidelines', 'Stationery', 'Digital Templates'],
-    brief: `Qemmah — meaning "peak" in Arabic — needed an identity that matched its name. The brand aspires to represent excellence and the drive to reach the highest possible standard in everything it does. The challenge: communicate that aspiration without falling into the visual clichés of "premium" branding.`,
-    approach: `We designed upward. The visual language uses proportion and negative space to create a sense of elevation — nothing heavy, nothing grounded. The mark was refined through many iterations until it had the confidence that the name demands. The palette is restrained, the typography exacting.`,
-    outcome: `Full brand identity system: primary mark and logo lockups, color and typography guidelines, stationery and business card design, digital asset templates, and a brand guidelines document. Qemmah launched with a visual identity that lives up to the ambition of its name.`
+    title: 'قمة · Qemmah', titleEn: 'Qemmah', category: 'Logo Design · Brand Identity',
+    img: 'Images/qemmah-1.jpg', year: '2024',
+    summaryAr: 'تصميم شعار قمة Qemmah — علامة تجمع بين خريطة منطقة تبوك وحرف Q بأسلوب بصري أنيق، تعكس الانتماء المحلي والتطلع للتميز.',
+    deliverables: ['Logo Design', 'Brand Mark', 'App Icon', 'Digital Mockups', 'Color & Typography System'],
+    brief: `Qemmah needed a logo that captured both a sense of place and an aspiration for excellence. The brand is rooted in Tabuk — a region in northwestern Saudi Arabia — and needed a mark that could function as an icon across digital and print surfaces while communicating the brand's core idea of reaching the peak.`,
+    approach: `The mark fuses two ideas: the silhouette of Tabuk's geographic shape — immediately recognizable to a local audience — placed within a circular Q letterform. The circle is open at the base, allowing the map to sit within the curve as if cradled by the letter. The result reads as both Q and a contained place symbol simultaneously. The palette stays minimal: near-black for the wordmark, a warm taupe for the map element, giving the identity warmth without ornamentation.`,
+    outcome: `A distinctive logomark that works at every scale — from app icon to laptop screen to phone wallpaper. The final deliverable included primary and reversed versions, digital mockup files, and usage guidelines for the complete Qemmah brand system.`,
+    galleryOverride: `<div class="proj-img proj-full">
+            <img src="Images/qemmah-1.jpg" alt="Qemmah — Logo Mockup on iPhones" loading="lazy" decoding="async">
+        </div>
+        <div class="proj-img proj-full">
+            <img src="Images/qemmah-2.jpg" alt="Qemmah — Logo Mockup on MacBook" loading="lazy" decoding="async">
+        </div>`
   },
   {
     slug: 'emdad', num: '15',
