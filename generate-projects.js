@@ -243,6 +243,25 @@ const projects = [
                 <img src="Images/perfume-ai-3.jpg" alt="تصاميم العطور — Forest" loading="lazy" decoding="async">
             </div>
         </div>`
+  },
+  {
+    slug: 'housing', num: '21',
+    title: 'برنامج الإسكان', titleEn: 'Housing Program', category: 'Print Design · Government',
+    img: 'Images/housing-1.jpg', year: '2024',
+    summaryAr: 'تصميم مطوية ونموذج تقرير رسمي لبرنامج الإسكان ضمن رؤية 2030 — مواد مطبوعة تُحول بيانات السياسة السكنية إلى تجربة بصرية مقنعة ومهنية.',
+    deliverables: ['Tri-fold Brochure Design', 'Report Template', 'Print Production Files', 'Government Collateral'],
+    brief: `The Housing Program — a key initiative under Saudi Vision 2030 — needed print communications that could explain a complex national housing policy in a clear, credible, and visually compelling way. The materials had to carry the weight of a government program while remaining accessible to ordinary citizens.`,
+    approach: `The design system draws from the program's established identity: Vision 2030 co-branding, a structured blue palette that signals authority and trust, and layout grids built for information density without sacrificing readability. The tri-fold brochure was designed as a citizen-facing narrative — walking through the program's journey from 2016 to 2030 with a timeline that makes the vision tangible. The report template gave internal teams a professional, on-brand format for regular progress documentation.`,
+    outcome: `Two production-ready print pieces: a tri-fold brochure presenting the Housing Program's vision and milestones, and a reusable report template for ongoing documentation — both fully aligned with government identity standards and Vision 2030 branding requirements.`,
+    driveLink: 'https://drive.google.com/file/d/1zhdJVqVq9G2g_W5eQFrL_IlflMsZPjtw/view?usp=sharing',
+    galleryOverride: `<div class="proj-img proj-full">
+            <img src="Images/housing-1.jpg" alt="برنامج الإسكان — Brochure" loading="lazy" decoding="async">
+        </div>
+        <div class="proj-img-pair">
+            <div class="proj-img">
+                <img src="Images/housing-2.jpg" alt="برنامج الإسكان — Report Template" loading="lazy" decoding="async">
+            </div>
+        </div>`
   }
 ];
 
