@@ -200,16 +200,6 @@ a { color: inherit; text-decoration: none; }
     object-position: top center;
 }
 
-.hero-img-wrap::before {
-    content: '';
-    position: absolute;
-    top: -14px;
-    right: -14px;
-    bottom: 14px;
-    left: 14px;
-    border: 1px solid var(--border);
-    z-index: -1;
-}
 
 .hero-contact {
     margin-top: 3.5rem;

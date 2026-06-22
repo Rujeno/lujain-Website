@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lujain Alshamrani — Graphic Designer</title>
     <meta name="description" content="Graphic designer based in Riyadh, specializing in brand identity, visual systems, and creative direction.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -45,7 +47,10 @@
             </div>
 
             <div class="hero-img-wrap fade-in-2">
-                <img src="Images/lujain.png" alt="Lujain Alshamrani">
+                <picture>
+                    <source srcset="Images/lujain.webp" type="image/webp">
+                    <img src="Images/lujain-opt.png" alt="Lujain Alshamrani" fetchpriority="high" decoding="async">
+                </picture>
             </div>
         </section>
 
@@ -155,7 +160,10 @@
                 <div class="home-about-grid">
 
                     <div class="home-about-img-wrap">
-                        <img src="Images/lujain1.png" alt="Lujain Alshamrani">
+                        <picture>
+                            <source srcset="Images/lujain1.webp" type="image/webp">
+                            <img src="Images/lujain1-opt.png" alt="Lujain Alshamrani" loading="lazy" decoding="async">
+                        </picture>
                     </div>
 
                     <div class="home-about-content">
