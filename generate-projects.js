@@ -344,13 +344,10 @@ function makeGallery(p) {
 function makeProjectPage(p, projects) {
   const nextIdx = (projects.indexOf(p) + 1) % projects.length;
   const next = projects[nextIdx];
-  const driveSection = p.driveLink ? `
-        <div class="proj-drive fade-in-3">
-            <span class="proj-drive-label">لمزيد من التفاصيل</span>
-            <a href="${p.driveLink}" class="proj-drive-link" target="_blank" rel="noopener noreferrer">
-                عرض المشروع كاملاً &rarr;
-            </a>
-        </div>` : '';
+  const driveBtn = p.driveLink ? `
+                    <a href="${p.driveLink}" class="proj-drive-inline" target="_blank" rel="noopener noreferrer">
+                        عرض المشروع كاملاً &rarr;
+                    </a>` : '';
 
   return `<!DOCTYPE html>
 <html lang="ar" dir="ltr">
@@ -383,48 +380,41 @@ function makeProjectPage(p, projects) {
 
             <a href="mydesignes.html" class="back-link">كل الأعمال</a>
 
-            <div class="project-hero fade-in">
-                <img src="${p.img}" alt="${p.title}">
-            </div>
-
-            <div class="proj-spread fade-in">
-                <div class="proj-left">
+            <div class="proj-hero-split fade-in">
+                <div class="proj-hero-img">
+                    <img src="${p.img}" alt="${p.title}">
+                </div>
+                <div class="proj-hero-info">
                     <div class="proj-big-num">${p.num}</div>
-                    <aside class="project-meta">
-                        <div class="meta-item">
-                            <div class="meta-label">العميل</div>
-                            <div class="meta-value">${p.titleEn}</div>
-                        </div>
+                    <h1 class="proj-title-ar">${p.title}</h1>
+                    <p class="proj-title-en">${p.titleEn}</p>
+                    <p class="proj-summary-ar ar">${p.summaryAr}</p>
+                    <div class="proj-meta-grid">
                         <div class="meta-item">
                             <div class="meta-label">التصنيف</div>
                             <div class="meta-value">${p.category}</div>
                         </div>
                         <div class="meta-item">
                             <div class="meta-label">المخرجات</div>
-                            <div class="meta-value">${p.deliverables.join('<br>')}</div>
+                            <div class="meta-value">${p.deliverables.join(' · ')}</div>
                         </div>
                         <div class="meta-item">
                             <div class="meta-label">السنة</div>
                             <div class="meta-value">${p.year}</div>
                         </div>
-                    </aside>
-                </div>
-                <div class="proj-right">
-                    <h1 class="proj-title-ar">${p.title}</h1>
-                    <p class="proj-title-en">${p.titleEn}</p>
-                    <p class="proj-summary-ar ar">${p.summaryAr}</p>
-                    <div class="proj-story">
-                        <p>${p.brief}</p>
-                        <p>${p.approach}</p>
-                        <p>${p.outcome}</p>
-                    </div>
+                    </div>${driveBtn}
                 </div>
             </div>
 
-            <div class="proj-images fade-in-2">
+            <div class="proj-story-section fade-in-2">
+                <p>${p.brief}</p>
+                <p>${p.approach}</p>
+                <p>${p.outcome}</p>
+            </div>
+
+            <div class="proj-images fade-in-3">
                 ${makeGallery(p)}
             </div>
-            ${driveSection}
 
             <a href="project-${next.slug}.html" class="next-project">
                 <div>
