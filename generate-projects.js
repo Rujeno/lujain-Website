@@ -4,7 +4,7 @@ const projects = [
   {
     slug: 'zid', num: '01',
     title: 'حدث زد', titleEn: 'Zid Event', category: 'Event Branding',
-    img: 'Images/zid.jpg', year: '2024',
+    img: 'Images/zid.webp', year: '2024',
     summaryAr: 'هوية بصرية متكاملة لحدث منصة زد السنوي — تجمع بين روح الاحتفال وهوية العلامة التجارية في منظومة بصرية واحدة، من الشعار وصولاً إلى اللافتات المسرحية والمواد الرقمية.',
     deliverables: ['Event Logo', 'Stage Graphics', 'Social Media Kit', 'Print Collateral', 'Digital Invitations'],
     brief: `Zid — one of Saudi Arabia's leading e-commerce platforms — needed a full visual identity for their flagship annual event. The ask was clear: create something that feels celebratory and high-energy while still fitting within Zid's established brand world. The event had to stand out, but not look like a stranger to the brand.`,
@@ -14,7 +14,7 @@ const projects = [
   {
     slug: 'lacorvet', num: '02',
     title: 'LA-CORVET', titleEn: 'LA-CORVET', category: 'Brand Identity · Fashion',
-    img: 'Images/LACORVET.png', year: '2024',
+    img: 'Images/LACORVET.webp', year: '2024',
     summaryAr: 'هوية علامة أزياء فاخرة تُبنى من الصفر — حروف محكمة، لوحة ألوان مكبوحة، وثقة تُقرأ في كل حجم وعلى كل سطح.',
     deliverables: ['Logo Design', 'Brand Guidelines', 'Typography System', 'Color Palette', 'Brand Collateral'],
     brief: `LA-CORVET was entering a competitive fashion market with no visual identity and a need to establish themselves as a premium player from day one. The challenge: create a brand that reads as luxury without looking like a copy of European labels — something with its own character and confidence.`,
@@ -24,7 +24,7 @@ const projects = [
   {
     slug: 'spert', num: '03',
     title: 'Spert Cosmetics', titleEn: 'Spert Cosmetics', category: 'Brand Identity · Cosmetics',
-    img: 'Images/Spert.png', year: '2024',
+    img: 'Images/Spert.webp', year: '2024',
     summaryAr: 'هوية علامة تجميل محلية صُممت لتنافس الأسماء العالمية بثقة — من تصميم العبوة إلى قوالب وسائل التواصل الاجتماعي، منظومة بصرية متكاملة ومتسقة.',
     deliverables: ['Logo Design', 'Packaging Design', 'Social Media Templates', 'Brand Guidelines', 'Label Design'],
     brief: `Spert was launching as a new local cosmetics brand in a market crowded with international names. They needed a brand that could hold its own on shelf against established competitors — one that communicated quality, care, and femininity without looking generic.`,
@@ -34,7 +34,7 @@ const projects = [
   {
     slug: 'rotora', num: '04',
     title: 'Rotora', titleEn: 'Rotora', category: 'Brand Identity',
-    img: 'Images/rotora.png', year: '2024',
+    img: 'Images/rotora.webp', year: '2024',
     summaryAr: 'منظومة هوية بصرية مرنة وقوية تعمل بنفس الاتساق على بطاقة العمل وكسوة المركبة والمنصة الرقمية — صُممت للنمو مع الشركة.',
     deliverables: ['Logo Design', 'Brand System', 'Vehicle Branding', 'Business Stationery', 'Brand Guidelines'],
     brief: `Rotora needed an identity built to grow with them — one that could move from a business card to a vehicle wrap to a digital platform without losing its integrity. The brand needed to convey precision, momentum, and professionalism in equal measure.`,
@@ -44,7 +44,7 @@ const projects = [
   {
     slug: 'art', num: '05',
     title: 'روائع الفن', titleEn: "Rawae'i Al-Fan", category: 'Exhibition Design',
-    img: 'Images/Art.png', year: '2024',
+    img: 'Images/Art.webp', year: '2024',
     summaryAr: 'هوية فضاء فني تدمج الموروث البصري العربي مع الرصانة المعاصرة — إطار للعمل الفني لا يزاحمه، بل يُعلي من شأنه.',
     deliverables: ['Exhibition Identity', 'Signage System', 'Print Collateral', 'Social Media Kit', 'Catalog Design'],
     brief: `An art space showcasing masterworks needed an identity that felt worthy of what it housed — one that communicated cultural value and curatorial seriousness without intimidating its audience. The design had to honor heritage while feeling alive and contemporary.`,
@@ -54,28 +54,28 @@ const projects = [
   {
     slug: 'saudeels', num: '06',
     title: 'Saudeels', titleEn: 'Saudeels · سعوديلز', category: 'Food Truck Branding',
-    img: 'Images/Saudeels.png', year: '2024',
+    img: 'Images/Saudeels.webp', year: '2024',
     summaryAr: 'هوية كاملة لعربة نودلز سعودية — شعار يجمع الثقافتين، ولوح ألوان جريء، ومنظومة بصرية تمتد من الشاحنة والتغليف حتى السوشال ميديا.',
     deliverables: ['Logo Design', 'Brand Guidelines', 'Food Truck Wrap', 'Packaging & Stickers', 'Uniforms', 'Poster Design', 'Social Media Kit', 'Menu Design', 'Brochure'],
     brief: `Saudeels (سعوديلز) is a Saudi noodles food truck concept that needed a brand as bold as its food. The challenge: merge local Saudi identity with the energy of Asian street food — in a visual language customers would recognize and remember from across a parking lot.`,
     approach: `The mark pairs a stylized noodle bowl and chopsticks into a single icon that reads instantly at any size — from an app icon to a full food truck wrap. A vivid palette of deep green, indigo blue, and vermillion orange signals warmth and appetite. Typography spans Arabic and English with equal confidence, and brand patterns built from the logo elements give every touchpoint its own personality.`,
     outcome: `A fully deployed identity across every surface: the food truck exterior, noodle boxes, paper bags, chopstick sleeves, stickers, staff uniforms, posters, social media templates, menu, and a printed brochure. Every piece reinforces the same bold, appetite-forward character.`,
     galleryOverride: `<div class="proj-img proj-full">
-            <img src="Images/saudeels-2.jpg" alt="Saudeels — Food Truck Wrap" loading="lazy" decoding="async">
+            <img src="Images/saudeels-2.webp" alt="Saudeels — Food Truck Wrap" loading="lazy" decoding="async">
         </div>
         <div class="proj-img-pair">
             <div class="proj-img">
-                <img src="Images/saudeels-5.jpg" alt="Saudeels — Poster Design" loading="lazy" decoding="async">
+                <img src="Images/saudeels-5.webp" alt="Saudeels — Poster Design" loading="lazy" decoding="async">
             </div>
             <div class="proj-img">
-                <img src="Images/saudeels-6.jpg" alt="Saudeels — Social Media Posts" loading="lazy" decoding="async">
+                <img src="Images/saudeels-6.webp" alt="Saudeels — Social Media Posts" loading="lazy" decoding="async">
             </div>
         </div>`
   },
   {
     slug: 'perk', num: '07',
     title: 'Perk Cafe', titleEn: 'Perk Cafe', category: 'Cafe Branding',
-    img: 'Images/perk.png', year: '2024',
+    img: 'Images/perk.webp', year: '2024',
     summaryAr: 'هوية مقهى متكاملة تُجسّد الدفء والتخصصية في كل نقطة تواصل مع الزبون — تُحسّ بها قبل أن تتذوق أول رشفة.',
     deliverables: ['Logo Design', 'Brand Guidelines', 'Packaging Design', 'Social Media Kit', 'Signage'],
     brief: `Perk is a specialty coffee shop with a focus on quality and experience. They came in with a strong vision but no visual identity — just a name and a location. The challenge was translating that vision into a brand that could carry the weight of the experience they were building.`,
@@ -85,7 +85,7 @@ const projects = [
   {
     slug: 'dayin', num: '08',
     title: 'DayIn Mini Market', titleEn: 'DayIn Mini Market', category: 'Retail Branding',
-    img: 'Images/DayIn.png', year: '2024',
+    img: 'Images/DayIn.webp', year: '2024',
     summaryAr: 'هوية محل تجزئة بشرية ومُقاربة تُقرأ من على بُعد بوضوح — على الكيس أو على الواجهة، دفء يُشعر أنه كان هنا دائماً.',
     deliverables: ['Logo Design', 'Signage System', 'Packaging Templates', 'Brand Guidelines', 'Point-of-Sale Design'],
     brief: `DayIn wanted to feel like the neighborhood market everyone loves — the one that's been there forever, that you trust without thinking about it. They needed a brand that communicated friendliness and freshness while being immediately recognizable at street level.`,
@@ -95,7 +95,7 @@ const projects = [
   {
     slug: 'baker', num: '09',
     title: 'Baker Bakery', titleEn: 'Baker Bakery', category: 'Bakery Branding',
-    img: 'Images/baker.png', year: '2024',
+    img: 'Images/baker.webp', year: '2024',
     summaryAr: 'هوية مخبز تُعبّر عن الحرفية والجودة الحقيقية — ملمس وحرارة في كل تفصيل، من الكيس إلى بطاقة المقهى.',
     deliverables: ['Logo Design', 'Packaging Design', 'Brand Guidelines', 'Stationery', 'Social Media Templates'],
     brief: `Baker Bakery wanted an identity that communicated one thing above all else: craft. They bake with intention, they use quality ingredients, and they wanted their branding to say that before a customer takes a single bite. The challenge was finding the visual language for warmth and artisanship without cliché.`,
@@ -105,7 +105,7 @@ const projects = [
   {
     slug: 'amad', num: '10',
     title: 'AMAD Group', titleEn: 'AMAD Group', category: 'Corporate Identity',
-    img: 'Images/amad.png', year: '2024',
+    img: 'Images/amad.webp', year: '2024',
     summaryAr: 'هوية مؤسسية لمجموعة متعددة القطاعات تُوحّد أعمالها المتنوعة تحت علامة واحدة — قوة تقودها، ومرونة تستوعب النمو.',
     deliverables: ['Corporate Logo', 'Brand System', 'Stationery Suite', 'Brand Guidelines', 'Document Templates'],
     brief: `AMAD Group operates across multiple business sectors and needed a single corporate identity that could give them a unified voice — one strong enough to lead the group while flexible enough to accommodate sub-brands. The design had to communicate scale, reliability, and ambition.`,
@@ -115,7 +115,7 @@ const projects = [
   {
     slug: 'alshifa', num: '11',
     title: 'الشفاء', titleEn: 'Alshifa', category: 'Healthcare Branding',
-    img: 'Images/alshifa.png', year: '2024',
+    img: 'Images/alshifa.webp', year: '2024',
     summaryAr: 'هوية رعاية صحية تبعث على الاطمئنان والثقة من أول نظرة — هندسة ناعمة وألوان مُهدِّئة تُشعر المريض بالأمان قبل أن يتكلم أحد.',
     deliverables: ['Logo Design', 'Brand Guidelines', 'Stationery', 'Signage System', 'Digital Templates'],
     brief: `Alshifa needed a healthcare brand built on trust. In the medical sector, design decisions carry weight — patients make inferences about the quality of care from the quality of what they see. The challenge was creating something that felt genuinely caring, clear, and credible without being clinical or cold.`,
@@ -125,7 +125,7 @@ const projects = [
   {
     slug: 'mazadak', num: '12',
     title: 'مزادك', titleEn: 'Mazadak Event', category: 'Event Design',
-    img: 'Images/mazadak.png', year: '2024',
+    img: 'Images/mazadak.webp', year: '2024',
     summaryAr: 'هوية حدث مزادات مصممة لبناء التشويق وتحريك الجمهور — نظام بصري عالي التباين يعمل عبر وسائل التواصل الاجتماعي ويصل إلى المسرح.',
     deliverables: ['Event Identity', 'Campaign Graphics', 'Social Media Kit', 'Stage Design', 'Print Materials'],
     brief: `Mazadak's auction event needed to generate genuine excitement before a single bid was placed. The visual identity had to do the promotional work — building anticipation across social media, attracting registrations, and making the event feel like something worth showing up for.`,
@@ -135,7 +135,7 @@ const projects = [
   {
     slug: 'madain', num: '13',
     title: 'مدائن', titleEn: 'Madain', category: 'Heritage Branding',
-    img: 'Images/madain.png', year: '2024',
+    img: 'Images/madain.webp', year: '2024',
     summaryAr: 'هوية وجهة تراثية تحمل عمق التاريخ النبطي في الأحجار، وتُطل برؤية معاصرة على ما يمكن أن تكون عليه مدائن صالح غداً.',
     deliverables: ['Brand Identity', 'Logo Design', 'Brand Guidelines', 'Print Collateral', 'Digital Assets'],
     brief: `Madain is a region defined by extraordinary historical depth — one of the most significant archaeological destinations in Saudi Arabia. The brand needed to carry that weight: to feel rooted in something real and ancient while communicating a contemporary vision for what the destination could become.`,
@@ -161,7 +161,7 @@ const projects = [
   {
     slug: 'emdad', num: '15',
     title: 'إمداد · رمضان 2025', titleEn: 'Emdad Ramadan 2025', category: 'Event Branding · Seasonal Campaign',
-    img: 'Images/Emdad.png', year: '2025',
+    img: 'Images/Emdad.webp', year: '2025',
     summaryAr: 'هوية رمضان 2025 لإمداد الخبرات — منظومة بصرية احتفالية تمتد من الكيوبات التفاعلية إلى خلفيات المسرح واللوحات الإعلانية، بلوحة ألوان تجمع التراث والحداثة.',
     deliverables: ['Seasonal Brand System', 'Event Stage Design', 'Display Cube Branding', 'Outdoor Advertising', 'Environmental Design'],
     brief: `Emdad Al Khebrat needed a complete Ramadan 2025 campaign identity — a visual system that could carry the warmth of the holy month while staying true to the brand's bold, energetic character. The campaign had to work across physical environments: exhibition cubes, event stages, and outdoor street advertising.`,
@@ -169,13 +169,13 @@ const projects = [
     outcome: `A complete seasonal identity system deployed across: branded 3D display cubes with welcome and Ramadan greetings, a full event stage backdrop with gradient and pattern treatment, and an outdoor advertising suite including illuminated panels and street furniture posters — all production-ready for the 2025 Ramadan season.`,
     driveLink: 'https://drive.google.com/drive/folders/1HyNF41xXaVFjm7q61ITVOI6c4au0j75b?usp=sharing',
     galleryOverride: `<div class="proj-img proj-full">
-            <img src="Images/Emdad.png" alt="إمداد رمضان 2025 — هوية الحملة" loading="lazy" decoding="async">
+            <img src="Images/Emdad.webp" alt="إمداد رمضان 2025 — هوية الحملة" loading="lazy" decoding="async">
         </div>`
   },
   {
     slug: 'alatha', num: '16',
     title: 'العذا · Aladda', titleEn: 'Aladda Perfumes', category: 'Fragrance · Social Media Design',
-    img: 'Images/alatha.png', year: '2023',
+    img: 'Images/alatha.webp', year: '2023',
     summaryAr: 'تصاميم متجر عطور "العذا" — هوية بصرية متكاملة وبوسترات تسويقية إبداعية تُقدّم خطوط العطور المختلفة بأسلوب راقٍ يعكس شخصية العلامة.',
     deliverables: ['Brand Posters', 'Product Catalog Design', 'Social Media Templates', 'Hair Mist Line Design', 'Campaign Visuals'],
     brief: `Aladda Perfume is a Saudi fragrance brand offering a range of distinctive scents — from light and fresh to deep oud blends, including a hair mist collection. They needed marketing visuals that could present their full product catalog in a sophisticated, retail-ready format that would work across social media and in-store.`,
@@ -183,13 +183,13 @@ const projects = [
     outcome: `A full set of social media marketing posters covering the perfume collection (Nooq, Ghaim, Asseer, Jissar), the hero campaign visual, and the hair mist product line — each delivered as standalone pieces that also read as a unified campaign family.`,
     driveLink: 'https://drive.google.com/drive/folders/1eN9ZYbkzOzNWMtIXteWkbTZUeyaBGVdd?usp=sharing',
     galleryOverride: `<div class="proj-img proj-full">
-            <img src="Images/alatha.png" alt="العذا — Campaign Posters" loading="lazy" decoding="async">
+            <img src="Images/alatha.webp" alt="العذا — Campaign Posters" loading="lazy" decoding="async">
         </div>`
   },
   {
     slug: 'jood', num: '17',
     title: 'جود الأصيل', titleEn: 'Jood Al-Aseel', category: 'Food & Product Catalog Design',
-    img: 'Images/jood.png', year: '2024',
+    img: 'Images/jood.webp', year: '2024',
     summaryAr: 'تصميم مجلة منتجات غذائية لجود الأصيل — كتالوج احترافي يعرض المنتجات الطازجة والمشتريات الغذائية بأسلوب بصري شهي يقنع المشتري قبل أن يتذوق.',
     deliverables: ['Magazine Design', 'Product Catalog', 'Food Photography Layout', 'Print Production Files'],
     brief: `Jood Al-Aseel is a food supplier specializing in fresh produce, pickles, and ingredients for sandwiches and shawarma. They needed a product catalog magazine that could present their full range to restaurant and retail buyers — something that looked appetizing and professional, and made the product quality speak for itself on the page.`,
@@ -197,13 +197,13 @@ const projects = [
     outcome: `A professionally designed product catalog magazine for Jood Al-Aseel, covering their full product range across multiple categories — ready for print distribution to wholesale buyers, restaurants, and retail partners.`,
     driveLink: 'https://drive.google.com/file/d/1xdWbaNTo4qvc4Aiww_-i05A2c-10Dw6H/view?usp=sharing',
     galleryOverride: `<div class="proj-img proj-full">
-            <img src="Images/jood.png" alt="جود الأصيل — Product Catalog" loading="lazy" decoding="async">
+            <img src="Images/jood.webp" alt="جود الأصيل — Product Catalog" loading="lazy" decoding="async">
         </div>`
   },
   {
     slug: 'riyadh', num: '18',
     title: 'بنك الرياض', titleEn: 'Riyadh Bank', category: 'Environmental Design · Mural',
-    img: 'Images/riyadh.png', year: '2024',
+    img: 'Images/riyadh.webp', year: '2024',
     summaryAr: 'تصميم جدارية احتفالية لبنك الرياض — مزيج بصري يجمع بين أيقونات أفق الرياض ورسالة العيد بلوحة ألوان تعكس هوية البنك على مساحة معمارية واسعة.',
     deliverables: ['Mural Design', 'Environmental Branding', 'Large Format Print', 'Campaign Artwork'],
     brief: `Riyadh Bank needed a large-scale wall mural for an Eid campaign — a statement piece that would greet customers walking into a branch with celebration and civic pride. The design had to feel monumental but warm, institutional but welcoming, and unmistakably tied to Riyadh's identity.`,
@@ -211,13 +211,13 @@ const projects = [
     outcome: `A fully executed large-format mural design — production files prepared for direct print at architectural scale, installed in a Riyadh Bank branch as a permanent seasonal feature. The piece delivers brand presence and emotional warmth simultaneously.`,
     driveLink: 'https://drive.google.com/drive/folders/1PAusLdGpn6fWt4YVOQrj0iPSd4bsoGlK?usp=sharing',
     galleryOverride: `<div class="proj-img proj-full">
-            <img src="Images/riyadh.png" alt="بنك الرياض — Mural" loading="lazy" decoding="async">
+            <img src="Images/riyadh.webp" alt="بنك الرياض — Mural" loading="lazy" decoding="async">
         </div>`
   },
   {
     slug: 'gate', num: '19',
     title: 'البوابة العقارية', titleEn: 'Real Estate Gate', category: 'Real Estate Branding',
-    img: 'Images/gate.png', year: '2024',
+    img: 'Images/gate.webp', year: '2024',
     summaryAr: 'هوية منصة عقارية متكاملة تمتد من ورق الرسائل إلى اللافتات الخارجية والتطبيق — علامة موحّدة تُشعر بالمصداقية على كل سطح.',
     deliverables: ['Logo Design', 'Brand Identity', 'Stationery & Print', 'Outdoor Signage', 'Digital & App Assets'],
     brief: `A real estate platform targeting both individual buyers and institutional investors needed an identity that inspired trust from first contact. In a market where credibility is everything, the brand had to signal professionalism, transparency, and authority — while remaining approachable enough to welcome first-time buyers.`,
