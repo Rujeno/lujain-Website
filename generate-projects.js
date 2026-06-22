@@ -60,24 +60,16 @@ const projects = [
     brief: `Saudeels (سعوديلز) is a Saudi noodles food truck concept that needed a brand as bold as its food. The challenge: merge local Saudi identity with the energy of Asian street food — in a visual language customers would recognize and remember from across a parking lot.`,
     approach: `The mark pairs a stylized noodle bowl and chopsticks into a single icon that reads instantly at any size — from an app icon to a full food truck wrap. A vivid palette of deep green, indigo blue, and vermillion orange signals warmth and appetite. Typography spans Arabic and English with equal confidence, and brand patterns built from the logo elements give every touchpoint its own personality.`,
     outcome: `A fully deployed identity across every surface: the food truck exterior, noodle boxes, paper bags, chopstick sleeves, stickers, staff uniforms, posters, social media templates, menu, and a printed brochure. Every piece reinforces the same bold, appetite-forward character.`,
-    galleryOverride: `
-        <div class="gallery-item g-wide">
-            <img src="Images/saudeels-1.jpg" alt="Saudeels — Brand Identity Cover" loading="lazy" decoding="async">
-        </div>
-        <div class="gallery-item">
+    galleryOverride: `<div class="proj-img proj-full">
             <img src="Images/saudeels-2.jpg" alt="Saudeels — Food Truck Wrap" loading="lazy" decoding="async">
         </div>
-        <div class="gallery-item">
-            <img src="Images/saudeels-3.jpg" alt="Saudeels — Chopstick & Business Card" loading="lazy" decoding="async">
-        </div>
-        <div class="gallery-item">
-            <img src="Images/saudeels-4.jpg" alt="Saudeels — Noodles Box Packaging" loading="lazy" decoding="async">
-        </div>
-        <div class="gallery-item g-wide">
-            <img src="Images/saudeels-5.jpg" alt="Saudeels — Poster Design" loading="lazy" decoding="async">
-        </div>
-        <div class="gallery-item g-wide">
-            <img src="Images/saudeels-6.jpg" alt="Saudeels — Social Media Posts" loading="lazy" decoding="async">
+        <div class="proj-img-pair">
+            <div class="proj-img">
+                <img src="Images/saudeels-5.jpg" alt="Saudeels — Poster Design" loading="lazy" decoding="async">
+            </div>
+            <div class="proj-img">
+                <img src="Images/saudeels-6.jpg" alt="Saudeels — Social Media Posts" loading="lazy" decoding="async">
+            </div>
         </div>`
   },
   {
@@ -209,43 +201,37 @@ const projects = [
     brief: `A real estate platform targeting both individual buyers and institutional investors needed an identity that inspired trust from first contact. In a market where credibility is everything, the brand had to signal professionalism, transparency, and authority — while remaining approachable enough to welcome first-time buyers.`,
     approach: `The mark is a diamond-rotated grid of four interlocking blocks — each unit representing a property, together forming a gateway. The geometry is precise and modular, with subtle notches that give the mark character without decoration. The palette was kept near-neutral: deep earth tones for print, pure black-on-white for environmental applications.`,
     outcome: `A fully deployed identity across every brand surface — from the letterhead and envelopes in the tan/kraft stationery suite, to a dimensional outdoor monument sign with an illuminated logo, to the app splash screen and mobile digital experience. Every touchpoint carries the same measured confidence.`,
-    galleryOverride: `
-                <div class="gallery-item g-wide">
-                    <img src="Images/gate-1.jpg" alt="البوابة العقارية — Stationery" loading="lazy" decoding="async">
-                </div>
-                <div class="gallery-item">
-                    <img src="Images/gate-2.jpg" alt="البوابة العقارية — Outdoor Signage" loading="lazy" decoding="async">
-                </div>
-                <div class="gallery-item">
-                    <img src="Images/gate-3.jpg" alt="البوابة العقارية — Mobile App" loading="lazy" decoding="async">
-                </div>
-                <div class="gallery-item g-wide">
-                    <img src="Images/gate.png" alt="البوابة العقارية — Logo" loading="lazy" decoding="async">
-                </div>`
+    galleryOverride: `<div class="proj-img proj-full">
+            <img src="Images/gate-1.jpg" alt="البوابة العقارية — Stationery" loading="lazy" decoding="async">
+        </div>
+        <div class="proj-img-pair">
+            <div class="proj-img">
+                <img src="Images/gate-2.jpg" alt="البوابة العقارية — Outdoor Signage" loading="lazy" decoding="async">
+            </div>
+            <div class="proj-img">
+                <img src="Images/gate-3.jpg" alt="البوابة العقارية — Mobile App" loading="lazy" decoding="async">
+            </div>
+        </div>`
   }
 ];
 
 function makeGallery(p) {
   if (p.galleryOverride) return p.galleryOverride;
-  return `
-                <div class="gallery-item g-wide">
-                    <img src="${p.img}" alt="${p.title}" loading="lazy" decoding="async">
-                </div>
-                <div class="gallery-item">
-                    <img src="${p.img}" alt="${p.title}" loading="lazy" decoding="async">
-                </div>
-                <div class="gallery-item">
-                    <img src="${p.img}" alt="${p.title}" loading="lazy" decoding="async">
-                </div>
-                <div class="gallery-placeholder g-wide">
-                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="1"/><path d="M3 9l4-4 4 4 4-5 4 5"/><circle cx="8.5" cy="7.5" r="1.5"/></svg>
-                    <span>More images coming soon</span>
-                </div>`;
+  return `<div class="proj-img proj-full">
+        <img src="${p.img}" alt="${p.title}" loading="lazy" decoding="async">
+    </div>`;
 }
 
 function makeProjectPage(p, projects) {
   const nextIdx = (projects.indexOf(p) + 1) % projects.length;
   const next = projects[nextIdx];
+  const driveSection = p.driveLink ? `
+        <div class="proj-drive fade-in-3">
+            <span class="proj-drive-label">لمزيد من التفاصيل</span>
+            <a href="${p.driveLink}" class="proj-drive-link" target="_blank" rel="noopener noreferrer">
+                عرض المشروع كاملاً &rarr;
+            </a>
+        </div>` : '';
 
   return `<!DOCTYPE html>
 <html lang="ar" dir="ltr">
@@ -282,62 +268,44 @@ function makeProjectPage(p, projects) {
                 <img src="${p.img}" alt="${p.title}">
             </div>
 
-            <div class="project-header fade-in">
-                <div class="project-title-block">
-                    <div class="project-eyebrow-tag">${p.category}</div>
-                    <h1 class="project-main-title">${p.title}</h1>
-                    ${p.title !== p.titleEn ? `<p class="project-title-sub">${p.titleEn}</p>` : ''}
+            <div class="proj-spread fade-in">
+                <div class="proj-left">
+                    <div class="proj-big-num">${p.num}</div>
+                    <aside class="project-meta">
+                        <div class="meta-item">
+                            <div class="meta-label">العميل</div>
+                            <div class="meta-value">${p.titleEn}</div>
+                        </div>
+                        <div class="meta-item">
+                            <div class="meta-label">التصنيف</div>
+                            <div class="meta-value">${p.category}</div>
+                        </div>
+                        <div class="meta-item">
+                            <div class="meta-label">المخرجات</div>
+                            <div class="meta-value">${p.deliverables.join('<br>')}</div>
+                        </div>
+                        <div class="meta-item">
+                            <div class="meta-label">السنة</div>
+                            <div class="meta-value">${p.year}</div>
+                        </div>
+                    </aside>
                 </div>
-                <div class="project-number">${p.num}</div>
-            </div>
-
-            <div class="project-body fade-in-2">
-
-                <aside class="project-meta">
-                    <div class="meta-item">
-                        <div class="meta-label">العميل</div>
-                        <div class="meta-value">${p.titleEn}</div>
-                    </div>
-                    <div class="meta-item">
-                        <div class="meta-label">التصنيف</div>
-                        <div class="meta-value">${p.category.replace(' · ', '<br>')}</div>
-                    </div>
-                    <div class="meta-item">
-                        <div class="meta-label">المخرجات</div>
-                        <div class="meta-value">${p.deliverables.join('<br>')}</div>
-                    </div>
-                    <div class="meta-item">
-                        <div class="meta-label">السنة</div>
-                        <div class="meta-value">${p.year}</div>
-                    </div>
-                </aside>
-
-                <div class="project-story">
-                    <div class="story-block">
-                        <p class="story-text story-ar ar">${p.summaryAr}</p>
-                    </div>
-                    <div class="story-block">
-                        <div class="story-heading">The Brief</div>
-                        <p class="story-text">${p.brief}</p>
-                    </div>
-                    <div class="story-block">
-                        <div class="story-heading">The Approach</div>
-                        <p class="story-text">${p.approach}</p>
-                    </div>
-                    <div class="story-block">
-                        <div class="story-heading">The Outcome</div>
-                        <p class="story-text">${p.outcome}</p>
+                <div class="proj-right">
+                    <h1 class="proj-title-ar">${p.title}</h1>
+                    <p class="proj-title-en">${p.titleEn}</p>
+                    <p class="proj-summary-ar ar">${p.summaryAr}</p>
+                    <div class="proj-story">
+                        <p>${p.brief}</p>
+                        <p>${p.approach}</p>
+                        <p>${p.outcome}</p>
                     </div>
                 </div>
-
             </div>
 
-            <div class="gallery-section fade-in-3">
-                <div class="gallery-heading">معرض المشروع</div>
-                <div class="gallery-grid">
-                    ${makeGallery(p)}
-                </div>
+            <div class="proj-images fade-in-2">
+                ${makeGallery(p)}
             </div>
+            ${driveSection}
 
             <a href="project-${next.slug}.html" class="next-project">
                 <div>
