@@ -1008,7 +1008,7 @@ a { color: inherit; text-decoration: none; }
 }
 
 .work-item-img {
-    aspect-ratio: 3/2;
+    aspect-ratio: 3/4;
     overflow: hidden;
     background: #EDE8E2;
     margin-bottom: 1.1rem;
