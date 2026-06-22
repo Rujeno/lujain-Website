@@ -381,9 +381,6 @@ function makeProjectPage(p, projects) {
             <a href="mydesignes.html" class="back-link">كل الأعمال</a>
 
             <div class="proj-hero-split fade-in">
-                <div class="proj-hero-img">
-                    <img src="${p.img}" alt="${p.title}">
-                </div>
                 <div class="proj-hero-info">
                     <div class="proj-big-num">${p.num}</div>
                     <h1 class="proj-title-ar">${p.title}</h1>
@@ -403,6 +400,9 @@ function makeProjectPage(p, projects) {
                             <div class="meta-value">${p.year}</div>
                         </div>
                     </div>${driveBtn}
+                </div>
+                <div class="proj-hero-img">
+                    <img src="${p.img}" alt="${p.title}">
                 </div>
             </div>
 
