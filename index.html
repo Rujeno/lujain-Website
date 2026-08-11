@@ -1,259 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lujain Alshamrani — Graphic Designer</title>
-    <meta name="description" content="Graphic designer based in Riyadh, specializing in brand identity, visual systems, and creative direction.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b0d12">
+  <meta name="description" content="Lujain Alshamrani — IT Department Lead focused on IT governance, cybersecurity GRC, systems, infrastructure, and security assurance.">
+  <title>Lujain Alshamrani — IT Governance & Cybersecurity</title>
+  <link rel="stylesheet" href="career/styles.css">
+  <style>
+    .header-actions{justify-self:end;display:flex;align-items:center;gap:10px}.lang-toggle{border:1px solid rgba(11,13,18,.18);background:transparent;color:inherit;border-radius:999px;padding:11px 14px;font:inherit;font-size:12px;font-weight:850;letter-spacing:.08em;cursor:pointer;transition:.2s}.lang-toggle:hover{border-color:#0b0d12;transform:translateY(-2px)}html[dir="rtl"] body{font-family:"Segoe UI",Tahoma,Arial,sans-serif}html[dir="rtl"] .hero h1,html[dir="rtl"] .section-content h2,html[dir="rtl"] .contact h2{letter-spacing:-.035em}html[dir="rtl"] .experience-body li{padding:15px 24px 15px 0}html[dir="rtl"] .experience-body li:before{left:auto;right:0;transform:scaleX(-1)}html[dir="rtl"] .stat+.stat,html[dir="rtl"] .focus-grid article+article,html[dir="rtl"] .skill-group+.skill-group{border-left:0;border-right:1px solid var(--line)}html[dir="rtl"] .stat+.stat{padding-left:18px;padding-right:22px}html[dir="rtl"] .availability-card{right:auto;left:-28px;transform:rotate(2deg)}html[dir="rtl"] .contact-panel:after{right:auto;left:-80px}@media(max-width:1120px){html[dir="rtl"] .availability-card{left:-8px}}@media(max-width:820px){html[dir="rtl"] .availability-card{left:12px;right:auto}html[dir="rtl"] .focus-grid article+article,html[dir="rtl"] .skill-group+.skill-group{border-right:0;border-top:1px solid var(--line)}}@media(max-width:560px){.header-actions{gap:6px}.lang-toggle{padding:10px 11px}html[dir="rtl"] .availability-card{left:auto}}
+  </style>
 </head>
 <body>
+  <div class="noise" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="#top"><span class="brand-mark">LA</span><span class="brand-name">Lujain Alshamrani</span></a>
+    <nav class="nav">
+      <a href="#experience" data-t="navExp">Experience</a>
+      <a href="#projects" data-t="navProjects">Projects</a>
+      <a href="#skills" data-t="navSkills">Skills</a>
+      <a href="mydesignes.html" data-t="navCreative">Creative Portfolio</a>
+      <a href="#contact" data-t="navContact">Contact</a>
+    </nav>
+    <div class="header-actions"><button class="lang-toggle" id="langToggle" type="button">AR</button><a class="nav-cta" href="mailto:lujain.shumrani@gmail.com" data-t="talk">Let’s talk</a></div>
+  </header>
 
-    <!-- NAV -->
-    <header class="nav">
-        <a href="index.html" class="nav-brand">Lujain Alshamrani</a>
-        <nav>
-            <button class="nav-btn" id="navBtn" aria-label="Toggle menu">
-                <span></span><span></span><span></span>
-            </button>
-            <ul class="nav-menu" id="navMenu">
-                <li><a href="mydesignes.html">Work</a></li>
-                <li><a href="aboutme.html">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <main id="top">
+    <section class="hero section-shell">
+      <div class="hero-copy">
+        <p class="eyebrow" data-t="eyebrow">Riyadh, Saudi Arabia · IT / GRC / Cybersecurity</p>
+        <h1 id="heroTitle">Technology with <span class="accent-word">control.</span><br>Security with <span class="accent-word">context.</span></h1>
+        <p class="hero-intro" id="heroIntro">I’m <strong>Lujain Alshamrani</strong>, a Computer Science professional leading day-to-day IT operations while building a deeper specialization in IT governance, cybersecurity GRC, access control, and security assurance.</p>
+        <div class="hero-actions"><a class="button button-primary" href="#experience"><span data-t="explore">Explore my work</span><span>↘</span></a><a class="button button-secondary" href="mydesignes.html"><span data-t="creative">Creative portfolio</span><span>↗</span></a></div>
+        <div class="hero-stats">
+          <div class="stat"><span class="stat-number">IT</span><span class="stat-label" data-t="stat1">Operations & Systems</span></div>
+          <div class="stat"><span class="stat-number">GRC</span><span class="stat-label" data-t="stat2">Governance & Assurance</span></div>
+          <div class="stat"><span class="stat-number">CS</span><span class="stat-label" data-t="stat3">Computer Science</span></div>
+        </div>
+      </div>
+      <aside class="hero-visual"><div class="portrait-frame"><img src="Images/lujain.webp" alt="Lujain Alshamrani"><span class="portrait-index" data-t="profileIndex">01 / PROFILE</span></div><div class="availability-card"><span class="pulse"></span><div><p data-t="direction">Current direction</p><strong data-t="directionValue">Technical GRC · IT Governance · Security Assurance</strong></div></div></aside>
+    </section>
 
-    <main class="page">
+    <section class="marquee"><div class="marquee-track"><span data-t="m1">IT GOVERNANCE</span><i>✦</i><span data-t="m2">CYBERSECURITY GRC</span><i>✦</i><span data-t="m3">ACCESS CONTROL</span><i>✦</i><span data-t="m4">INFRASTRUCTURE</span><i>✦</i><span data-t="m5">SYSTEMS ANALYSIS</span><i>✦</i><span data-t="m6">NETWORKING</span><i>✦</i></div></section>
 
-        <!-- ① HERO -->
-        <section class="hero">
-            <div class="hero-text">
-                <div class="hero-label fade-in">Graphic Designer · Riyadh</div>
-                <h1 class="hero-name fade-in-2">
-                    Lujain<br>Alshamrani
-                </h1>
-                <p class="hero-desc fade-in-3">
-                    Creating visual identities that communicate clearly,
-                    connect emotionally, and stand the test of time.
-                    From brand strategy to final execution.
-                </p>
-                <div class="hero-actions fade-in-3">
-                    <a href="mydesignes.html" class="btn-primary">View Work &rarr;</a>
-                    <a href="#contact" class="btn-ghost">Get In Touch</a>
-                </div>
-            </div>
+    <section class="about section-shell split-section" id="about"><div class="section-kicker"><span>02</span><p data-t="profile">Profile</p></div><div class="section-content about-grid"><h2 data-t="aboutTitle">I bridge operations, systems, and governance.</h2><div class="about-copy"><p data-t="about1">My experience sits at the intersection of business needs and technical execution: administering core platforms, coordinating infrastructure and telecom services, managing access and technology assets, evaluating enterprise systems, and translating operational requirements into structured technology decisions.</p><p data-t="about2">I’m strengthening that foundation with a cybersecurity path focused on controls, risk, identity and access, Linux, networking, and practical security analysis — with the goal of working in technical GRC and security assurance roles that require both governance judgment and technical understanding.</p></div></div></section>
 
-            <div class="hero-img-wrap fade-in-2">
-                <picture>
-                    <source srcset="Images/lujain.webp" type="image/webp">
-                    <img src="Images/lujain-opt.webp" alt="Lujain Alshamrani" fetchpriority="high" decoding="async">
-                </picture>
-            </div>
-        </section>
+    <section class="experience section-shell split-section" id="experience"><div class="section-kicker"><span>03</span><p data-t="experience">Experience</p></div><div class="section-content"><div class="section-heading-row"><h2 data-t="expTitle">Selected professional experience</h2><p data-t="expSub">Technology operations with an expanding governance and security focus.</p></div><article class="experience-card"><div class="experience-meta"><span class="status-pill" data-t="current">CURRENT</span><span data-t="riyadh">Riyadh, Saudi Arabia</span></div><div class="experience-main"><div><h3 data-t="role">IT Department Lead</h3><p class="company" data-t="company">Madain Real Estate Development</p></div><div class="experience-body"><p data-t="expIntro">Lead and coordinate business-critical IT services across users, systems, access, connectivity, vendors, and technology initiatives.</p><ul><li data-t="e1">Administer Google Workspace users, groups, aliases, access, and domain-related services.</li><li data-t="e2">Coordinate telecom, fiber, SIP trunk, call-center, PBX, and service-migration activities.</li><li data-t="e3">Maintain IT asset and custody records across laptops, mobile devices, and corporate lines.</li><li data-t="e4">Evaluate ERP and enterprise system requirements, vendors, scope, support, and implementation considerations.</li><li data-t="e5">Support website, DNS, Cloudflare, WordPress, and other digital-service operations.</li><li data-t="e6">Translate operational issues into structured requirements, escalation paths, and follow-up actions.</li></ul></div></div></article><div class="focus-grid"><article><span class="focus-number">A</span><h3 data-t="f1t">Governance mindset</h3><p data-t="f1">Access, ownership, accountability, controls, approvals, documentation, and operational risk.</p></article><article><span class="focus-number">B</span><h3 data-t="f2t">Technical foundation</h3><p data-t="f2">Networking, Linux, DNS, identity, endpoints, telecom, systems administration, and troubleshooting.</p></article><article><span class="focus-number">C</span><h3 data-t="f3t">Business translation</h3><p data-t="f3">Requirements analysis, vendor coordination, stakeholder communication, and technology decision support.</p></article></div></div></section>
 
-        <!-- ② SELECTED WORK -->
-        <section class="home-work-section">
-            <div class="home-work-header container">
-                <div class="home-section-label">Selected Work</div>
-                <a href="mydesignes.html" class="home-work-all">View All 24 Projects &rarr;</a>
-            </div>
+    <section class="projects section-shell split-section" id="projects"><div class="section-kicker"><span>04</span><p data-t="projects">Projects</p></div><div class="section-content"><div class="section-heading-row"><h2 data-t="projectsTitle">Projects that show how I think</h2><p data-t="projectsSub">Not just tools — decisions, controls, systems, and outcomes.</p></div><div class="project-list"><article class="project-card featured"><div class="project-topline"><span>01</span><span data-t="p1type">IT GOVERNANCE / IAM</span></div><div class="project-body"><h3 data-t="p1t">Identity, Access & Workspace Administration</h3><p data-t="p1">Structured administration of users, groups, aliases, access, domains, and account governance within Google Workspace, with emphasis on ownership and controlled administrative access.</p><div class="tags"><span>Google Workspace</span><span>IAM</span><span>Access Control</span><span>Governance</span></div></div></article><article class="project-card"><div class="project-topline"><span>02</span><span data-t="p2type">INFRASTRUCTURE</span></div><div class="project-body"><h3 data-t="p2t">Telecom & Call-Center Service Migration</h3><p data-t="p2">Coordinated dependencies across connectivity, SIP services, PBX/call-center operations, service providers, migration timing, and business continuity considerations.</p><div class="tags"><span>SIP Trunk</span><span>PBX</span><span>Fiber</span><span>Vendor Management</span></div></div></article><article class="project-card"><div class="project-topline"><span>03</span><span data-t="p3type">SYSTEMS ANALYSIS</span></div><div class="project-body"><h3 data-t="p3t">ERP Requirements & Vendor Evaluation</h3><p data-t="p3">Compared enterprise solutions against cross-functional requirements, implementation scope, support terms, data migration, reporting needs, and operational fit.</p><div class="tags"><span>Odoo</span><span>ERP</span><span>Requirements</span><span>Risk & Fit</span></div></div></article><article class="project-card"><div class="project-topline"><span>04</span><span data-t="p4type">CYBERSECURITY LAB</span></div><div class="project-body"><h3 data-t="p4t">Linux & Security Foundations Lab</h3><p data-t="p4">Practical learning environment covering Linux file permissions, users and groups, ownership, networking concepts, ports, access control, and packet-level analysis using Wireshark.</p><div class="tags"><span>Linux</span><span>Wireshark</span><span>Networking</span><span>Security+</span></div></div></article></div></div></section>
 
-            <div class="home-projects-grid">
+    <section class="skills section-shell split-section" id="skills"><div class="section-kicker"><span>05</span><p data-t="capabilities">Capabilities</p></div><div class="section-content"><div class="section-heading-row"><h2 data-t="skillsTitle">Technical + governance toolkit</h2><p data-t="skillsSub">A practical mix of operations, systems, controls, and analysis.</p></div><div class="skill-columns"><div class="skill-group"><span class="skill-label" data-t="sg1">Governance & Security</span><ul><li data-t="s11">IT Governance</li><li data-t="s12">Access Control & IAM</li><li data-t="s13">Security Controls</li><li data-t="s14">Risk Assessment Foundations</li><li data-t="s15">Security Assurance</li><li data-t="s16">Asset Governance</li></ul></div><div class="skill-group"><span class="skill-label" data-t="sg2">Infrastructure & Systems</span><ul><li>Linux</li><li data-t="networking">Networking</li><li>DNS & Cloudflare</li><li>Google Workspace</li><li>SIP / PBX / Telecom</li><li>WordPress</li></ul></div><div class="skill-group"><span class="skill-label" data-t="sg3">Analysis & Delivery</span><ul><li data-t="s31">Systems Analysis</li><li data-t="s32">Requirements Gathering</li><li data-t="s33">Vendor Evaluation</li><li data-t="s34">Stakeholder Coordination</li><li data-t="s35">Documentation</li><li data-t="s36">Troubleshooting</li></ul></div></div><div class="cert-strip"><div><span data-t="cert">Certification</span><strong>CCNA</strong></div><div><span data-t="studying">Currently studying</span><strong>CompTIA Security+</strong></div><div><span data-t="education">Education</span><strong data-t="cs">Computer Science</strong></div></div></div></section>
 
-                <a href="project-gate.html" class="project-card">
-                    <div class="card-img-wrap">
-                        <img src="Images/gate.webp" alt="البوابة العقارية" loading="lazy" decoding="async">
-                        <div class="card-overlay"><span class="card-overlay-btn">View Project</span></div>
-                    </div>
-                    <div class="card-body">
-                        <div class="card-category">Real Estate Branding</div>
-                        <div class="card-rule"></div>
-                        <h2 class="card-title">البوابة العقارية</h2>
-                        <p class="card-desc">Full brand identity deployed across stationery, outdoor signage, and mobile — architecture at every scale.</p>
-                        <span class="card-link">View Project &rarr;</span>
-                    </div>
-                </a>
+    <section class="contact section-shell" id="contact"><div class="contact-panel"><p class="eyebrow" data-t="contactKicker">06 / Contact</p><h2 id="contactTitle">Interested in someone who understands both <span>controls</span> and <span>technology?</span></h2><p class="contact-copy" data-t="contactText">I’m building toward roles in Technical GRC, IT Governance, Security Assurance, and security-focused technology operations.</p><div class="contact-actions"><a class="button button-primary light" href="mailto:lujain.shumrani@gmail.com">lujain.shumrani@gmail.com <span>↗</span></a><a class="button button-secondary dark" href="https://github.com/Rujeno" target="_blank" rel="noreferrer">GitHub <span>↗</span></a></div></div></section>
+  </main>
 
-                <a href="project-lacorvet.html" class="project-card">
-                    <div class="card-img-wrap">
-                        <img src="Images/LACORVET.webp" alt="LA-CORVET" loading="lazy" decoding="async">
-                        <div class="card-overlay"><span class="card-overlay-btn">View Project</span></div>
-                    </div>
-                    <div class="card-body">
-                        <div class="card-category">Brand Identity · Fashion</div>
-                        <div class="card-rule"></div>
-                        <h2 class="card-title">LA-CORVET</h2>
-                        <p class="card-desc">Luxury visual language built from scratch — refined letterforms, restrained palette, confidence at every scale.</p>
-                        <span class="card-link">View Project &rarr;</span>
-                    </div>
-                </a>
+  <footer class="site-footer"><div><strong>Lujain Alshamrani</strong><span data-t="footer">IT Governance · Cybersecurity GRC · Systems</span></div><a href="#top" data-t="back">Back to top ↑</a></footer>
 
-                <a href="project-spert.html" class="project-card">
-                    <div class="card-img-wrap">
-                        <img src="Images/Spert.webp" alt="Spert Cosmetics" loading="lazy" decoding="async">
-                        <div class="card-overlay"><span class="card-overlay-btn">View Project</span></div>
-                    </div>
-                    <div class="card-body">
-                        <div class="card-category">Brand Identity · Cosmetics</div>
-                        <div class="card-rule"></div>
-                        <h2 class="card-title">Spert Cosmetics</h2>
-                        <p class="card-desc">A local cosmetics launch competing against international names — cohesive identity from packaging to social media.</p>
-                        <span class="card-link">View Project &rarr;</span>
-                    </div>
-                </a>
-
-                <a href="project-perk.html" class="project-card">
-                    <div class="card-img-wrap">
-                        <img src="Images/perk.webp" alt="Perk" loading="lazy" decoding="async">
-                        <div class="card-overlay"><span class="card-overlay-btn">View Project</span></div>
-                    </div>
-                    <div class="card-body">
-                        <div class="card-category">Brand Identity · Lifestyle</div>
-                        <div class="card-rule"></div>
-                        <h2 class="card-title">Perk</h2>
-                        <p class="card-desc">A lifestyle brand identity that lives between warmth and energy — built to translate across product, space, and digital.</p>
-                        <span class="card-link">View Project &rarr;</span>
-                    </div>
-                </a>
-
-                <a href="project-qemmah.html" class="project-card">
-                    <div class="card-img-wrap">
-                        <img src="Images/Qemmah.webp" alt="قمة Qemmah" loading="lazy" decoding="async">
-                        <div class="card-overlay"><span class="card-overlay-btn">View Project</span></div>
-                    </div>
-                    <div class="card-body">
-                        <div class="card-category">Brand Identity</div>
-                        <div class="card-rule"></div>
-                        <h2 class="card-title">قمة · Qemmah</h2>
-                        <p class="card-desc">A bold visual identity for a brand aspiring to the summit — mark design, typography, and a full identity system.</p>
-                        <span class="card-link">View Project &rarr;</span>
-                    </div>
-                </a>
-
-                <a href="project-art.html" class="project-card">
-                    <div class="card-img-wrap">
-                        <img src="Images/Art.webp" alt="روائع الفن" loading="lazy" decoding="async">
-                        <div class="card-overlay"><span class="card-overlay-btn">View Project</span></div>
-                    </div>
-                    <div class="card-body">
-                        <div class="card-category">Exhibition Design</div>
-                        <div class="card-rule"></div>
-                        <h2 class="card-title">روائع الفن</h2>
-                        <p class="card-desc">An art space identity merging classical Arabic tradition with contemporary restraint — the art remains the focus.</p>
-                        <span class="card-link">View Project &rarr;</span>
-                    </div>
-                </a>
-
-            </div>
-
-            <div class="home-work-footer container">
-                <a href="mydesignes.html" class="btn-primary">See All Projects &rarr;</a>
-            </div>
-        </section>
-
-        <!-- ③ ABOUT -->
-        <section class="home-about-section">
-            <div class="container">
-                <div class="home-about-grid">
-
-                    <div class="home-about-img-wrap">
-                        <picture>
-                            <source srcset="Images/lujain1.webp" type="image/webp">
-                            <img src="Images/lujain1-opt.webp" alt="Lujain Alshamrani" loading="lazy" decoding="async">
-                        </picture>
-                    </div>
-
-                    <div class="home-about-content">
-                        <div class="home-section-label">About Me</div>
-                        <h2 class="home-about-name">Lujain<br>Alshamrani</h2>
-                        <p class="home-about-role">Graphic Designer</p>
-
-                        <div class="home-about-bio">
-                            <p>
-                                Graphic designer based in Riyadh, specializing in brand identity,
-                                logo design, and visual communication. I work at the intersection
-                                of strategy and craft — understanding what a brand needs to say,
-                                then finding the most compelling way to say it.
-                            </p>
-                            <p>
-                                My work spans startups building their identity from scratch to
-                                established brands looking to evolve. Whether it's a single logo
-                                or a full visual system, I bring the same attention to detail
-                                and purpose to every project.
-                            </p>
-                        </div>
-
-                        <div class="home-services-row">
-                            <div class="home-service-pill">Strategy &amp; Positioning</div>
-                            <div class="home-service-pill">Brand Identity</div>
-                            <div class="home-service-pill">Logo Design</div>
-                            <div class="home-service-pill">Print &amp; Advertising</div>
-                            <div class="home-service-pill">Social Media Design</div>
-                        </div>
-
-                        <a href="aboutme.html" class="btn-primary">Full Profile &rarr;</a>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <!-- ④ DARK QUOTE STRIP -->
-        <section class="home-quote-strip">
-            <div class="container home-quote-inner">
-                <p class="home-quote-ar ar">"أنا لجين، مصممة شغوفة بصناعة صور وهوية تجعل العلامات التجارية تتحدث بلغة الناس."</p>
-                <p class="home-quote-en">"I am Lujain — a passionate designer dedicated to creating visuals and identities that make brands speak the language of people."</p>
-            </div>
-        </section>
-
-        <!-- ④ CONTACT -->
-        <section class="home-contact-section" id="contact">
-            <div class="container home-contact-inner">
-                <div class="home-contact-head">
-                    <p class="home-contact-label">Let's work together</p>
-                    <h2 class="home-contact-title">Get In Touch</h2>
-                </div>
-                <div class="home-contact-links">
-                    <a href="tel:+966540626039" class="home-contact-item">
-                        <span class="contact-label">Phone</span>
-                        <span class="contact-value">+966 54 062 6039</span>
-                    </a>
-                    <a href="mailto:lujain.shumrani@gmail.com" class="home-contact-item">
-                        <span class="contact-label">Email</span>
-                        <span class="contact-value">lujain.shumrani@gmail.com</span>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-    </main>
-
-    <!-- FOOTER -->
-    <footer class="site-footer">
-        <span class="footer-brand">Lujain Alshamrani</span>
-        <ul class="footer-links">
-            <li><a href="mydesignes.html">Work</a></li>
-            <li><a href="aboutme.html">About</a></li>
-        </ul>
-        <span class="footer-copy">&copy; 2025 All rights reserved</span>
-    </footer>
-
-    <script>
-        const btn = document.getElementById('navBtn');
-        const menu = document.getElementById('navMenu');
-        btn.addEventListener('click', () => {
-            btn.classList.toggle('open');
-            menu.classList.toggle('open');
-        });
-        menu.querySelectorAll('a').forEach(link => {
-            link.addEventListener('click', () => {
-                btn.classList.remove('open');
-                menu.classList.remove('open');
-            });
-        });
-    </script>
+  <script>
+    const T={
+      en:{navExp:'Experience',navProjects:'Projects',navSkills:'Skills',navCreative:'Creative Portfolio',navContact:'Contact',talk:'Let’s talk',eyebrow:'Riyadh, Saudi Arabia · IT / GRC / Cybersecurity',explore:'Explore my work',creative:'Creative portfolio',stat1:'Operations & Systems',stat2:'Governance & Assurance',stat3:'Computer Science',profileIndex:'01 / PROFILE',direction:'Current direction',directionValue:'Technical GRC · IT Governance · Security Assurance',m1:'IT GOVERNANCE',m2:'CYBERSECURITY GRC',m3:'ACCESS CONTROL',m4:'INFRASTRUCTURE',m5:'SYSTEMS ANALYSIS',m6:'NETWORKING',profile:'Profile',aboutTitle:'I bridge operations, systems, and governance.',about1:'My experience sits at the intersection of business needs and technical execution: administering core platforms, coordinating infrastructure and telecom services, managing access and technology assets, evaluating enterprise systems, and translating operational requirements into structured technology decisions.',about2:'I’m strengthening that foundation with a cybersecurity path focused on controls, risk, identity and access, Linux, networking, and practical security analysis — with the goal of working in technical GRC and security assurance roles that require both governance judgment and technical understanding.',experience:'Experience',expTitle:'Selected professional experience',expSub:'Technology operations with an expanding governance and security focus.',current:'CURRENT',riyadh:'Riyadh, Saudi Arabia',role:'IT Department Lead',company:'Madain Real Estate Development',expIntro:'Lead and coordinate business-critical IT services across users, systems, access, connectivity, vendors, and technology initiatives.',e1:'Administer Google Workspace users, groups, aliases, access, and domain-related services.',e2:'Coordinate telecom, fiber, SIP trunk, call-center, PBX, and service-migration activities.',e3:'Maintain IT asset and custody records across laptops, mobile devices, and corporate lines.',e4:'Evaluate ERP and enterprise system requirements, vendors, scope, support, and implementation considerations.',e5:'Support website, DNS, Cloudflare, WordPress, and other digital-service operations.',e6:'Translate operational issues into structured requirements, escalation paths, and follow-up actions.',f1t:'Governance mindset',f1:'Access, ownership, accountability, controls, approvals, documentation, and operational risk.',f2t:'Technical foundation',f2:'Networking, Linux, DNS, identity, endpoints, telecom, systems administration, and troubleshooting.',f3t:'Business translation',f3:'Requirements analysis, vendor coordination, stakeholder communication, and technology decision support.',projects:'Projects',projectsTitle:'Projects that show how I think',projectsSub:'Not just tools — decisions, controls, systems, and outcomes.',p1type:'IT GOVERNANCE / IAM',p1t:'Identity, Access & Workspace Administration',p1:'Structured administration of users, groups, aliases, access, domains, and account governance within Google Workspace, with emphasis on ownership and controlled administrative access.',p2type:'INFRASTRUCTURE',p2t:'Telecom & Call-Center Service Migration',p2:'Coordinated dependencies across connectivity, SIP services, PBX/call-center operations, service providers, migration timing, and business continuity considerations.',p3type:'SYSTEMS ANALYSIS',p3t:'ERP Requirements & Vendor Evaluation',p3:'Compared enterprise solutions against cross-functional requirements, implementation scope, support terms, data migration, reporting needs, and operational fit.',p4type:'CYBERSECURITY LAB',p4t:'Linux & Security Foundations Lab',p4:'Practical learning environment covering Linux file permissions, users and groups, ownership, networking concepts, ports, access control, and packet-level analysis using Wireshark.',capabilities:'Capabilities',skillsTitle:'Technical + governance toolkit',skillsSub:'A practical mix of operations, systems, controls, and analysis.',sg1:'Governance & Security',s11:'IT Governance',s12:'Access Control & IAM',s13:'Security Controls',s14:'Risk Assessment Foundations',s15:'Security Assurance',s16:'Asset Governance',sg2:'Infrastructure & Systems',networking:'Networking',sg3:'Analysis & Delivery',s31:'Systems Analysis',s32:'Requirements Gathering',s33:'Vendor Evaluation',s34:'Stakeholder Coordination',s35:'Documentation',s36:'Troubleshooting',cert:'Certification',studying:'Currently studying',education:'Education',cs:'Computer Science',contactKicker:'06 / Contact',contactText:'I’m building toward roles in Technical GRC, IT Governance, Security Assurance, and security-focused technology operations.',footer:'IT Governance · Cybersecurity GRC · Systems',back:'Back to top ↑'},
+      ar:{navExp:'الخبرة',navProjects:'المشاريع',navSkills:'المهارات',navCreative:'معرض التصميم',navContact:'التواصل',talk:'تواصل معي',eyebrow:'الرياض، المملكة العربية السعودية · تقنية المعلومات / GRC / الأمن السيبراني',explore:'استعرض خبرتي',creative:'معرض أعمال التصميم',stat1:'العمليات والأنظمة',stat2:'الحوكمة وضمان الأمن',stat3:'علوم الحاسب',profileIndex:'01 / الملف المهني',direction:'توجهي الحالي',directionValue:'Technical GRC · حوكمة تقنية المعلومات · ضمان الأمن',m1:'حوكمة تقنية المعلومات',m2:'الأمن السيبراني GRC',m3:'إدارة الصلاحيات',m4:'البنية التحتية',m5:'تحليل الأنظمة',m6:'الشبكات',profile:'نبذة',aboutTitle:'أربط بين التشغيل والأنظمة والحوكمة.',about1:'تتركز خبرتي في المنطقة التي تلتقي فيها احتياجات الأعمال بالتنفيذ التقني؛ من إدارة المنصات الأساسية وتنسيق خدمات البنية التحتية والاتصالات، إلى إدارة الصلاحيات والأصول التقنية، وتقييم الأنظمة المؤسسية، وتحويل المتطلبات التشغيلية إلى قرارات تقنية منظمة.',about2:'وأعمل على تعزيز هذه الخبرة بمسار في الأمن السيبراني يركز على الضوابط والمخاطر والهوية وإدارة الوصول وLinux والشبكات والتحليل الأمني العملي، بهدف التخصص في أدوار Technical GRC وضمان الأمن التي تتطلب فهمًا للحوكمة إلى جانب أساس تقني قوي.',experience:'الخبرة',expTitle:'خبرة مهنية مختارة',expSub:'تشغيل تقني مع تركيز متزايد على الحوكمة والأمن.',current:'حاليًا',riyadh:'الرياض، المملكة العربية السعودية',role:'قائدة قسم تقنية المعلومات',company:'مدائن للتطوير العقاري',expIntro:'قيادة وتنسيق خدمات تقنية المعلومات الحيوية للأعمال عبر المستخدمين والأنظمة والصلاحيات والاتصال والموردين والمبادرات التقنية.',e1:'إدارة مستخدمي Google Workspace والمجموعات والأسماء المستعارة والصلاحيات والخدمات المرتبطة بالنطاقات.',e2:'تنسيق خدمات الاتصالات والألياف وSIP Trunk ومركز الاتصال وPBX وأنشطة نقل الخدمات.',e3:'إدارة سجلات الأصول والعهد التقنية لأجهزة الحاسب والهواتف والخطوط المؤسسية.',e4:'تقييم متطلبات أنظمة ERP والأنظمة المؤسسية والموردين والنطاق والدعم واعتبارات التنفيذ.',e5:'دعم عمليات المواقع وDNS وCloudflare وWordPress والخدمات الرقمية الأخرى.',e6:'تحويل المشكلات التشغيلية إلى متطلبات منظمة ومسارات تصعيد وإجراءات متابعة واضحة.',f1t:'عقلية الحوكمة',f1:'الصلاحيات والملكية والمساءلة والضوابط والاعتمادات والتوثيق والمخاطر التشغيلية.',f2t:'أساس تقني',f2:'الشبكات وLinux وDNS والهوية والأجهزة الطرفية والاتصالات وإدارة الأنظمة واستكشاف الأعطال.',f3t:'ترجمة احتياجات الأعمال',f3:'تحليل المتطلبات وتنسيق الموردين والتواصل مع أصحاب المصلحة ودعم القرارات التقنية.',projects:'المشاريع',projectsTitle:'مشاريع توضّح طريقة تفكيري',projectsSub:'ليست مجرد أدوات؛ بل قرارات وضوابط وأنظمة ونتائج.',p1type:'حوكمة تقنية المعلومات / IAM',p1t:'إدارة الهوية والصلاحيات وGoogle Workspace',p1:'إدارة منظمة للمستخدمين والمجموعات والأسماء المستعارة والصلاحيات والنطاقات وحوكمة الحسابات داخل Google Workspace، مع التركيز على الملكية والتحكم في الصلاحيات الإدارية.',p2type:'البنية التحتية',p2t:'نقل خدمات الاتصالات ومركز الاتصال',p2:'تنسيق الاعتماديات بين الاتصال وخدمات SIP وPBX وعمليات مركز الاتصال ومزودي الخدمة وتوقيت النقل واعتبارات استمرارية الأعمال.',p3type:'تحليل الأنظمة',p3t:'تحليل متطلبات ERP وتقييم الموردين',p3:'مقارنة الحلول المؤسسية وفق متطلبات الإدارات ونطاق التنفيذ وشروط الدعم وترحيل البيانات واحتياجات التقارير والملاءمة التشغيلية.',p4type:'مختبر أمن سيبراني',p4t:'مختبر أساسيات Linux والأمن',p4:'بيئة تعلم عملية تشمل صلاحيات الملفات في Linux والمستخدمين والمجموعات والملكية ومفاهيم الشبكات والمنافذ وإدارة الوصول وتحليل الحزم باستخدام Wireshark.',capabilities:'المهارات',skillsTitle:'مزيج تقني وحوكمي',skillsSub:'خبرة عملية تجمع التشغيل والأنظمة والضوابط والتحليل.',sg1:'الحوكمة والأمن',s11:'حوكمة تقنية المعلومات',s12:'إدارة الصلاحيات وIAM',s13:'الضوابط الأمنية',s14:'أساسيات تقييم المخاطر',s15:'ضمان الأمن',s16:'حوكمة الأصول',sg2:'البنية التحتية والأنظمة',networking:'الشبكات',sg3:'التحليل والتنفيذ',s31:'تحليل الأنظمة',s32:'جمع المتطلبات',s33:'تقييم الموردين',s34:'تنسيق أصحاب المصلحة',s35:'التوثيق',s36:'استكشاف الأعطال',cert:'شهادة مهنية',studying:'أدرس حاليًا',education:'التعليم',cs:'علوم الحاسب',contactKicker:'06 / التواصل',contactText:'أبني مساري نحو أدوار Technical GRC وحوكمة تقنية المعلومات وضمان الأمن والعمليات التقنية ذات التركيز الأمني.',footer:'حوكمة تقنية المعلومات · الأمن السيبراني GRC · الأنظمة',back:'العودة للأعلى ↑'}
+    };
+    const toggle=document.getElementById('langToggle'),heroTitle=document.getElementById('heroTitle'),heroIntro=document.getElementById('heroIntro'),contactTitle=document.getElementById('contactTitle');
+    const htmlText={en:{heroTitle:'Technology with <span class="accent-word">control.</span><br>Security with <span class="accent-word">context.</span>',heroIntro:'I’m <strong>Lujain Alshamrani</strong>, a Computer Science professional leading day-to-day IT operations while building a deeper specialization in IT governance, cybersecurity GRC, access control, and security assurance.',contactTitle:'Interested in someone who understands both <span>controls</span> and <span>technology?</span>'},ar:{heroTitle:'تقنية بضوابط <span class="accent-word">واضحة.</span><br>وأمن بفهم <span class="accent-word">أعمق.</span>',heroIntro:'أنا <strong>لجين الشمراني</strong>، متخصصة في علوم الحاسب أقود أعمال تقنية المعلومات اليومية، وأطوّر تخصصي بصورة أعمق في حوكمة تقنية المعلومات، والأمن السيبراني GRC، وإدارة الصلاحيات، وضمان الأمن.',contactTitle:'تبحث عن شخص يفهم <span>الضوابط</span> و<span>التقنية</span> معًا؟'}};
+    function setLang(lang){document.documentElement.lang=lang;document.documentElement.dir=lang==='ar'?'rtl':'ltr';document.querySelectorAll('[data-t]').forEach(el=>{const k=el.dataset.t;if(T[lang][k])el.textContent=T[lang][k]});heroTitle.innerHTML=htmlText[lang].heroTitle;heroIntro.innerHTML=htmlText[lang].heroIntro;contactTitle.innerHTML=htmlText[lang].contactTitle;toggle.textContent=lang==='ar'?'EN':'AR';document.title=lang==='ar'?'لجين الشمراني — حوكمة تقنية المعلومات والأمن السيبراني':'Lujain Alshamrani — IT Governance & Cybersecurity';localStorage.setItem('siteLang',lang)}
+    toggle.addEventListener('click',()=>setLang(document.documentElement.lang==='ar'?'en':'ar'));setLang(localStorage.getItem('siteLang')||'en');
+  </script>
 </body>
 </html>
