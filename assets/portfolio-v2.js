@@ -94,3 +94,5 @@ addWhatsAppContact();
 updateCityscapeMetric();
 toggle.addEventListener('click',()=>setLang(lang==='en'?'ar':'en'));
 setLang(lang);
+
+// GitHub Pages redeploy trigger: 2026-08-11 11:29 Asia/Riyadh
