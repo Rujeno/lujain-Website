@@ -58,6 +58,28 @@ function addWhatsAppContact(){
   }
 }
 
+function updateCityscapeMetric(){
+  const label=[...document.querySelectorAll('.visual-label')].find(el=>el.textContent.trim().toUpperCase()==='CITYSCAPE RIYADH');
+  if(!label) return;
+
+  const project=label.closest('.project');
+  const mock=project?.querySelector('.mock');
+  if(mock && mock.children.length>=2){
+    mock.children[0].textContent='≈ 5,000';
+    const metricLabel=mock.children[1];
+    metricLabel.setAttribute('data-en','INTEREST REGISTRATIONS');
+    metricLabel.setAttribute('data-ar','تسجيل اهتمام');
+    metricLabel.textContent=lang==='ar'?'تسجيل اهتمام':'INTEREST REGISTRATIONS';
+  }
+
+  const desc=project?.querySelector('.desc');
+  if(desc){
+    desc.setAttribute('data-en','Led booth operations, team responsibilities, visitor flow, stakeholder follow-up, and approximately 5,000 interest registrations, with lessons learned documented for future participation.');
+    desc.setAttribute('data-ar','قيادة عمليات الجناح وتوزيع مهام الفريق وتدفق الزوار والمتابعة مع أصحاب المصلحة، مع تسجيل حوالي 5,000 حالة اهتمام وتوثيق الدروس المستفادة للمشاركات القادمة.');
+    desc.textContent=lang==='ar'?desc.dataset.ar:desc.dataset.en;
+  }
+}
+
 function setLang(next){
   lang=next;
   localStorage.setItem('siteLang',lang);
@@ -69,5 +91,6 @@ function setLang(next){
 }
 
 addWhatsAppContact();
+updateCityscapeMetric();
 toggle.addEventListener('click',()=>setLang(lang==='en'?'ar':'en'));
 setLang(lang);
