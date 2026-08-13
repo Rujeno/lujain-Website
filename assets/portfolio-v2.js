@@ -16,44 +16,90 @@ const rich={
   }
 };
 
+function applyBurgundyIdentity(){
+  const style=document.createElement('style');
+  style.textContent=`
+    :root{--bg:#170708;--panel:#230b0d;--panel2:#2d1013;--text:#f8f1e8;--muted:#bca8a4;--line:#4a2427;--purple:#7a2028;--purple-soft:#d4ad72;--green:#d4ad72;--white:#fffaf2}
+    body{background:radial-gradient(circle at 18% 0%,rgba(122,32,40,.34),transparent 30%),radial-gradient(circle at 88% 18%,rgba(212,173,114,.07),transparent 25%),#170708}
+    .sidebar{background:linear-gradient(180deg,#2b0e11,#1d090b);border-color:#4a2427}
+    .section{background:linear-gradient(145deg,rgba(48,15,18,.96),rgba(28,8,10,.98));border-color:#4a2427}
+    .side-links a,.socials a,.lang,.metric,.about-card,.about-item,.skill-card,.credential,.experience{background:#2b0e11;border-color:#4a2427}
+    .side-note{background:rgba(212,173,114,.07);border-color:rgba(212,173,114,.22);color:#e2c18e}
+    .hero:after{border-color:rgba(212,173,114,.09)}
+    .btn-primary,.contact-links a:first-child{background:#7a2028;border-color:#9b3942}
+    .hero h1 span,.skill-card>span,.project-meta .project-status,.role{color:#d4ad72}
+    .status{background:rgba(212,173,114,.08);border-color:rgba(212,173,114,.24);color:#d4ad72}
+    ::selection{background:#7a2028;color:#fff}
+
+    .projects{display:flex;flex-direction:column;gap:18px}
+    .project{display:grid;grid-template-columns:minmax(280px,.82fr) minmax(0,1.18fr);min-height:310px;background:linear-gradient(120deg,#2c0d10,#1e090b);border:1px solid #4a2427;border-radius:26px;overflow:hidden;box-shadow:0 20px 55px rgba(0,0,0,.16)}
+    .project:nth-child(even){grid-template-columns:minmax(0,1.18fr) minmax(280px,.82fr)}
+    .project:nth-child(even) .visual{order:2}
+    .project:hover{transform:translateY(-3px);border-color:#8e4b4f;box-shadow:0 24px 65px rgba(0,0,0,.24)}
+    .visual{height:auto;min-height:310px;background:radial-gradient(circle at 70% 20%,rgba(212,173,114,.12),transparent 26%),linear-gradient(145deg,#3a1115,#21090c);padding:24px}
+    .visual:before{border-color:rgba(212,173,114,.10)}
+    .visual-label{color:#d8bd93}
+    .mock{left:24px;right:24px;bottom:24px;background:rgba(31,8,11,.88);border-color:#684044;backdrop-filter:blur(8px)}
+    .chip.hot,.bar i{background:#8c2932}
+    .project-body{padding:34px;display:flex;flex-direction:column;justify-content:center}
+    .project h3{font-size:30px;max-width:760px}
+    .tags span{border-color:#563034;color:#cdbbb6;background:rgba(255,255,255,.02)}
+    @media(max-width:820px){.project,.project:nth-child(even){grid-template-columns:1fr}.project:nth-child(even) .visual{order:0}.visual{min-height:230px}.project-body{padding:24px}.project h3{font-size:24px}}
+  `;
+  document.head.appendChild(style);
+}
+
+function addCvAutomationProject(){
+  const projects=document.querySelector('.projects');
+  if(!projects || document.getElementById('cvAutomationProject')) return;
+  const article=document.createElement('article');
+  article.className='project';
+  article.id='cvAutomationProject';
+  article.innerHTML=`
+    <div class="visual">
+      <span class="visual-label">GMAIL / GOOGLE DRIVE / AUTOMATION</span>
+      <div class="mock">
+        <div class="term"><b>01</b> Gmail → detect CV / certificates<br><b>02</b> Classify → department & role<br><b>03</b> Drive → candidate folders<br><b>04</b> Hash → prevent duplicates</div>
+        <div class="chips" style="margin-top:12px"><span class="chip hot">APPS SCRIPT</span><span class="chip">GMAIL</span><span class="chip">DRIVE</span><span class="chip">AUTOMATION</span></div>
+      </div>
+    </div>
+    <div class="project-body">
+      <div class="project-meta"><span>09 · AUTOMATION / SYSTEMS</span><span class="project-status" data-en="BUILT" data-ar="تم بناؤه">BUILT</span></div>
+      <h3 data-en="Recruitment CV Email Automation" data-ar="أتمتة تنظيم السير الذاتية من البريد">Recruitment CV Email Automation</h3>
+      <p class="role" data-en="Process Automation / Google Apps Script" data-ar="أتمتة إجراءات / Google Apps Script">Process Automation / Google Apps Script</p>
+      <p class="desc" data-en="Built an automated recruitment workflow that processes incoming CV emails, identifies CV and certificate attachments, classifies candidates by department and role, organizes files into Google Drive candidate folders, and prevents duplicate storage using file hashes." data-ar="بناء سير عمل آلي للتوظيف يعالج رسائل السير الذاتية الواردة، ويتعرف على مرفقات السيرة والشهادات، ويصنف المرشحين حسب الإدارة والتخصص، وينظم الملفات داخل مجلدات المرشحين في Google Drive، مع منع التكرار باستخدام بصمة الملفات.">Built an automated recruitment workflow that processes incoming CV emails, identifies CV and certificate attachments, classifies candidates by department and role, organizes files into Google Drive candidate folders, and prevents duplicate storage using file hashes.</p>
+      <div class="tags"><span>Google Apps Script</span><span>Gmail</span><span>Google Drive</span><span>Automation</span><span>Classification</span><span>Duplicate Prevention</span></div>
+    </div>`;
+  projects.prepend(article);
+
+  const metric=document.querySelector('.hero-metrics .metric strong');
+  if(metric && /^\d+$/.test(metric.textContent.trim())) metric.textContent=String(Number(metric.textContent.trim())+1);
+}
+
 function addWhatsAppContact(){
   const whatsappUrl='https://wa.me/966540626039';
-
   const contact=document.getElementById('contact');
   if(contact){
     const info=contact.firstElementChild;
     const links=contact.querySelector('.contact-links');
-
     if(info && !info.querySelector('.contact-phone')){
       const phone=document.createElement('p');
       phone.className='contact-phone';
-      phone.style.cssText='margin-top:18px;display:flex;flex-wrap:wrap;align-items:center;gap:10px;color:#9c9ca6;font-size:12px;';
-      phone.innerHTML='<span data-en="Mobile / WhatsApp" data-ar="الجوال / واتساب">Mobile / WhatsApp</span><a href="tel:+966540626039" dir="ltr" style="color:#f7f7f8;font-size:14px;font-weight:800;text-decoration:none;">+966 54 062 6039</a>';
+      phone.style.cssText='margin-top:18px;display:flex;flex-wrap:wrap;align-items:center;gap:10px;color:#bca8a4;font-size:12px;';
+      phone.innerHTML='<span data-en="Mobile / WhatsApp" data-ar="الجوال / واتساب">Mobile / WhatsApp</span><a href="tel:+966540626039" dir="ltr" style="color:#f8f1e8;font-size:14px;font-weight:800;text-decoration:none;">+966 54 062 6039</a>';
       info.appendChild(phone);
     }
-
     if(links && !links.querySelector('[data-whatsapp]')){
       const wa=document.createElement('a');
-      wa.href=whatsappUrl;
-      wa.target='_blank';
-      wa.rel='noreferrer';
-      wa.dataset.whatsapp='true';
-      wa.style.cssText='background:#25D366;border-color:#25D366;color:#07130b;';
+      wa.href=whatsappUrl;wa.target='_blank';wa.rel='noreferrer';wa.dataset.whatsapp='true';
       wa.innerHTML='<span data-en="WhatsApp" data-ar="واتساب">WhatsApp</span> ↗';
       links.prepend(wa);
     }
   }
-
   const socials=document.querySelector('.socials');
   if(socials && !socials.querySelector('[data-whatsapp]')){
     const waSmall=document.createElement('a');
-    waSmall.href=whatsappUrl;
-    waSmall.target='_blank';
-    waSmall.rel='noreferrer';
-    waSmall.dataset.whatsapp='true';
-    waSmall.setAttribute('aria-label','WhatsApp');
-    waSmall.textContent='WA';
-    waSmall.style.cssText='background:#25D366;border-color:#25D366;color:#07130b;';
+    waSmall.href=whatsappUrl;waSmall.target='_blank';waSmall.rel='noreferrer';waSmall.dataset.whatsapp='true';waSmall.setAttribute('aria-label','WhatsApp');waSmall.textContent='WA';
     socials.prepend(waSmall);
   }
 }
@@ -61,17 +107,13 @@ function addWhatsAppContact(){
 function updateCityscapeMetric(){
   const label=[...document.querySelectorAll('.visual-label')].find(el=>el.textContent.trim().toUpperCase()==='CITYSCAPE RIYADH');
   if(!label) return;
-
   const project=label.closest('.project');
   const mock=project?.querySelector('.mock');
   if(mock && mock.children.length>=2){
     mock.children[0].textContent='≈ 5,000';
     const metricLabel=mock.children[1];
-    metricLabel.setAttribute('data-en','INTEREST REGISTRATIONS');
-    metricLabel.setAttribute('data-ar','تسجيل اهتمام');
-    metricLabel.textContent=lang==='ar'?'تسجيل اهتمام':'INTEREST REGISTRATIONS';
+    metricLabel.setAttribute('data-en','INTEREST REGISTRATIONS');metricLabel.setAttribute('data-ar','تسجيل اهتمام');metricLabel.textContent=lang==='ar'?'تسجيل اهتمام':'INTEREST REGISTRATIONS';
   }
-
   const desc=project?.querySelector('.desc');
   if(desc){
     desc.setAttribute('data-en','Led booth operations, team responsibilities, visitor flow, stakeholder follow-up, and approximately 5,000 interest registrations, with lessons learned documented for future participation.');
@@ -81,18 +123,16 @@ function updateCityscapeMetric(){
 }
 
 function setLang(next){
-  lang=next;
-  localStorage.setItem('siteLang',lang);
-  document.documentElement.lang=lang;
-  document.documentElement.dir=lang==='ar'?'rtl':'ltr';
-  toggle.textContent=lang==='ar'?'EN':'AR';
+  lang=next;localStorage.setItem('siteLang',lang);document.documentElement.lang=lang;document.documentElement.dir=lang==='ar'?'rtl':'ltr';toggle.textContent=lang==='ar'?'EN':'AR';
   document.querySelectorAll('[data-en]').forEach(el=>{el.textContent=el.dataset[lang]});
   Object.entries(rich).forEach(([id,values])=>{const el=document.getElementById(id);if(el)el.innerHTML=values[lang]});
 }
 
+applyBurgundyIdentity();
+addCvAutomationProject();
 addWhatsAppContact();
 updateCityscapeMetric();
 toggle.addEventListener('click',()=>setLang(lang==='en'?'ar':'en'));
 setLang(lang);
 
-// GitHub Pages redeploy trigger: 2026-08-11 11:29 Asia/Riyadh
+// GitHub Pages redeploy trigger: 2026-08-13 Asia/Riyadh
