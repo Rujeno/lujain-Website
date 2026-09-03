@@ -2,7 +2,7 @@ const toggle=document.getElementById('langToggle');
 let lang=localStorage.getItem('siteLang')||'en';
 
 const rich={
-  heroTitle:{
+  heroTitleV2:{
     en:'Technology with <span>control.</span><br>Projects with <span>impact.</span>',
     ar:'تقنية <span>منظمة.</span><br>وحوكمة <span>أوضح.</span>'
   },
