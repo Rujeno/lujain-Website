@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="TechGuard - IT Governance and Security Assurance Hub" />
+  <title>TechGuard | IT Governance & Security Assurance</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">
+        <div class="brand-mark"><span></span><span></span><span></span></div>
+        <div>
+          <div class="brand-name">TechGuard</div>
+          <div class="brand-caption">GRC OPERATING HUB</div>
+        </div>
+      </div>
+
+      <div class="workspace-switcher">
+        <span class="workspace-dot"></span>
+        <div>
+          <small>Workspace</small>
+          <strong>Madain Demo Org</strong>
+        </div>
+        <button class="icon-button" aria-label="Switch workspace">⌄</button>
+      </div>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <div class="nav-label">Overview</div>
+        <button class="nav-item active" data-view="dashboard"><span class="nav-icon">⌂</span>Dashboard</button>
+        <button class="nav-item" data-view="assets"><span class="nav-icon">▣</span>Assets</button>
+        <button class="nav-item" data-view="access"><span class="nav-icon">⌘</span>Access reviews</button>
+        <div class="nav-label">Assurance</div>
+        <button class="nav-item" data-view="risks"><span class="nav-icon">△</span>Risk register <em class="nav-count red">3</em></button>
+        <button class="nav-item" data-view="evidence"><span class="nav-icon">▤</span>Control evidence <em class="nav-count amber">5</em></button>
+        <button class="nav-item" data-view="tickets"><span class="nav-icon">◈</span>IT tickets <em class="nav-count blue">7</em></button>
+        <div class="nav-label">System</div>
+        <button class="nav-item" data-view="settings"><span class="nav-icon">⚙</span>Settings</button>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="security-note"><span class="pulse"></span><div><strong>Demo environment</strong><small>Synthetic data only</small></div></div>
+        <div class="user-profile"><div class="avatar">LS</div><div><strong>Lujain Alshamrani</strong><small>IT Governance Lead</small></div><button class="icon-button">•••</button></div>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <button class="mobile-menu icon-button" id="mobileMenu" aria-label="Open navigation">☰</button>
+        <div class="breadcrumbs"><span>TechGuard</span><span>/</span><strong id="breadcrumbCurrent">Dashboard</strong></div>
+        <div class="topbar-actions">
+          <div class="last-sync"><span class="sync-dot"></span>Last synced 4 min ago</div>
+          <button class="icon-button notification" aria-label="Notifications">♢<span></span></button>
+          <button class="outline-button" id="exportBtn">Export report <span>↗</span></button>
+        </div>
+      </header>
+
+      <section class="page-content">
+        <div id="viewContainer"></div>
+      </section>
+    </main>
+  </div>
+
+  <div class="modal-backdrop" id="modalBackdrop" hidden>
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <div class="modal-header"><div><span class="eyebrow" id="modalEyebrow">Quick action</span><h2 id="modalTitle">Add item</h2></div><button class="close-modal icon-button" id="closeModal">×</button></div>
+      <form id="modalForm">
+        <div id="modalFields"></div>
+        <div class="modal-actions"><button type="button" class="text-button" id="cancelModal">Cancel</button><button type="submit" class="primary-button">Save item <span>→</span></button></div>
+      </form>
+    </div>
+  </div>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="app.js"></script>
+</body>
+</html>
