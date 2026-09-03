@@ -1,239 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About — Lujain Alshamrani</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        /* Google Fonts Arabic support */
-        @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500&display=swap');
-        .ar { font-family: 'Tajawal', var(--serif), sans-serif; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="About Lujain Alshamrani — IT operations, governance, cybersecurity GRC, and technical project delivery.">
+  <title>About — Lujain Alshamrani</title>
+  <link rel="stylesheet" href="assets/portfolio-v2.css">
+  <style>
+    .about-page .about-hero{min-height:560px;display:grid;grid-template-columns:minmax(0,1.12fr) minmax(260px,.88fr);gap:36px;align-items:center;position:relative;overflow:hidden}
+    .about-page .about-hero:before{content:"";position:absolute;width:620px;height:620px;right:-230px;top:-190px;background:radial-gradient(circle at 38% 38%,rgba(247,255,184,.9),transparent 25%),radial-gradient(circle at 55% 55%,rgba(255,151,202,.55),transparent 35%),radial-gradient(circle at 68% 68%,rgba(219,170,244,.58),transparent 42%);filter:blur(38px);opacity:.52;pointer-events:none}
+    .about-page .about-hero-copy,.about-page .about-hero-visual{position:relative;z-index:1}
+    .about-page .about-hero h1{margin:22px 0 0;font-size:clamp(42px,5.4vw,72px);line-height:.98;letter-spacing:-.06em;font-weight:650}
+    .about-page .about-hero h1 span{font-family:var(--serif);font-style:italic;font-weight:400}
+    .about-page .about-lead{max-width:680px;margin:25px 0 0;color:#626568;font-size:16px;line-height:1.85}
+    .about-page .about-hero-visual{display:grid;place-items:center;min-height:330px;border:1px solid rgba(17,19,21,.12);border-radius:24px;background:rgba(255,255,255,.58);backdrop-filter:blur(14px);padding:28px}
+    .about-page .about-hero-visual img{width:min(100%,330px);aspect-ratio:1/1;object-fit:cover;border-radius:18px;mix-blend-mode:multiply}
+    .about-page .about-hero-caption{margin-top:15px;color:#76787b;font-size:10px;letter-spacing:.08em;text-transform:uppercase;text-align:center}
+    .about-page .about-section-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:14px}
+    .about-page .about-panel{border:1px solid #e1e0dc;border-radius:20px;background:#f8f7f4;padding:27px}
+    .about-page .about-panel h2{margin:0 0 12px;font-size:22px;letter-spacing:-.035em}
+    .about-page .about-panel p{margin:0;color:#67696c;font-size:13px;line-height:1.9}
+    .about-page .about-panel p+p{margin-top:13px}
+    .about-page .about-list{list-style:none;padding:0;margin:0;display:grid;gap:10px}
+    .about-page .about-list li{padding:15px 16px;border:1px solid #e1e0dc;border-radius:15px;background:#fff}
+    .about-page .about-list strong{display:block;font-size:13px}
+    .about-page .about-list span{display:block;margin-top:4px;color:#707275;font-size:11px;line-height:1.65}
+    .about-page .focus-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+    .about-page .focus-card{min-height:155px;border:1px solid #dfdedb;border-radius:18px;padding:21px;background:#fff}
+    .about-page .focus-card:nth-child(2){background:linear-gradient(125deg,#fff,rgba(219,170,244,.18))}
+    .about-page .focus-card:nth-child(3){background:linear-gradient(125deg,#fff,rgba(247,255,184,.35))}
+    .about-page .focus-card span{color:#895a78;font-size:9px;font-weight:900;letter-spacing:.1em;text-transform:uppercase}
+    .about-page .focus-card h3{margin:13px 0 7px;font-size:18px}
+    .about-page .focus-card p{margin:0;color:#6c6e71;font-size:11px;line-height:1.7}
+    .about-page .about-cta{display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .about-page .about-cta h2{margin:0;font-size:clamp(28px,4vw,48px);line-height:1.05;letter-spacing:-.05em}
+    .about-page .about-cta p{max-width:580px;margin:10px 0 0;color:#67696c;font-size:13px;line-height:1.8}
+    @media(max-width:900px){.about-page .about-hero,.about-page .about-section-grid{grid-template-columns:1fr}.about-page .about-hero-visual{order:-1}.about-page .focus-grid{grid-template-columns:1fr}.about-page .about-cta{display:block}}
+    @media(max-width:560px){.about-page .about-hero h1{font-size:40px}.about-page .about-lead{font-size:14px}.about-page .section{padding:25px}}
+  </style>
 </head>
 <body>
+  <div class="app about-page">
+    <main class="content">
+      <section class="section about-hero" id="about">
+        <div class="about-hero-copy">
+          <span class="eyebrow"><i></i><span data-en="IT · GRC · CYBERSECURITY" data-ar="تقنية المعلومات · GRC · الأمن السيبراني">IT · GRC · CYBERSECURITY</span></span>
+          <h1 data-en="I connect technology with accountability." data-ar="أربط التقنية بالمسؤولية.">I connect technology with <span>accountability.</span></h1>
+          <p class="about-lead" data-en="I'm Lujain Alshamrani, a Computer Science professional working across IT operations, enterprise systems, access governance, technical coordination, and cybersecurity GRC. I turn unclear operational needs into structured, documented, and measurable technology work." data-ar="أنا لجين الشمراني، متخصصة في علوم الحاسب، أعمل في تشغيل تقنية المعلومات والأنظمة المؤسسية وحوكمة الصلاحيات والتنسيق التقني وGRC للأمن السيبراني. أحوّل الاحتياج التشغيلي غير الواضح إلى عمل تقني منظم وموثق وقابل للقياس.">I'm Lujain Alshamrani, a Computer Science professional working across IT operations, enterprise systems, access governance, technical coordination, and cybersecurity GRC. I turn unclear operational needs into structured, documented, and measurable technology work.</p>
+          <div class="hero-actions"><a class="btn btn-primary" href="index.html#projects"><span data-en="View my projects" data-ar="استعرض مشاريعي">View my projects</span><span>↘</span></a><a class="btn" href="index.html#contact"><span data-en="Get in touch" data-ar="تواصل معي">Get in touch</span><span>→</span></a></div>
+        </div>
+        <div class="about-hero-visual"><div><img src="Images/identity.webp" alt="Lujain Alshamrani identity mark"><p class="about-hero-caption" data-en="Technology · Governance · Security" data-ar="التقنية · الحوكمة · الأمن">Technology · Governance · Security</p></div></div>
+      </section>
 
-    <!-- NAV -->
-    <header class="nav">
-        <a href="index.html" class="nav-brand">Lujain Alshamrani</a>
-        <nav>
-            <button class="nav-btn" id="navBtn" aria-label="Toggle menu">
-                <span></span><span></span><span></span>
-            </button>
-            <ul class="nav-menu" id="navMenu">
-                <li><a href="mydesignes.html">Work</a></li>
-                <li><a href="aboutme.html" class="active">About</a></li>
-                <li><a href="index.html#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+      <section class="section">
+        <div class="section-head"><h2 data-en="How I create value" data-ar="كيف أضيف القيمة">How I create value</h2><p data-en="My strength is working between the technical detail and the operational decision — understanding both, then making the work clearer and easier to control." data-ar="نقطة قوتي هي العمل بين التفاصيل التقنية والقرار التشغيلي؛ أفهم الجانبين ثم أجعل العمل أوضح وأسهل في المتابعة والضبط.">My strength is working between the technical detail and the operational decision — understanding both, then making the work clearer and easier to control.</p></div>
+        <div class="about-section-grid">
+          <div class="about-panel"><h2 data-en="My approach" data-ar="منهجي في العمل">My approach</h2><p data-en="I start with the problem, users, dependencies, owner, and risk. Then I map the process, define the evidence or output required, coordinate the people involved, and follow through until the solution is usable." data-ar="أبدأ بالمشكلة والمستخدمين والاعتماديات والمسؤول والمخاطر. ثم أحلل الإجراء، وأحدد المخرج أو الدليل المطلوب، وأنسق الأطراف المعنية، وأتابع حتى يصبح الحل قابلًا للاستخدام.">I start with the problem, users, dependencies, owner, and risk. Then I map the process, define the evidence or output required, coordinate the people involved, and follow through until the solution is usable.</p><p data-en="That is why my work can range from access reviews and IT service coordination to automation, system implementation, infrastructure dependencies, and security assurance." data-ar="ولهذا يمتد عملي من مراجعات الصلاحيات وتنسيق خدمات تقنية المعلومات إلى الأتمتة وتنفيذ الأنظمة واعتماديات البنية التحتية والضمان الأمني.">That is why my work can range from access reviews and IT service coordination to automation, system implementation, infrastructure dependencies, and security assurance.</p></div>
+          <div class="about-panel"><ul class="about-list"><li><strong data-en="Structured execution" data-ar="تنفيذ منظم">Structured execution</strong><span data-en="Clear owners, dependencies, deliverables, and follow-up." data-ar="مسؤوليات واعتماديات ومخرجات ومتابعة واضحة.">Clear owners, dependencies, deliverables, and follow-up.</span></li><li><strong data-en="Governance mindset" data-ar="تفكير حوكمي">Governance mindset</strong><span data-en="Controls, evidence, accountability, and risk awareness built into the work." data-ar="إدخال الضوابط والأدلة والمساءلة والوعي بالمخاطر ضمن العمل.">Controls, evidence, accountability, and risk awareness built into the work.</span></li><li><strong data-en="Technical communication" data-ar="تواصل تقني">Technical communication</strong><span data-en="Translating technical detail into decisions that stakeholders can act on." data-ar="تحويل التفاصيل التقنية إلى قرارات يستطيع أصحاب المصلحة تنفيذها.">Translating technical detail into decisions that stakeholders can act on.</span></li></ul></div>
+        </div>
+      </section>
 
-    <main class="page">
+      <section class="section">
+        <div class="section-head"><h2 data-en="Current focus" data-ar="تركيزي الحالي">Current focus</h2><p data-en="The direction I am deliberately building toward: technical GRC, IT risk, security assurance, and reliable technology operations." data-ar="المسار الذي أبنيه بوعي: GRC التقني، مخاطر تقنية المعلومات، الضمان الأمني، وتشغيل التقنية بشكل موثوق.">The direction I am deliberately building toward: technical GRC, IT risk, security assurance, and reliable technology operations.</p></div>
+        <div class="focus-grid"><article class="focus-card"><span>01 · OPERATIONS</span><h3 data-en="IT Operations" data-ar="تشغيل تقنية المعلومات">IT Operations</h3><p data-en="Systems, users, services, vendors, connectivity, and operational continuity." data-ar="الأنظمة والمستخدمون والخدمات والموردون والاتصال واستمرارية التشغيل.">Systems, users, services, vendors, connectivity, and operational continuity.</p></article><article class="focus-card"><span>02 · GOVERNANCE</span><h3 data-en="GRC & Technology Risk" data-ar="GRC ومخاطر التقنية">GRC &amp; Technology Risk</h3><p data-en="Access governance, control design, evidence, risk registers, and audit readiness." data-ar="حوكمة الصلاحيات وتصميم الضوابط والأدلة وسجلات المخاطر والاستعداد للمراجعة.">Access governance, control design, evidence, risk registers, and audit readiness.</p></article><article class="focus-card"><span>03 · DELIVERY</span><h3 data-en="Automation & Delivery" data-ar="الأتمتة والتسليم">Automation &amp; Delivery</h3><p data-en="Practical tools and coordinated delivery that reduce friction and repetitive work." data-ar="أدوات عملية وتسليم منسق يقلل التعقيد والعمل المتكرر.">Practical tools and coordinated delivery that reduce friction and repetitive work.</p></article></div>
+      </section>
 
-        <!-- ① BIO HERO — dark charcoal + brand mark -->
-        <section class="about-bio-hero">
-            <svg class="brand-mark" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="100" cy="100" r="96" fill="#7C1020"/>
-                <circle cx="86" cy="82" r="64" fill="#F5F5F4"/>
-                <circle cx="110" cy="112" r="37" fill="#272727"/>
-            </svg>
-            <div class="bio-hero-text">
-                <p class="bio-hero-ar ar">
-                    "أنا لجين، مصممة شغوفة بصناعة صور وهوية تجعل العلامات التجارية تتحدث بلغة الناس.
-                    أؤمن أن التصميم الناجح ليس فقط جمالاً بصرياً، بل أداة استراتيجية لخلق انطباع قوي يفتح أبواب النجاح.
-                    مهمتي أن أترجم رؤية العميل إلى تجربة بصرية متكاملة تُحدث صدى وتبقى في الأذهان."
-                </p>
-                <p class="bio-hero-en">
-                    "I am LUJAIN, a passionate designer dedicated to creating visuals and identities that make brands
-                    speak the language of people. I believe that successful design is not just about visual beauty,
-                    but a strategic tool to create a strong impression that opens doors to success. My mission is
-                    to translate the client's vision into a complete visual experience that resonates and remains unforgettable."
-                </p>
-            </div>
-        </section>
-
-        <!-- ② ABOUT DETAILS — profile + skills -->
-        <section class="about-section">
-            <div class="container">
-                <div class="about-grid">
-                    <div class="about-text fade-in">
-                        <div class="section-label">About Me</div>
-                        <h1 class="about-name">Lujain<br>Alshamrani</h1>
-                        <p class="about-title">Graphic Designer</p>
-                        <div class="about-bio">
-                            <p>
-                                Graphic designer based in Riyadh, specializing in brand identity,
-                                logo design, and visual communication. I work at the intersection
-                                of strategy and craft — understanding what a brand needs to say,
-                                then finding the most compelling way to say it.
-                            </p>
-                            <p>
-                                My work spans startups building their identity from scratch to
-                                established brands looking to evolve. Whether it's a single logo
-                                or a full visual system, I bring the same attention to detail
-                                and purpose to every project.
-                            </p>
-                        </div>
-                        <div class="skills-label">Tools &amp; Disciplines</div>
-                        <ul class="skills-list">
-                            <li>Adobe Illustrator</li>
-                            <li>Adobe Photoshop</li>
-                            <li>Visual Design</li>
-                            <li>Brand Identity &amp; Logo Design</li>
-                            <li>Strategy &amp; Brand Positioning</li>
-                            <li>Print &amp; Advertising Design</li>
-                            <li>Social Media Design</li>
-                        </ul>
-                        <div class="about-contact-links">
-                            <a href="tel:+966540626039">
-                                <span style="font-size:0.65rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--sand);">Phone &nbsp;—&nbsp;</span>
-                                +966 54 062 6039
-                            </a>
-                            <a href="mailto:lujain.shumrani@gmail.com">
-                                <span style="font-size:0.65rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--sand);">Email &nbsp;—&nbsp;</span>
-                                lujain.shumrani@gmail.com
-                            </a>
-                        </div>
-                    </div>
-                    <div class="about-img-wrap fade-in-2">
-                        <picture>
-                            <source srcset="Images/lujain1.webp" type="image/webp">
-                            <img src="Images/lujain1-opt.png" alt="Lujain Alshamrani" loading="lazy" decoding="async">
-                        </picture>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ③ SERVICES -->
-        <section class="services-section">
-            <div class="container">
-                <div class="services-heading">
-                    <p class="services-title-ar ar">كيف أقدر أخدمك؟</p>
-                    <p class="services-title-en">HOW CAN I HELP YOU?</p>
-                </div>
-                <div class="services-grid">
-
-                    <div class="service-card">
-                        <p class="service-title-ar ar">الاستراتيجية والتموضع</p>
-                        <span class="service-title-en">Strategy &amp; Positioning</span>
-                        <div class="service-rule"></div>
-                        <p class="service-desc-ar ar">
-                            من خلال الدراسة العميقة، يتم تحديد موقع العلامة في أذهان الجمهور مقارنة
-                            بالمنافسين. يساعد التموضع الاستراتيجي على رسم الطريق الواضح للعلامة
-                            وضمان ارتباطها بقيم واضحة ومؤثرة.
-                        </p>
-                        <p class="service-desc-en">
-                            Through in-depth study, the brand's position in the minds of the audience
-                            is defined in comparison to competitors. Strategic positioning ensures the
-                            brand is linked with clear and impactful values, paving the way for its
-                            growth and differentiation.
-                        </p>
-                    </div>
-
-                    <div class="service-card">
-                        <p class="service-title-ar ar">بناء الهوية المتكاملة</p>
-                        <span class="service-title-en">Integrated Identity Building</span>
-                        <div class="service-rule"></div>
-                        <p class="service-desc-ar ar">
-                            بناء الهوية لا يقتصر على تصميم الشعار أو الألوان فقط، بل يشمل صياغة
-                            رسالة وهوية بصرية ولفظية متكاملة تعكس شخصية العلامة. يهدف هذا العمل
-                            إلى خلق انطباع متماسك يجعل العلامة فريدة ومميزة في السوق.
-                        </p>
-                        <p class="service-desc-en">
-                            Identity building goes beyond logos and colors; it involves crafting
-                            a complete visual and verbal system that reflects the brand's personality.
-                            The goal is to create a cohesive impression that makes the brand
-                            stand out in the market.
-                        </p>
-                    </div>
-
-                    <div class="service-card">
-                        <p class="service-title-ar ar">إدارة العلامة التجارية</p>
-                        <span class="service-title-en">Brand Management</span>
-                        <div class="service-rule"></div>
-                        <p class="service-desc-ar ar">
-                            إدارة العلامة التجارية هي فن وعلم بناء قيمة العلامة والمحافظة عليها.
-                            من خلال فهم سلوك المستهلك والسوق، يتم وضع استراتيجيات تسويقية وبصرية
-                            متكاملة تعزز حضور العلامة وتزيد من ولاء العملاء.
-                        </p>
-                        <p class="service-desc-en">
-                            Brand management is the art and science of building and sustaining brand
-                            value. By understanding consumer behavior and market dynamics, integrated
-                            marketing and visual strategies are developed to strengthen brand presence
-                            and increase customer loyalty.
-                        </p>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <!-- ④ CLIENTS -->
-        <section class="clients-section">
-            <div class="clients-heading">
-                <p class="clients-title-ar ar">شركاء النجاح</p>
-                <p class="clients-title-en">Success Partners</p>
-            </div>
-            <div class="clients-grid">
-                <span class="client-name">بنك الرياض · Riyad Bank</span>
-                <span class="client-name">وزارة البيئة والمياه والزراعة</span>
-                <span class="client-name">إمداد · Emdad</span>
-                <span class="client-name">Abyat</span>
-                <span class="client-name">كالما · Calma</span>
-                <span class="client-name">Zid</span>
-                <span class="client-name">البوابة العقارية</span>
-                <span class="client-name">Foreiva Beauty Culture</span>
-                <span class="client-name">8 Infiito Training</span>
-                <span class="client-name">قمة · Qemmah</span>
-                <span class="client-name">نهتم للفعاليات</span>
-                <span class="client-name">الهنداوية · AlHindawiya</span>
-                <span class="client-name">الكنا · Aladda</span>
-                <span class="client-name">Duke Gulf</span>
-                <span class="client-name">اللجنة التنفيذية لحوكمة الطاقة</span>
-            </div>
-        </section>
-
-        <!-- ⑤ CTA -->
-        <section class="cta-section">
-            <p class="cta-quote-ar ar">
-                "هل لديك فكرة تبحث عمّن يصيغها بصريًا؟<br>
-                أنا هنا لأحوّلها إلى تجربة مميزة."
-            </p>
-            <p class="cta-quote-en">
-                "Do you have an idea waiting to be visually shaped?<br>
-                I'm here to transform it into a unique experience."
-            </p>
-            <a href="mailto:lujain.shumrani@gmail.com" class="btn-white">Get in Touch &rarr;</a>
-        </section>
-
+      <section class="section about-cta"><div><h2 data-en="Let’s build work that holds up." data-ar="نبني عملًا يصمد أمام الواقع.">Let’s build work that holds up.</h2><p data-en="Explore the projects and operating models I have built, or get in touch about a role where technical understanding and accountability matter." data-ar="استعرض المشاريع ونماذج التشغيل التي بنيتها، أو تواصل معي حول فرصة تجمع بين الفهم التقني وتحمل المسؤولية.">Explore the projects and operating models I have built, or get in touch about a role where technical understanding and accountability matter.</p></div><a class="btn btn-primary" href="index.html#contact"><span data-en="Contact me" data-ar="تواصل معي">Contact me</span><span>↗</span></a></section>
+      <footer>© 2026 Lujain Alshamrani · IT, Governance &amp; Cybersecurity</footer>
     </main>
 
-    <!-- FOOTER -->
-    <footer class="site-footer">
-        <span class="footer-brand">Lujain Alshamrani</span>
-        <ul class="footer-links">
-            <li><a href="mydesignes.html">Work</a></li>
-            <li><a href="aboutme.html">About</a></li>
-        </ul>
-        <span class="footer-copy">&copy; 2024 All rights reserved</span>
-    </footer>
-
-    <script>
-        const btn = document.getElementById('navBtn');
-        const menu = document.getElementById('navMenu');
-        btn.addEventListener('click', () => {
-            btn.classList.toggle('open');
-            menu.classList.toggle('open');
-        });
-        menu.querySelectorAll('a').forEach(link => {
-            link.addEventListener('click', () => {
-                btn.classList.remove('open');
-                menu.classList.remove('open');
-            });
-        });
-    </script>
+    <aside class="sidebar">
+      <div class="identity-photo"><img src="Images/identity.webp" alt="Lujain Alshamrani identity"></div>
+      <nav class="side-links"><a href="index.html#home"><span data-en="Home" data-ar="الرئيسية">Home</span><span>01</span></a><a href="aboutme.html" class="active"><span data-en="About" data-ar="نبذة">About</span><span>02</span></a><a href="index.html#experience"><span data-en="Experience" data-ar="الخبرة">Experience</span><span>03</span></a><a href="index.html#projects"><span data-en="Projects" data-ar="المشاريع">Projects</span><span>04</span></a><a href="index.html#contact"><span data-en="Contact" data-ar="تواصل">Contact</span><span>05</span></a></nav>
+      <div class="side-note" data-en="IT Operations · Governance · Project Coordination · Cybersecurity GRC" data-ar="تشغيل تقنية المعلومات · الحوكمة · تنسيق المشاريع · GRC والأمن السيبراني">IT Operations · Governance · Project Coordination · Cybersecurity GRC</div>
+      <div class="socials"><a href="https://github.com/Rujeno" target="_blank" rel="noreferrer">GH</a><a href="mailto:lujain.shumrani@gmail.com">@</a><button class="lang" id="langToggle">AR</button></div>
+    </aside>
+  </div>
+  <script src="assets/portfolio-v2.js"></script>
 </body>
 </html>
