@@ -1,89 +1,79 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en" dir="ltr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="TechGuard — IT Governance and Security Assurance Hub by Lujain Alshamrani.">
-    <title>TechGuard — Lujain Alshamrani</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        .tg-preview{height:100%;min-height:560px;background:#f5f8fc;padding:26px;display:flex;gap:16px;direction:ltr;font-family:Arial,sans-serif}
-        .tg-side{width:24%;border-radius:14px;background:#102d49;padding:18px;color:#e8f3fb}.tg-brand{font-size:18px;font-weight:800}.tg-brand small{display:block;margin-top:4px;color:#91c4d8;font-size:8px;letter-spacing:.12em}.tg-nav{margin-top:42px;display:grid;gap:9px}.tg-nav span{padding:9px;border-radius:7px;color:#bad0df;font-size:9px}.tg-nav span:first-child{background:#1e5277;color:#fff;border-left:3px solid #35c8be}.tg-main{flex:1}.tg-top{height:30px;display:flex;align-items:center;justify-content:space-between;color:#45627c;font-size:9px}.tg-button{border:1px solid #cad9e6;border-radius:7px;padding:6px 10px;background:#fff}.tg-greeting{margin:22px 0 18px}.tg-kicker{color:#0aa8aa;font-size:8px;letter-spacing:.14em}.tg-greeting strong{display:block;margin-top:7px;color:#163550;font-size:22px}.tg-greeting small{display:block;margin-top:6px;color:#7b91a5;font-size:9px}.tg-metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.tg-metric{padding:14px;border-radius:10px;background:#fff;border:1px solid #e1eaf1}.tg-metric small{display:block;color:#74899b;font-size:8px}.tg-metric strong{display:block;margin-top:9px;color:#153753;font-size:22px}.tg-panels{display:grid;grid-template-columns:1.25fr .75fr;gap:12px;margin-top:12px}.tg-panel{min-height:190px;border:1px solid #e1eaf1;border-radius:10px;background:#fff;padding:14px}.tg-panel h4{color:#183852;font-size:11px;margin-bottom:18px}.tg-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:4px}.tg-grid i{height:25px;border-radius:4px;background:#b4dfd6}.tg-grid i:nth-child(3n){background:#e99a88}.tg-grid i:nth-child(4n){background:#f0d796}.tg-bars{height:130px;display:flex;align-items:end;gap:12px;padding:0 8px 4px}.tg-bars i{width:17px;border-radius:4px 4px 0 0;background:#72d0c1}.tg-bars i:nth-child(2){height:84%}.tg-bars i:nth-child(3){height:62%}.tg-bars i:nth-child(4){height:76%}.tg-bars i:nth-child(5){height:45%}.tg-bars i:nth-child(6){height:70%}
-        .tg-story{direction:rtl;text-align:right}.tg-story strong{color:var(--ink)}.tg-points{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:1rem 0 2rem}.tg-point{border:1px solid var(--line);border-radius:16px;padding:1.3rem;background:rgba(255,255,255,.3)}.tg-point h3{font-size:1rem;margin-bottom:.5rem}.tg-point p{font-size:.82rem!important;line-height:1.8!important}.tg-disclaimer{margin-top:1.5rem;padding:1rem 1.2rem;border-right:3px solid var(--accent);background:rgba(89,108,255,.06);color:var(--muted);font-size:.82rem;line-height:1.8}
-        @media(max-width:900px){.tg-preview{min-height:420px;padding:16px}.tg-side{width:22%}.tg-greeting strong{font-size:17px}.tg-metrics{grid-template-columns:repeat(2,1fr)}.tg-panels{grid-template-columns:1fr}.tg-point{padding:1rem}}
-        @media(max-width:560px){.tg-preview{min-height:360px;padding:10px;gap:8px}.tg-side{width:28%;padding:10px}.tg-brand{font-size:12px}.tg-nav{margin-top:24px;gap:4px}.tg-nav span{font-size:7px;padding:6px}.tg-greeting{margin:12px 0}.tg-greeting strong{font-size:13px}.tg-greeting small,.tg-kicker{font-size:6px}.tg-metric{padding:9px}.tg-metric strong{font-size:17px}.tg-panel{min-height:120px;padding:9px}.tg-panel h4{font-size:8px;margin-bottom:10px}.tg-grid i{height:14px}.tg-bars{height:75px;gap:5px}.tg-bars i{width:10px}.tg-points{grid-template-columns:1fr}}
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="TechGuard — an IT Governance and Security Assurance Hub designed and built by Lujain Alshamrani.">
+  <title>TechGuard — Lujain Alshamrani</title>
+  <link rel="stylesheet" href="assets/portfolio-v2.css">
+  <style>
+    .case-page .case-hero{display:grid;grid-template-columns:minmax(0,.92fr) minmax(0,1.08fr);gap:14px;align-items:stretch}
+    .case-page .case-copy{display:flex;flex-direction:column;justify-content:center;min-height:590px;padding:42px;background:#111315;color:#fff;border-radius:24px;position:relative;overflow:hidden}
+    .case-page .case-copy:after{content:"";position:absolute;width:440px;height:440px;right:-170px;top:-150px;background:radial-gradient(circle at 38% 38%,rgba(247,255,184,.72),transparent 25%),radial-gradient(circle at 58% 55%,rgba(255,151,202,.45),transparent 36%),radial-gradient(circle at 70% 70%,rgba(219,170,244,.48),transparent 45%);filter:blur(30px);opacity:.58;pointer-events:none}
+    .case-page .case-copy>*{position:relative;z-index:1}
+    .case-page .case-back{display:inline-flex;align-items:center;gap:8px;color:#bfc1c2;font-size:10px;font-weight:850;letter-spacing:.08em;text-transform:uppercase;margin-bottom:auto}
+    .case-page .case-back:hover{color:var(--dune)}
+    .case-page .case-kicker{margin-top:70px;color:var(--dune);font-size:10px;font-weight:900;letter-spacing:.12em}
+    .case-page .case-copy h1{margin:18px 0 0;max-width:620px;font-size:clamp(38px,5vw,68px);line-height:1;letter-spacing:-.06em;font-weight:650}
+    .case-page .case-copy h1 span{font-family:var(--serif);font-style:italic;font-weight:400}
+    .case-page .case-lead{max-width:590px;margin:22px 0 0;color:#c9cbcc;font-size:14px;line-height:1.9}
+    .case-page .case-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:30px}
+    .case-page .case-actions .btn{border-color:#3a3c3e;background:transparent;color:#fff}
+    .case-page .case-actions .btn-primary{background:var(--dune);border-color:var(--dune);color:#111315}
+    .case-page .case-preview{min-height:590px;padding:24px;border:1px solid var(--line);border-radius:24px;background:#e9edf0;display:flex;align-items:center;overflow:hidden}
+    .case-page .dashboard{width:100%;display:grid;grid-template-columns:112px 1fr;min-height:470px;border-radius:17px;overflow:hidden;background:#f7f9fa;box-shadow:0 18px 45px rgba(17,19,21,.13);font-family:Arial,sans-serif;direction:ltr}
+    .case-page .dash-side{padding:17px 11px;background:#132d45;color:#dce9f1}.case-page .dash-brand{font-size:13px;font-weight:800;color:#fff}.case-page .dash-brand small{display:block;margin-top:3px;color:#8db6c9;font-size:6px;letter-spacing:.1em}.case-page .dash-nav{display:grid;gap:5px;margin-top:36px}.case-page .dash-nav span{padding:8px 7px;border-radius:6px;color:#aec3d1;font-size:7px}.case-page .dash-nav span:first-child{background:#245473;color:#fff;border-left:2px solid #54d4c5}.case-page .dash-main{min-width:0;padding:18px 19px}.case-page .dash-top{display:flex;align-items:center;justify-content:space-between;color:#71879a;font-size:7px}.case-page .dash-export{border:1px solid #cedae3;border-radius:5px;padding:5px 7px;background:#fff;color:#536a7d}.case-page .dash-greeting{margin:23px 0 15px}.case-page .dash-kicker{color:#08a4a7;font-size:6px;letter-spacing:.13em}.case-page .dash-greeting strong{display:block;margin-top:5px;color:#183751;font-size:18px}.case-page .dash-greeting small{display:block;margin-top:5px;color:#8a9aaa;font-size:7px}.case-page .dash-metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:7px}.case-page .dash-metric{padding:10px 8px;border:1px solid #e1e8ed;border-radius:7px;background:#fff}.case-page .dash-metric small{display:block;color:#8092a1;font-size:6px}.case-page .dash-metric strong{display:block;margin-top:6px;color:#173752;font-size:17px}.case-page .dash-panels{display:grid;grid-template-columns:1.2fr .8fr;gap:8px;margin-top:9px}.case-page .dash-panel{min-height:170px;padding:11px;border:1px solid #e1e8ed;border-radius:7px;background:#fff}.case-page .dash-panel h3{margin:0 0 13px;color:#1b3b55;font-size:8px}.case-page .risk-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:3px}.case-page .risk-grid i{height:22px;border-radius:3px;background:#b4dfd6}.case-page .risk-grid i:nth-child(3n){background:#e99a88}.case-page .risk-grid i:nth-child(4n){background:#f0d796}.case-page .bars{height:119px;display:flex;align-items:end;justify-content:space-around;gap:5px;padding:0 6px 4px}.case-page .bars i{width:13px;height:70%;border-radius:3px 3px 0 0;background:#72d0c1}.case-page .bars i:nth-child(2){height:84%}.case-page .bars i:nth-child(3){height:62%}.case-page .bars i:nth-child(4){height:76%}.case-page .bars i:nth-child(5){height:45%}.case-page .bars i:nth-child(6){height:70%}
+    .case-page .section{padding:40px}.case-page .section-head{align-items:flex-start}.case-page .section-head h2{max-width:360px}.case-page .case-two-col{display:grid;grid-template-columns:1fr 1fr;gap:14px}.case-page .case-card{border:1px solid #e1e0dc;border-radius:20px;padding:25px;background:#f8f7f4}.case-page .case-card.dark{background:#111315;color:#fff;border-color:#111315}.case-page .case-card h3{margin:0 0 12px;font-size:22px;letter-spacing:-.035em}.case-page .case-card p{margin:0;color:#67696c;font-size:13px;line-height:1.9}.case-page .case-card.dark p{color:#c9cbcc}.case-page .case-card p+p{margin-top:13px}
+    .case-page .model-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}.case-page .model-step{min-height:170px;padding:18px;border:1px solid #dfdedb;border-radius:17px;background:#fff}.case-page .model-step:nth-child(2){background:linear-gradient(145deg,#fff,rgba(255,151,202,.12))}.case-page .model-step:nth-child(3){background:linear-gradient(145deg,#fff,rgba(219,170,244,.16))}.case-page .model-step:nth-child(4){background:linear-gradient(145deg,#fff,rgba(247,255,184,.35))}.case-page .model-num{display:grid;place-items:center;width:32px;height:32px;border-radius:10px;background:#111315;color:var(--dune);font-size:11px;font-weight:900}.case-page .model-step h3{margin:18px 0 6px;font-size:16px}.case-page .model-step p{margin:0;color:#6a6c6f;font-size:11px;line-height:1.7}
+    .case-page .evidence-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.case-page .evidence-card{padding:22px;border:1px solid #dfdedb;border-radius:18px;background:#fff}.case-page .evidence-card span{color:#895a78;font-size:9px;font-weight:900;letter-spacing:.1em;text-transform:uppercase}.case-page .evidence-card h3{margin:13px 0 7px;font-size:18px}.case-page .evidence-card p{margin:0;color:#6c6e71;font-size:11px;line-height:1.75}.case-page .case-note{margin-top:15px;padding:16px 18px;border-left:3px solid #b7ce55;border-radius:0 12px 12px 0;background:rgba(247,255,184,.35);color:#606267;font-size:12px;line-height:1.8}
+    .case-page .case-footer{display:flex;align-items:center;justify-content:space-between;gap:18px}.case-page .case-footer h2{margin:0;font-size:clamp(28px,4vw,52px);line-height:1;letter-spacing:-.05em}.case-page .case-footer p{max-width:560px;margin:10px 0 0;color:#67696c;font-size:13px;line-height:1.8}
+    @media(max-width:1000px){.case-page .case-hero{grid-template-columns:1fr}.case-page .case-copy{min-height:0}.case-page .case-preview{min-height:0}.case-page .model-grid{grid-template-columns:repeat(3,1fr)}}
+    @media(max-width:720px){.case-page .section{padding:25px}.case-page .case-copy{padding:28px}.case-page .case-kicker{margin-top:55px}.case-page .case-two-col{grid-template-columns:1fr}.case-page .model-grid,.case-page .evidence-grid{grid-template-columns:1fr}.case-page .case-footer{display:block}.case-page .dashboard{grid-template-columns:76px 1fr}.case-page .dash-side{padding:12px 8px}.case-page .dash-nav{margin-top:25px}.case-page .dash-nav span{font-size:6px;padding:6px 5px}.case-page .dash-main{padding:12px}.case-page .dash-greeting strong{font-size:14px}.case-page .dash-panels{grid-template-columns:1fr}.case-page .dash-metrics{grid-template-columns:repeat(2,1fr)}}
+  </style>
 </head>
 <body>
-    <header class="nav">
-        <a href="index.html" class="nav-brand">Lujain Alshamrani</a>
-        <nav>
-            <button class="nav-btn" id="navBtn" aria-label="Toggle menu"><span></span><span></span><span></span></button>
-            <ul class="nav-menu" id="navMenu">
-                <li><a href="index.html#projects" class="active">Projects</a></li>
-                <li><a href="aboutme.html">About</a></li>
-                <li><a href="index.html#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <div class="app case-page">
+    <main class="content">
+      <div class="section" style="padding:14px 25px"><a class="back-link" href="index.html#projects"><span data-en="Back to selected projects" data-ar="العودة إلى المشاريع المختارة">Back to selected projects</span></a></div>
 
-    <main class="page">
-        <div class="container">
-            <a href="index.html#projects" class="back-link">العودة إلى المشاريع</a>
-
-            <div class="proj-hero-split fade-in">
-                <div class="proj-hero-info">
-                    <div class="proj-big-num">09</div>
-                    <h1 class="proj-title-ar">TechGuard</h1>
-                    <p class="proj-title-en">IT Governance &amp; Security Assurance Hub</p>
-                    <p class="proj-summary-ar ar">نموذج أولي لمنصة تشغيلية تجمع الأصول والصلاحيات والمخاطر وأدلة الضوابط وتذاكر تقنية المعلومات في مكان واحد لمساعدة فرق التقنية والحوكمة على العمل بوضوح واستعداد أعلى للمراجعة.</p>
-                    <div class="proj-meta-grid">
-                        <div class="meta-item"><div class="meta-label">الدور</div><div class="meta-value">Product Design · GRC Operating Model · Frontend Development</div></div>
-                        <div class="meta-item"><div class="meta-label">النطاق</div><div class="meta-value">Assets · Access Reviews · Risk Register · Control Evidence · IT Tickets</div></div>
-                        <div class="meta-item"><div class="meta-label">الحالة</div><div class="meta-value">MVP prototype · Synthetic data · No production backend</div></div>
-                        <a class="proj-drive-inline" href="projects/techguard/index.html">فتح النسخة التفاعلية ↗</a>
-                    </div>
-                </div>
-                <div class="proj-hero-img">
-                    <div class="tg-preview" aria-label="TechGuard dashboard preview">
-                        <div class="tg-side"><div class="tg-brand">TechGuard<small>GRC OPERATING HUB</small></div><div class="tg-nav"><span>Dashboard</span><span>Assets</span><span>Access reviews</span><span>Risk register</span><span>Evidence</span><span>IT tickets</span></div></div>
-                        <div class="tg-main"><div class="tg-top"><span>TechGuard / Dashboard</span><span class="tg-button">Export report ↗</span></div><div class="tg-greeting"><span class="tg-kicker">GOVERNANCE OPERATIONS</span><strong>Good morning, Lujain.</strong><small>One workspace for keeping technology reliable, access controlled, and audit-ready.</small></div><div class="tg-metrics"><div class="tg-metric"><small>Control health</small><strong>86%</strong></div><div class="tg-metric"><small>Open high risks</small><strong>3</strong></div><div class="tg-metric"><small>Reviews due</small><strong>5</strong></div><div class="tg-metric"><small>Open tickets</small><strong>7</strong></div></div><div class="tg-panels"><div class="tg-panel"><h4>Risk posture</h4><div class="tg-grid"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div><div class="tg-panel"><h4>Control completion</h4><div class="tg-bars"><i></i><i></i><i></i><i></i><i></i><i></i></div></div></div></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="proj-story-section tg-story fade-in-2">
-                <p><strong>الفكرة:</strong> تحويل أعمال IT التشغيلية المتفرقة إلى نموذج تشغيل قابل للرؤية والقياس: من يملك الأصل؟ من يملك الصلاحية؟ ما الخطر؟ ما الدليل؟ وما الإجراء التالي؟</p>
-                <p><strong>ما بنيته:</strong> صممت واجهة MVP ببيانات تجريبية تربط بين سجل الأصول، مراجعات الوصول، سجل المخاطر، أدلة الضوابط، وتذاكر تقنية المعلومات. أضفت إجراءات تفاعلية لإضافة المخاطر والأصول والتذاكر والأدلة، مع لوحة مؤشرات تلخص حالة الضوابط والمخاطر والاستحقاقات.</p>
-                <p><strong>القيمة المهنية:</strong> المشروع يوضح قدرتي على ترجمة مفاهيم GRC إلى تجربة تشغيلية يفهمها فريق IT وصاحب الضابط والمدقق، مع الحفاظ على حدود واضحة بين نموذج العرض الأولي والمنصة الإنتاجية.</p>
-                <div class="tg-points">
-                    <div class="tg-point"><h3>Govern</h3><p>ملكية واضحة للأصول والصلاحيات والضوابط.</p></div>
-                    <div class="tg-point"><h3>Assure</h3><p>تتبع الأدلة والاستحقاقات والفجوات.</p></div>
-                    <div class="tg-point"><h3>Act</h3><p>ربط المخاطر والتذاكر بالإجراء التالي.</p></div>
-                </div>
-                <div class="tg-disclaimer">ملاحظة: هذه نسخة MVP تعليمية/استعراضية ببيانات اصطناعية. الخطوة التالية للإنتاج هي إضافة API وقاعدة بيانات وتسجيل دخول وصلاحيات وأثر تدقيق وموافقات رسمية.</div>
-            </div>
-
-            <div class="proj-images fade-in-3">
-                <div class="proj-img-pair">
-                    <div class="proj-img" style="display:grid;place-items:center;padding:2rem;background:#102d49;color:#fff;text-align:center"><div><strong style="font-size:2rem;display:block">RISK</strong><span style="color:#a8cedc;font-size:.75rem">Likelihood × Impact · Owner · Treatment</span></div></div>
-                    <div class="proj-img" style="display:grid;place-items:center;padding:2rem;background:#111315;color:#fff;text-align:center"><div><strong style="font-size:2rem;display:block">EVIDENCE</strong><span style="color:#c8b4d6;font-size:.75rem">Control · Owner · Due date · Status</span></div></div>
-                </div>
-            </div>
-
-            <a href="index.html#projects" class="next-project"><div><div class="next-label">العودة</div><div class="next-name">كل المشاريع</div></div><div class="next-arrow">&larr;</div></a>
+      <section class="case-hero">
+        <div class="case-copy">
+          <div class="case-back"><span>09</span><span>GRC PRODUCT PROTOTYPE</span></div>
+          <div class="case-kicker">TECHGUARD · MVP</div>
+          <h1 data-en="A clearer way to run <span>technology governance.</span>" data-ar="طريقة أوضح لإدارة <span>حوكمة التقنية.</span>">A clearer way to run <span>technology governance.</span></h1>
+          <p class="case-lead" data-en="TechGuard is a synthetic-data operating hub that brings assets, access reviews, risks, control evidence, and IT tickets into one audit-ready view." data-ar="TechGuard منصة تشغيلية ببيانات اصطناعية تجمع الأصول ومراجعات الصلاحيات والمخاطر وأدلة الضوابط وتذاكر تقنية المعلومات في واجهة واحدة جاهزة للمراجعة.">TechGuard is a synthetic-data operating hub that brings assets, access reviews, risks, control evidence, and IT tickets into one audit-ready view.</p>
+          <div class="case-actions"><a class="btn btn-primary" href="projects/techguard/index.html"><span data-en="Open interactive project" data-ar="فتح المشروع التفاعلي">Open interactive project</span><span>↗</span></a><a class="btn" href="index.html#projects"><span data-en="Back to portfolio" data-ar="العودة إلى الموقع">Back to portfolio</span><span>←</span></a></div>
         </div>
+        <div class="case-preview">
+          <div class="dashboard" aria-label="TechGuard dashboard preview">
+            <aside class="dash-side"><div class="dash-brand">TechGuard<small>GRC OPERATING HUB</small></div><div class="dash-nav"><span>Dashboard</span><span>Assets</span><span>Access</span><span>Risks</span><span>Evidence</span><span>Tickets</span></div></aside>
+            <div class="dash-main"><div class="dash-top"><span>TechGuard / Dashboard</span><span class="dash-export">Export report ↗</span></div><div class="dash-greeting"><span class="dash-kicker">GOVERNANCE OPERATIONS</span><strong>Good morning, Lujain.</strong><small>One workspace for keeping technology reliable, access controlled, and audit-ready.</small></div><div class="dash-metrics"><div class="dash-metric"><small>Control health</small><strong>86%</strong></div><div class="dash-metric"><small>High risks</small><strong>3</strong></div><div class="dash-metric"><small>Reviews due</small><strong>5</strong></div><div class="dash-metric"><small>IT tickets</small><strong>7</strong></div></div><div class="dash-panels"><div class="dash-panel"><h3>Risk posture</h3><div class="risk-grid"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div><div class="dash-panel"><h3>Control completion</h3><div class="bars"><i></i><i></i><i></i><i></i><i></i><i></i></div></div></div></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-head"><h2 data-en="The project in one view" data-ar="المشروع في صورة واحدة">The project in one view</h2><p data-en="This is a portfolio prototype, but it is designed around a real operating question: can a technology team see ownership, exposure, evidence, and next action in one place?" data-ar="هذا نموذج أولي للعرض في ملفي المهني، لكنه مبني حول سؤال تشغيلي واقعي: هل يستطيع فريق التقنية رؤية الملكية ونطاق التعرض والأدلة والإجراء التالي في مكان واحد؟">This is a portfolio prototype, but it is designed around a real operating question: can a technology team see ownership, exposure, evidence, and next action in one place?</p></div>
+        <div class="case-two-col"><article class="case-card"><h3 data-en="The challenge" data-ar="التحدي">The challenge</h3><p data-en="IT governance work is often spread across spreadsheets, email threads, access lists, risk logs, evidence folders, and ticketing tools. The information exists, but the relationship between the records is difficult to see." data-ar="غالبًا ما تكون أعمال حوكمة التقنية موزعة بين الجداول ورسائل البريد وقوائم الصلاحيات وسجلات المخاطر ومجلدات الأدلة وأنظمة التذاكر. المعلومات موجودة، لكن العلاقة بينها ليست واضحة.">IT governance work is often spread across spreadsheets, email threads, access lists, risk logs, evidence folders, and ticketing tools. The information exists, but the relationship between the records is difficult to see.</p></article><article class="case-card dark"><h3 data-en="The response" data-ar="الاستجابة">The response</h3><p data-en="I designed a single operating view that connects the records through ownership and action: an asset can have an owner, an access review can reveal a gap, a risk can require treatment, and a control can need evidence or a ticket." data-ar="صممت واجهة تشغيلية موحدة تربط السجلات بالملكية والإجراء: الأصل له مالك، ومراجعة الصلاحيات قد تكشف فجوة، والمخاطر تحتاج معالجة، والضابط قد يحتاج دليلًا أو تذكرة.">I designed a single operating view that connects the records through ownership and action: an asset can have an owner, an access review can reveal a gap, a risk can require treatment, and a control can need evidence or a ticket.</p></article></div>
+      </section>
+
+      <section class="section">
+        <div class="section-head"><h2 data-en="The operating model" data-ar="نموذج التشغيل">The operating model</h2><p data-en="The experience follows the way governance work actually moves: establish what exists, confirm who can access it, assess exposure, prove the control, and act on the gap." data-ar="تتبع التجربة تسلسل العمل الحوكمي: حصر الموجود، والتحقق ممن يملك الوصول، وتقييم التعرض، وإثبات فاعلية الضابط، ثم معالجة الفجوة.">The experience follows the way governance work actually moves: establish what exists, confirm who can access it, assess exposure, prove the control, and act on the gap.</p></div>
+        <div class="model-grid"><article class="model-step"><span class="model-num">01</span><h3 data-en="Assets" data-ar="الأصول">Assets</h3><p data-en="What systems and services exist, and who owns them?" data-ar="ما الأنظمة والخدمات الموجودة؟ ومن المسؤول عنها؟">What systems and services exist, and who owns them?</p></article><article class="model-step"><span class="model-num">02</span><h3 data-en="Access" data-ar="الوصول">Access</h3><p data-en="Who has access, why, and when was it last reviewed?" data-ar="من لديه الصلاحية؟ ولماذا؟ ومتى تمت مراجعتها؟">Who has access, why, and when was it last reviewed?</p></article><article class="model-step"><span class="model-num">03</span><h3 data-en="Risk" data-ar="المخاطر">Risk</h3><p data-en="What could go wrong, and how serious is the exposure?" data-ar="ما الذي قد يحدث؟ وما مستوى خطورة التعرض؟">What could go wrong, and how serious is the exposure?</p></article><article class="model-step"><span class="model-num">04</span><h3 data-en="Evidence" data-ar="الأدلة">Evidence</h3><p data-en="What proves that the control exists and is working?" data-ar="ما الذي يثبت وجود الضابط وفاعليته؟">What proves that the control exists and is working?</p></article><article class="model-step"><span class="model-num">05</span><h3 data-en="Action" data-ar="الإجراء">Action</h3><p data-en="What owner, ticket, or treatment closes the gap?" data-ar="ما المسؤول أو التذكرة أو المعالجة التي تغلق الفجوة؟">What owner, ticket, or treatment closes the gap?</p></article></div>
+      </section>
+
+      <section class="section">
+        <div class="section-head"><h2 data-en="What I contributed" data-ar="مساهمتي في المشروع">What I contributed</h2><p data-en="The project demonstrates both the technology work and the reasoning behind the experience." data-ar="يوضح المشروع العمل التقني والتفكير الذي بُنيت عليه التجربة.">The project demonstrates both the technology work and the reasoning behind the experience.</p></div>
+        <div class="evidence-grid"><article class="evidence-card"><span>01 · PRODUCT THINKING</span><h3 data-en="GRC translated into workflow" data-ar="تحويل GRC إلى إجراء">GRC translated into workflow</h3><p data-en="I converted abstract governance concepts into records, owners, statuses, due dates, evidence, and next actions." data-ar="حوّلت مفاهيم الحوكمة إلى سجلات ومالكين وحالات وتواريخ استحقاق وأدلة وإجراءات تالية.">I converted abstract governance concepts into records, owners, statuses, due dates, evidence, and next actions.</p></article><article class="evidence-card"><span>02 · INTERFACE DESIGN</span><h3 data-en="A decision-oriented dashboard" data-ar="لوحة تدعم القرار">A decision-oriented dashboard</h3><p data-en="The visual hierarchy surfaces control health, high risks, reviews due, and open tickets before the detail." data-ar="يُظهر التسلسل البصري صحة الضوابط والمخاطر العالية والمراجعات المستحقة والتذاكر المفتوحة قبل التفاصيل.">The visual hierarchy surfaces control health, high risks, reviews due, and open tickets before the detail.</p></article><article class="evidence-card"><span>03 · FRONTEND BUILD</span><h3 data-en="A working, inspectable MVP" data-ar="نموذج أولي قابل للتجربة">A working, inspectable MVP</h3><p data-en="I built the interactive front end with HTML, CSS, and JavaScript, including navigation, forms, filters, and synthetic records." data-ar="بنيت الواجهة التفاعلية باستخدام HTML وCSS وJavaScript، مع التنقل والنماذج والفلاتر والسجلات الاصطناعية.">I built the interactive front end with HTML, CSS, and JavaScript, including navigation, forms, filters, and synthetic records.</p></article></div>
+        <div class="case-note" data-en="Scope note: TechGuard is a portfolio MVP using synthetic data. It is not connected to a live organization, real identities, or production systems." data-ar="ملاحظة النطاق: TechGuard نموذج أولي مهني يستخدم بيانات اصطناعية، ولا يرتبط بجهة أو هويات حقيقية أو أنظمة إنتاجية.">Scope note: TechGuard is a portfolio MVP using synthetic data. It is not connected to a live organization, real identities, or production systems.</div>
+      </section>
+
+      <section class="section case-footer"><div><h2 data-en="See it in action." data-ar="شاهديه وهو يعمل.">See it in action.</h2><p data-en="Open the interactive prototype to explore the dashboard, records, filters, and demo actions." data-ar="افتحي النموذج التفاعلي لاستعراض لوحة التحكم والسجلات والفلاتر والإجراءات التجريبية.">Open the interactive prototype to explore the dashboard, records, filters, and demo actions.</p></div><a class="btn btn-primary" href="projects/techguard/index.html"><span data-en="Open TechGuard" data-ar="فتح TechGuard">Open TechGuard</span><span>↗</span></a></section>
+      <footer>© 2026 Lujain Alshamrani · TechGuard case study</footer>
     </main>
 
-    <footer class="site-footer"><span class="footer-brand">Lujain Alshamrani</span><ul class="footer-links"><li><a href="index.html#projects">Projects</a></li><li><a href="aboutme.html">About</a></li></ul><span class="footer-copy">&copy; 2026 All rights reserved</span></footer>
-
-    <script>
-        const btn = document.getElementById('navBtn');
-        const menu = document.getElementById('navMenu');
-        btn.addEventListener('click', () => { btn.classList.toggle('open'); menu.classList.toggle('open'); });
-        menu.querySelectorAll('a').forEach(link => link.addEventListener('click', () => { btn.classList.remove('open'); menu.classList.remove('open'); }));
-    </script>
+    <aside class="sidebar"><div class="identity-photo"><img src="Images/identity.webp" alt="Lujain Alshamrani identity"></div><nav class="side-links"><a href="index.html#home"><span data-en="Home" data-ar="الرئيسية">Home</span><span>01</span></a><a href="index.html#projects" class="active"><span data-en="Projects" data-ar="المشاريع">Projects</span><span>02</span></a><a href="index.html#experience"><span data-en="Experience" data-ar="الخبرة">Experience</span><span>03</span></a><a href="index.html#contact"><span data-en="Contact" data-ar="تواصل">Contact</span><span>04</span></a></nav><div class="side-note" data-en="IT Operations · Governance · Project Coordination · Cybersecurity GRC" data-ar="تشغيل تقنية المعلومات · الحوكمة · تنسيق المشاريع · GRC والأمن السيبراني">IT Operations · Governance · Project Coordination · Cybersecurity GRC</div><div class="socials"><a href="https://github.com/Rujeno" target="_blank" rel="noreferrer">GH</a><a href="mailto:lujain.shumrani@gmail.com">@</a><button class="lang" id="langToggle">AR</button></div></aside>
+  </div>
+  <script src="assets/portfolio-v2.js"></script>
 </body>
 </html>

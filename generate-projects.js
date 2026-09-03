@@ -381,7 +381,6 @@ function makeProjectPage(p, projects) {
             </button>
             <ul class="nav-menu" id="navMenu">
                 <li><a href="mydesignes.html" class="active">Work</a></li>
-                <li><a href="aboutme.html">About</a></li>
                 <li><a href="index.html#contact">Contact</a></li>
             </ul>
         </nav>
@@ -443,7 +442,6 @@ function makeProjectPage(p, projects) {
         <span class="footer-brand">Lujain Alshamrani</span>
         <ul class="footer-links">
             <li><a href="mydesignes.html">Work</a></li>
-            <li><a href="aboutme.html">About</a></li>
         </ul>
         <span class="footer-copy">&copy; 2025 All rights reserved</span>
     </footer>
