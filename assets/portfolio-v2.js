@@ -66,11 +66,13 @@ function refineArabicCopy(){const replacements=new Map([
 ['نطاق عملي الحالي يشمل تشغيل تقنية المعلومات والأنظمة المؤسسية والخدمات الرقمية والحوكمة والموردين والتنسيق التقني.','يمتد نطاق عملي الحالي عبر تشغيل تقنية المعلومات والأنظمة المؤسسية والخدمات الرقمية والحوكمة وإدارة الموردين والتنسيق بين الاحتياج التشغيلي والتنفيذ التقني.']
 ]);document.querySelectorAll('[data-ar]').forEach(el=>{if(replacements.has(el.dataset.ar))el.dataset.ar=replacements.get(el.dataset.ar);});}
 function setLang(next){lang=next;localStorage.setItem('siteLang',lang);document.documentElement.lang=lang;document.documentElement.dir=lang==='ar'?'rtl':'ltr';document.body.classList.toggle('is-ar',lang==='ar');toggle.textContent=lang==='ar'?'EN':'AR';document.querySelectorAll('[data-en]').forEach(el=>{const value=el.dataset[lang]||'';if(value.includes('<'))el.innerHTML=value;else el.textContent=value});Object.entries(rich).forEach(([id,values])=>{const el=document.getElementById(id);if(el)el.innerHTML=values[lang]});}
+function setIdentityAvatar(){document.querySelectorAll('.identity-photo img').forEach(img=>{img.src='Images/avatar.svg';img.style.filter='none';img.style.objectFit='cover';});}
 
 addCvAutomationProject();
 redesignProjectVisuals();
 addWhatsAppContact();
 updateCityscapeMetric();
 refineArabicCopy();
+setIdentityAvatar();
 toggle.addEventListener('click',()=>setLang(lang==='en'?'ar':'en'));
 setLang(lang);
